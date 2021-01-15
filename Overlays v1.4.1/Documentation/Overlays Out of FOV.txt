@@ -1,0 +1,41 @@
+1. Default :
+-> Use the captured image for single FOV by default
+
+-> Use the table canvas for Full scan by default
+
+The following can be the solutions for the overlays dragged out of the FOV during configuration :
+
+-> Increase the canvas by a pre-defined percentage on the condition that the overlays are moved out of the FOV.
+
+-> Increase the canvas only by a calculated pixel quantity based on how the overlay has moved out of the FOV in terms of X and Y.
+
+-> Bring the overlay just within the bounds of the FOV.
+
+-> Draw the overlay at the previous drawn location.
+
+The following can be the solution for the overlays drawn out of the FOV during inspection :
+
+-> The part can be cut along its bounding box and placed within the center fo FOV of the canvas image for display.
+
+-> Increase the canvas by a fixed preset percentage
+
+-> Increase the canvas dynamically based upon the maximum (Left, Top, Right, Bottom) taken up by the overlays.
+
+-> Bring the overlay just within the bounds of the FOV.
+
+Takeaways :
+
+Immediate (IFB) :
+1. Fixed percentage addition on all sides of canvas during launch and maintain throughout execution (Border pixels).
+2. Bring the overlays just within the image boundary during configuration and inspection.
+
+Later (v3) :
+1. Look into competitors implementation.
+2. Overlapping of overlays.
+3. Dynamic canvas adjustment.
+
+
+
+
+
+

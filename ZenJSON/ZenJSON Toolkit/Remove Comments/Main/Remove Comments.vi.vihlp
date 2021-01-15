@@ -1,0 +1,29 @@
+<VI_Documentation>
+	<Owning_Library Checkbox = "True">
+		<Owning_library_name>JSON File Handling</Owning_library_name>
+		<Owning_library_path></Owning_library_path>
+	</Owning_Library>
+	<Names_of_required_libraries></Names_of_required_libraries>
+	<Names_of_platforms>Windows</Names_of_platforms>
+	<VI_Description>This VI removes comments from the JSON that has just been read from a JSON file.This step is mandatory before parsing out the data to the next step. 
+It is capable of removing <b>single line ( // // ) </b>and<b> multiple line (/* */)</b>comments from the input JSON String.</VI_Description>
+	<Detailed_help_link>False</Detailed_help_link>
+	<Scrollable_window>False</Scrollable_window>
+	<Details Checkbox = "False">
+		<Details_text>Put details here</Details_text>
+	</Details>
+	<Examples Checkbox = "True">
+		<Path_to_example_image>E:\JSON File Handling Files\JSON File Handler\JSON File Handling(Internal Test) - Copy - Copy\Remove Comments\Data\Test Cases\Remove Coments 1.png</Path_to_example_image>
+		<Example_VI_name>Remove  Comments Example</Example_VI_name>
+		<Example_VI_path>E:\JSON File Handling Files\JSON File Handler\JSON File Handling(Internal Test) - Copy - Copy\Remove Comments\Data\Remove Comments Example.vi</Example_VI_path>	
+	</Examples>
+	<Start_path>VI_folder</Start_path>
+	<Table Checkbox = "False">
+		<Object>
+			</Object>
+		<Link>
+			</Link>
+		<Description>
+			</Description>
+	</Table>	
+</VI_Documentation>

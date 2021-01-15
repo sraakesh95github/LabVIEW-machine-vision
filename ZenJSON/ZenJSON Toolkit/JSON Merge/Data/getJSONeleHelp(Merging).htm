@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>
+Get JSON elements help
+</title>
+</head>
+<body>
+<b><u>Inputs :</u></b>
+<br>
+<br>
+<b>1) Default VCluster (LabVIEW Datatype) - required</b>
+<br>
+VCLuster must be a variant turned cluster, which is usually obtained as the output of JSON Serialization. This project uses the JKI JSON toolkit exclusively, so it is recommended to use the JKI JSON UNflatten from JSON string SubVI. The VCLuster takes the output of the JKI JSON Unflatten SubVI.
+<br><br>
+<br>
+<b>2) Override VCluster (LabVIEW Datatype) - required</b>
+<br>
+VCLuster must be a variant turned cluster, which is usually obtained as the output of JSON Serialization. This project uses the JKI JSON toolkit exclusively, so it is recommended to use the JKI JSON UNflatten from JSON string SubVI. The VCLuster takes the output of the JKI JSON Unflatten SubVI.
+<br><br>
+<br>
+<b>3) Array Elements Check Keys (Array of Strings) - recommended</b>
+<br>Use the elements provided in the array to check for the Array of Clusters if certain clusters are present in the override and not in the default. These elements will be added in the default. For Example, if "Name" is provided, it will check for name in the cluster.
+<br><br>
+<b>4) Error In - optional </b>
+<br><br>
+	Describes error conditions that occur before this node runs. This input provides standard error in functionality. 
+<br><br>
+<u><b>Outputs :</u></b>
+<br><br>
+<b>1)Output Merged VCluster (Variant Cluster)</b>
+<br>
+	The merged cluster from the "Default" and the "Override" is available at the output as a VCluster.
+<br><br>
+<br>
+<b>2) Error Message</b>
+<br>Gives the grammatical or syntax errors that have been encountered in the JSON path List array. The paths where errors have been encountered will be considered as void by default, i.e the output VCluster will conatin the void datatype at places where the required element was not found. It gives the error message in the below format<br><br>
+[pathIndex] : stringToBeCheckedForError<br><br>
+Example : JSON path provided :<br> [0] => $.cluster.errorArray<br>[1] => $.errorCluster.array<br><br>Error Message:<br>[0]:errorArray<br>[1]:errorCluster 
+<br><br>
+<b>3) Error Out :</b>
+	Contains error information. This output provides standard error out functionality
+<br><br><br>
+<b>JSON String/LabVIEW Constraints</b><br><br><ol>
+<li>LabVIEW does not support the following datatype:
+	<br>-> Array of arrays (Such types can be considered as array of clusters instead)
+	<br>-> Array of different datatypes(different cluster structures)</li>
+<br>
+<li>The Unflatten from JSON JKI does not support the following datatypes:
+	<br>-> 2D arrays</li>
+<br>
+<li>Perform the following to get Enumerated datatype:
+	<br>-> In JSON String : give the Enum in the Numeric syntax (Eg: "enum": 0)
+	<br>-> In LabVIEW : Give the <b>type</b> input input to the <b>Variants to Data.vi</b> as the required Enum.</li><br>
+<li>The timestamp is converted in the form of string. You can use the <b>Scan From String.vi</b> to convert the string into the required timestamp data.
+	</ol>
+<br><br>
+</body>
+</html>
+	
+	
+	
+
+
+
+

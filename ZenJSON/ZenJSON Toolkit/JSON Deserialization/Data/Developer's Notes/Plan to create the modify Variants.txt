@@ -1,0 +1,64 @@
+Inputs Defined: 
+
+a. Enumerated : 
+	-> replace
+	-> insert
+	-> append
+b. Data Cluster
+c. Override JSON Variant
+d. JSON File Path
+
+Outputs defined:
+
+a. Modified Override JSON
+b. Data Operation Performed from the list of options available
+
+Algorithm :
+
+1. Enter into the required hierarchy of the JSON
+2. If Replace is provided as an enumerated perform the following :
+
+	a. If the element is an array
+		
+		->If the datatype of both the elements specified by the path and the input data are the same, and also the array element is present,replace the array element
+		-> Else If datatypes dont match, don't replace and give an error message stating the datatype mismatch
+		-> Else if datatype is same and element in the given index is not present, then append the element as the last element of the array.
+	
+	b. Else if its a cluster / Primitive datatype,
+		-> If the cluster element is present,
+				replace the cluster element with the given input cluster
+		-> Else if the cluster element is not present,
+				append the cluster element at the end of the last element
+
+3. If Insert is provided as an enumerated perform the following :
+
+	a. If the element is an array
+		
+		->If the datatype of both the elements specified by the path and the input data are the same, and also the array element is present,insert the array element next to the specified array element
+		-> Else If datatypes dont match, don't insert and give an error message stating the datatype mismatch
+		-> Else if datatype is same and element in the given index is not present, then append the element as the last element of the array.
+	
+b. Else if its a cluster / Primitive datatype,
+		-> If the cluster element is present,
+				insert the cluster element next to the element specified in the JSON path.
+		-> Else if the cluster element is not present,
+				append the cluster element at the end of the last element
+
+4. If Append is provided as an enumerated perform the following :
+
+	a. If the element is an array, append the input cluster element next to the last element of the array.
+	
+	b. Else if its a cluster / Primitive datatype,
+		Append the input cluster element next to the last element in the cluster
+
+
+
+
+
+
+
+	
+				
+					
+	
+

@@ -1,0 +1,3 @@
+BatchID,	FailID,	InspectionMcID,	Event Name,	Event Time,	Event Reason,	Non Utilised Time
+None,None,None,Start,04-Apr-2019 11:30:22,Machine Start,0
+None,None,GTRON_V1.3_DHOOT_DHOOT-VIP 3_26-09-2018,Exit,04-Apr-2019 11:31:57,Software Exit,0

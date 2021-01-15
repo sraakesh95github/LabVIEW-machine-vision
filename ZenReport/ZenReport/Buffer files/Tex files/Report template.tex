@@ -1,0 +1,96 @@
+%% LyX 2.3.0 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage[bottom = 0.5cm]{geometry}
+\geometry{verbose,lmargin=1cm,rmargin=1cm}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\voffset=-80pt
+\fancyfoot[L]{%
+  \vspace{1.6\baselineskip}
+  \scriptsize{CONFIDENTIALITY NOTICE: The information above may contain Zentron Labs confidential information, protected by law. If this message is confidential, forwarding it to individuals, other than those with a need to know, without the permission is prohibited.}}
+\pagestyle{fancy}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+
+\makeatother
+
+\usepackage{babel}
+\usepackage{listings}
+\renewcommand{\lstlistingname}{Listing}
+
+\begin{document}
+\noindent %
+\begin{minipage}[t]{0.45\columnwidth}%
+\noindent \textbf{Part Name : $part_name$}
+
+\textbf{Customer Name : $customer_name$}
+
+\textbf{Operator Name : $operator_name$}%
+\end{minipage}\qquad{}\qquad{}\qquad{}\qquad{}\qquad{}\qquad{}\qquad{}%
+\begin{minipage}[c]{0.45\columnwidth}%
+\includegraphics[scale=0.5]{\string"$logo_filepath$\string".png}%
+\end{minipage}
+
+\medskip{}
+\medskip{}
+\medskip{}
+
+\noindent \rule[0.5ex]{1\columnwidth}{1pt}
+
+\textbf{}
+
+\begin{flushleft}
+\begin{tabular}{p{3.5cm}p{3.5cm}p{5.5cm}p{3cm}}
+\texttt{\large{System Name}} & $system_name$ & \texttt{\large{Measurement Date and Time}} & $measurement_date_and_time$\tabularnewline
+\texttt{\large{Location}} & $location$ & \texttt{\large{Job Number}} & $job_number$\tabularnewline
+\texttt{\large{Department}} & $department$ & \texttt{\large{Status}} & $status$\tabularnewline
+\end{tabular}
+\end{flushleft}
+
+\medskip{}
+\medskip{}
+
+\noindent \rule[0.5ex]{1\columnwidth}{1pt}
+\medskip{}
+\begin{center}
+\includegraphics[width = $image_width$$unit$ , height = $image_height$$unit$]{\string"$image_path$\string".png}
+\par\end{center}
+
+\pagebreak
+
+\noindent %
+\begin{minipage}[t]{0.45\columnwidth}%
+\noindent \textbf{Part Name : $part_name$}
+
+\textbf{Customer Name : $customer_name$}
+
+\textbf{Operator Name : $operator_name$}%
+\end{minipage}\qquad{}\qquad{}\qquad{}\qquad{}\qquad{}\qquad{}\qquad{}%
+\begin{minipage}[c]{0.45\columnwidth}%
+\includegraphics[scale=0.5]{\string"$logo_filepath$\string".png}%
+\end{minipage}
+
+\medskip{}
+\medskip{}
+\medskip{}
+
+\noindent \rule[0.5ex]{1\columnwidth}{1pt}
+
+\begin{center}
+\begin{tabular}{clccccccc}
+\textbf{SL.NO} & \textbf{MEASUREMENTS} & \textbf{LSL} & \textbf{NOMINAL} & \textbf{USL} & \textbf{MEASURED} & \textbf{DEVIATION} & \textbf{UNITS} & \textbf{STATUS}\tabularnewline
+ &  &  &  &  &  &  &  & \tabularnewline
+$table2$
+
+\end{tabular}
+\end{center}
+
+\end{document}

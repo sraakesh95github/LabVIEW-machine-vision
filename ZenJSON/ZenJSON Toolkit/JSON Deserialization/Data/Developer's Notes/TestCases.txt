@@ -1,0 +1,3 @@
+1. When entered as $.array_object[name=testing3...].id in the JSON PathList, it doesn't work. It takes as an empty hierarchy within the path due to 2 adjacent paths.
+2. If the unbundle is used for the input of Variant to Data, then bundle it again, so that we get the output as a VCluster and not the same datatype as the element. As discussed with Veena.
+3.  

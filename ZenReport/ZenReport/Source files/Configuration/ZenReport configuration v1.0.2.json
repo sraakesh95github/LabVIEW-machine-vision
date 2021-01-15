@@ -1,0 +1,119 @@
+{
+  "SystemSpecificParameters": {
+    "SystemName": "QMS",
+    "CompanyName": "Molex",
+    "Location": "Bengaluru",
+    "Department": "Automation",
+    "LogoFilepath": "",
+    "ImageTempFilePath": "E:\\QMS1.0\\Temp\\Reports",
+    "PrinterParameters": {
+      "PrinterNamesList": [
+        "Printer1",
+        "Printer2"
+      ],
+      "DefaultPrinterName": "HP LaserJet MFP M128fw"
+    }
+  },
+  "PartSpecificParameters": [
+    {
+      "ReportType": "Part",
+      "TableParameters": [
+        {
+          "TableID": 12,
+          "ColumnDetails": [
+            {
+              "ColumnName": "Measurement Name",
+              "ColumnWidth": 12,
+              "ColumnTextAlignment": "left"
+            }
+          ]
+        }
+      ],
+      "ImageParameters": [
+        {
+          "ImageID": "1",
+          "ImageBookmark": "image1",
+          "ImageScalingParameters": {
+            "Width": 195,
+            "Height": 165,
+            "Unit": "mm"
+          },
+          "DefaultDisplayString": "String to be displayed instead of image file",
+          "ImageFilepath": "",
+          "ResamplingFactor": 0.2,
+          "UseDefaultScaling": false
+        },
+        {
+          "ImageID": "2",
+          "ImageBookmark": "image2",
+          "ImageScalingParameters": {
+            "Width": 32,
+            "Height": 12,
+            "Unit": "mm"
+          },
+          "DefaultDisplayString": "String to be displayed instead of image file",
+          "ImageFilepath": "",
+          "ResamplingFactor": 0.2,
+          "UseDefaultScaling": false
+        }
+      ],
+      "OutputReportNamePrefix": "",
+      "OutputFilePath": "E:\\Temporary Code Modification\\Test outputs\\TestPackage",
+      "DefaultBookmarkValues": [
+        {
+          "BookmarkKey": "Bookmark1",
+          "BookmarkValue": "Value1"
+        },
+        {
+          "BookmarkKey": "Bookmark2",
+          "BookmarkValue": "Value2"
+        }
+      ]
+    },
+    {
+      "ReportType": "Batch",
+      "TableParameters": [
+        {
+          "TableID": 12,
+          "ColumnDetails": [
+            {
+              "ColumnName": "Measurement Name",
+              "ColumnWidth": 12,
+              "ColumnTextAlignment": "left"
+            }
+          ]
+        }
+      ],
+      "OutputReportNamePrefix": "Batch",
+      "OutputFilePath": "E:\\Temporary Code Modification\\Test outputs\\TestPackage",
+      "ImageParameters": [
+        {
+          "ImageID": "1",
+          "ImageBookmark": "image1",
+          "ImageScalingParameters": {
+            "Width": 450,
+            "Height": 301,
+            "Unit": "pt"
+          },
+          "DefaultDisplayString": "String to be displayed instead of image file",
+          "ImageFilepath": "",
+          "ResamplingFactor": 1,
+          "UseDefaultScaling": false
+        },
+        {
+          "ImageID": "2",
+          "ImageBookmark": "image2",
+          "ImageScalingParameters": {
+            "Width": 32,
+            "Height": 12,
+            "Unit": "pt"
+          },
+          "DefaultDisplayString": "String to be displayed instead of image file",
+          "ImageFilepath": "",
+          "ResamplingFactor": 1,
+          "UseDefaultScaling": false
+        }
+      ]
+    }
+  ]
+}

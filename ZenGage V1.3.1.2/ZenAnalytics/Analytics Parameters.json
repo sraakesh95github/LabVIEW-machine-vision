@@ -1,0 +1,127 @@
+{
+  "AnalyticsParameters": {
+    "UpdateRateCategories": {
+      "LOW": {
+        "SampleElapsed": 100,
+        "TimeElapsed": 4
+      },
+      "MEDIUM": {
+        "SampleElapsed": 70,
+        "TimeElapsed": 2
+      },
+      "HIGH": {
+        "SampleElapsed": 1,
+        "TimeElapsed": 1
+      }
+    },
+    "AnalyticsForPartsList": [
+      {
+        "Name": "ECU1512",
+        "InitializationValues": {
+          "RowsIn2DArray": 10000,
+          "ColumnsIn2DArray": 11,
+          "SamplesToDisplay": 100,
+          "UpdateRate": "HIGH"
+        },
+        "PlotParameters": {
+          "Trend": [
+            {
+              "TrendPlotID": 1,
+              "PlotProperties": {
+                "FontName": "Times New Roman",
+                "FontSize": 15,
+                "FontColor": "White",
+                "IsBold": true,
+                "IsItalic": false,
+                "PlotColor": "Maroon"
+              }
+            }
+          ],
+          "Histogram": [
+            {
+              "HistogramPlotID": 1,
+              "PlotProperties": {
+                "FontName": "Times New Roman",
+                "FontSize": 15,
+                "FontColor": "White",
+                "IsBold": true,
+                "IsItalic": false,
+                "PlotColor": "Maroon"
+              }
+            }
+          ],
+          "BarPlot": [
+            {
+              "BarPlotID": 1,
+              "BarValuesID": 0,
+              "PlotProperties": {
+                "FontName": "Times New Roman",
+                "FontSize": 15,
+                "IsBold": true,
+                "IsItalic": false,
+                "FontColor": "White"
+              },
+              "Sectors": [
+                "Pass",
+                "Fail"
+              ]
+            },
+            {
+              "BarPlotID": 2,
+              "BarValuesID": 6,
+              "PlotProperties": {
+                "FontName": "Times New Roman",
+                "FontSize": 15,
+                "IsBold": true,
+                "IsItalic": false,
+                "FontColor": "White"
+              },
+              "Sectors": [
+                "defect1",
+                "defect2",
+                "defect3",
+                "defect4",
+                "defect5"
+              ]
+            }
+          ],
+          "PieChart": [
+            {
+              "PieChartID": 1,
+              "PieChartValueID": 0,
+              "PlotProperties": {
+                "FontName": "Times New Roman",
+                "FontSize": 15,
+                "IsBold": true,
+                "IsItalic": false,
+                "FontColor": "White"
+              },
+              "Sectors": [
+                "Pass",
+                "Fail"
+              ]
+            },
+            {
+              "PieChartID": 2,
+              "PieChartValueID": 6,
+              "PlotProperties": {
+                "FontName": "Times New Roman",
+                "FontSize": 15,
+                "IsBold": true,
+                "IsItalic": false,
+                "FontColor": "White"
+              },
+              "Sectors": [
+                "defect1",
+                "defect2",
+                "defect3",
+                "defect4",
+                "defect5"
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,561 @@
+{
+  "AnalyticsParameters": {
+    "UpdateRateCategories": {
+      "LOW": {
+        "SampleElapsed": 100,
+        "TimeElapsed": 4
+      },
+      "MEDIUM": {
+        "SampleElapsed": 70,
+        "TimeElapsed": 2
+      },
+      "HIGH": {
+        "SampleElapsed": 1,
+        "TimeElapsed": 1
+      }
+    },
+    "AnalyticsForPartsList": [
+      {
+        "Name": "TT-1478",
+        "InitializationValues": {
+          "RowsIn2DArray": 9000,
+          "ColumnsIn2DArray": 19,
+          "SamplesToDisplay": 100,
+          "UpdateRate": "HIGH"
+        },
+        "PlotParameters": {
+          "Trend": [
+            {
+              "TrendPlotID": 1,
+              "PlotProperties": {
+                "FontName": "Times New Roman",
+                "FontSize": 15,
+                "FontColor": "Black",
+                "IsBold": true,
+                "IsItalic": false,
+                "PlotColor": "Maroon"
+              }
+            }
+          ],
+          "Histogram": [
+            {
+              "HistogramPlotID": 1,
+              "PlotProperties": {
+                "FontName": "Times New Roman",
+                "FontSize": 15,
+                "FontColor": "Black",
+                "IsBold": true,
+                "IsItalic": false,
+                "PlotColor": "Maroon"
+              }
+            }
+          ],
+          "BarPlot": [
+            {
+              "BarPlotID": 1,
+              "BarValuesID": 10,
+              "PlotProperties": {
+                "FontName": "Times New Roman",
+                "FontSize": 15,
+                "IsBold": true,
+                "IsItalic": false,
+                "FontColor": "Black"
+              },
+              "Sectors": [
+                "L",
+                "H",
+                "W",
+                "W1",
+                "C1",
+                "C2",
+                "I1",
+                "I2",
+                "W3"
+              ]
+            }
+          ],
+          "PieChart": [
+            {
+              "PieChartID": 1,
+              "PieChartValueID": 0,
+              "PlotProperties": {
+                "FontName": "Times New Roman",
+                "FontSize": 15,
+                "IsBold": true,
+                "IsItalic": false,
+                "FontColor": "Black"
+              },
+              "Sectors": [
+                "Pass",
+                "Fail"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Name": "TT-1524",
+        "InitializationValues": {
+          "RowsIn2DArray": 9000,
+          "ColumnsIn2DArray": 17,
+          "SamplesToDisplay": 100,
+          "UpdateRate": "HIGH"
+        },
+        "PlotParameters": {
+          "Trend": [
+            {
+              "TrendPlotID": 1,
+              "PlotProperties": {
+                "FontName": "Times New Roman",
+                "FontSize": 15,
+                "FontColor": "Black",
+                "IsBold": true,
+                "IsItalic": false,
+                "PlotColor": "Maroon"
+              }
+            }
+          ],
+          "Histogram": [
+            {
+              "HistogramPlotID": 1,
+              "PlotProperties": {
+                "FontName": "Times New Roman",
+                "FontSize": 15,
+                "FontColor": "Black",
+                "IsBold": true,
+                "IsItalic": false,
+                "PlotColor": "Maroon"
+              }
+            }
+          ],
+          "BarPlot": [
+            {
+              "BarPlotID": 1,
+              "BarValuesID": 9,
+              "PlotProperties": {
+                "FontName": "Times New Roman",
+                "FontSize": 15,
+                "IsBold": true,
+                "IsItalic": false,
+                "FontColor": "Black"
+              },
+              "Sectors": [
+                "L",
+                "H",
+                "W",
+                "W3",
+                "C1",
+                "C2",
+                "I1",
+                "Dia"
+              ]
+            }
+          ],
+          "PieChart": [
+            {
+              "PieChartID": 1,
+              "PieChartValueID": 0,
+              "PlotProperties": {
+                "FontName": "Times New Roman",
+                "FontSize": 15,
+                "IsBold": true,
+                "IsItalic": false,
+                "FontColor": "Black"
+              },
+              "Sectors": [
+                "Pass",
+                "Fail"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Name": "TT-1525",
+        "InitializationValues": {
+          "RowsIn2DArray": 9000,
+          "ColumnsIn2DArray": 15,
+          "SamplesToDisplay": 100,
+          "UpdateRate": "HIGH"
+        },
+        "PlotParameters": {
+          "Trend": [
+            {
+              "TrendPlotID": 1,
+              "PlotProperties": {
+                "FontName": "Times New Roman",
+                "FontSize": 15,
+                "FontColor": "Black",
+                "IsBold": true,
+                "IsItalic": false,
+                "PlotColor": "Maroon"
+              }
+            }
+          ],
+          "Histogram": [
+            {
+              "HistogramPlotID": 1,
+              "PlotProperties": {
+                "FontName": "Times New Roman",
+                "FontSize": 15,
+                "FontColor": "Black",
+                "IsBold": true,
+                "IsItalic": false,
+                "PlotColor": "Maroon"
+              }
+            }
+          ],
+          "BarPlot": [
+            {
+              "BarPlotID": 1,
+              "BarValuesID": 8,
+              "PlotProperties": {
+                "FontName": "Times New Roman",
+                "FontSize": 15,
+                "IsBold": true,
+                "IsItalic": false,
+                "FontColor": "Black"
+              },
+              "Sectors": [
+                "H",
+                "W",
+                "W3",
+                "C1",
+                "C2",
+                "I1",
+                "Dia"
+              ]
+            }
+          ],
+          "PieChart": [
+            {
+              "PieChartID": 1,
+              "PieChartValueID": 0,
+              "PlotProperties": {
+                "FontName": "Times New Roman",
+                "FontSize": 15,
+                "IsBold": true,
+                "IsItalic": false,
+                "FontColor": "Black"
+              },
+              "Sectors": [
+                "Pass",
+                "Fail"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Name": "TT-1828",
+        "InitializationValues": {
+          "RowsIn2DArray": 9000,
+          "ColumnsIn2DArray": 13,
+          "SamplesToDisplay": 100,
+          "UpdateRate": "HIGH"
+        },
+        "PlotParameters": {
+          "Trend": [
+            {
+              "TrendPlotID": 1,
+              "PlotProperties": {
+                "FontName": "Times New Roman",
+                "FontSize": 15,
+                "FontColor": "Black",
+                "IsBold": true,
+                "IsItalic": false,
+                "PlotColor": "Maroon"
+              }
+            }
+          ],
+          "Histogram": [
+            {
+              "HistogramPlotID": 1,
+              "PlotProperties": {
+                "FontName": "Times New Roman",
+                "FontSize": 15,
+                "FontColor": "Black",
+                "IsBold": true,
+                "IsItalic": false,
+                "PlotColor": "Maroon"
+              }
+            }
+          ],
+          "BarPlot": [
+            {
+              "BarPlotID": 1,
+              "BarValuesID": 7,
+              "PlotProperties": {
+                "FontName": "Times New Roman",
+                "FontSize": 15,
+                "IsBold": true,
+                "IsItalic": false,
+                "FontColor": "Black"
+              },
+              "Sectors": [
+                "L",
+                "E",
+                "C1",
+                "I1",
+                "W",
+                "H3"
+              ]
+            }
+          ],
+          "PieChart": [
+            {
+              "PieChartID": 1,
+              "PieChartValueID": 0,
+              "PlotProperties": {
+                "FontName": "Times New Roman",
+                "FontSize": 15,
+                "IsBold": true,
+                "IsItalic": false,
+                "FontColor": "Black"
+              },
+              "Sectors": [
+                "Pass",
+                "Fail"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Name": "TT-1891",
+        "InitializationValues": {
+          "RowsIn2DArray": 9000,
+          "ColumnsIn2DArray": 15,
+          "SamplesToDisplay": 100,
+          "UpdateRate": "HIGH"
+        },
+        "PlotParameters": {
+          "Trend": [
+            {
+              "TrendPlotID": 1,
+              "PlotProperties": {
+                "FontName": "Times New Roman",
+                "FontSize": 15,
+                "FontColor": "Black",
+                "IsBold": true,
+                "IsItalic": false,
+                "PlotColor": "Maroon"
+              }
+            }
+          ],
+          "Histogram": [
+            {
+              "HistogramPlotID": 1,
+              "PlotProperties": {
+                "FontName": "Times New Roman",
+                "FontSize": 15,
+                "FontColor": "Black",
+                "IsBold": true,
+                "IsItalic": false,
+                "PlotColor": "Maroon"
+              }
+            }
+          ],
+          "BarPlot": [
+            {
+              "BarPlotID": 1,
+              "BarValuesID": 8,
+              "PlotProperties": {
+                "FontName": "Times New Roman",
+                "FontSize": 15,
+                "IsBold": true,
+                "IsItalic": false,
+                "FontColor": "Black"
+              },
+              "Sectors": [
+                "L",
+                "E",
+                "H",
+                "W",
+                "C1",
+                "I1",
+                "Window"
+              ]
+            }
+          ],
+          "PieChart": [
+            {
+              "PieChartID": 1,
+              "PieChartValueID": 0,
+              "PlotProperties": {
+                "FontName": "Times New Roman",
+                "FontSize": 15,
+                "IsBold": true,
+                "IsItalic": false,
+                "FontColor": "Black"
+              },
+              "Sectors": [
+                "Pass",
+                "Fail"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Name": "TT-2689",
+        "InitializationValues": {
+          "RowsIn2DArray": 9000,
+          "ColumnsIn2DArray": 27,
+          "SamplesToDisplay": 100,
+          "UpdateRate": "HIGH"
+        },
+        "PlotParameters": {
+          "Trend": [
+            {
+              "TrendPlotID": 1,
+              "PlotProperties": {
+                "FontName": "Times New Roman",
+                "FontSize": 15,
+                "FontColor": "Black",
+                "IsBold": true,
+                "IsItalic": false,
+                "PlotColor": "Maroon"
+              }
+            }
+          ],
+          "Histogram": [
+            {
+              "HistogramPlotID": 1,
+              "PlotProperties": {
+                "FontName": "Times New Roman",
+                "FontSize": 15,
+                "FontColor": "Black",
+                "IsBold": true,
+                "IsItalic": false,
+                "PlotColor": "Maroon"
+              }
+            }
+          ],
+          "BarPlot": [
+            {
+              "BarPlotID": 1,
+              "BarValuesID": 14,
+              "PlotProperties": {
+                "FontName": "Times New Roman",
+                "FontSize": 15,
+                "IsBold": true,
+                "IsItalic": false,
+                "FontColor": "Black"
+              },
+              "Sectors": [
+                "L",
+                "L1",
+                "C1",
+                "C2",
+                "C3",
+                "I1",
+                "I2",
+                "I3",
+                "W",
+                "W1",
+                "W3",
+                "H",
+                "H1"
+              ]
+            }
+          ],
+          "PieChart": [
+            {
+              "PieChartID": 1,
+              "PieChartValueID": 0,
+              "PlotProperties": {
+                "FontName": "Times New Roman",
+                "FontSize": 15,
+                "IsBold": true,
+                "IsItalic": false,
+                "FontColor": "Black"
+              },
+              "Sectors": [
+                "Pass",
+                "Fail"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Name": "TT-1704",
+        "InitializationValues": {
+          "RowsIn2DArray": 9000,
+          "ColumnsIn2DArray": 17,
+          "SamplesToDisplay": 100,
+          "UpdateRate": "HIGH"
+        },
+        "PlotParameters": {
+          "Trend": [
+            {
+              "TrendPlotID": 1,
+              "PlotProperties": {
+                "FontName": "Times New Roman",
+                "FontSize": 15,
+                "FontColor": "Black",
+                "IsBold": true,
+                "IsItalic": false,
+                "PlotColor": "Maroon"
+              }
+            }
+          ],
+          "Histogram": [
+            {
+              "HistogramPlotID": 1,
+              "PlotProperties": {
+                "FontName": "Times New Roman",
+                "FontSize": 15,
+                "FontColor": "Black",
+                "IsBold": true,
+                "IsItalic": false,
+                "PlotColor": "Maroon"
+              }
+            }
+          ],
+          "BarPlot": [
+            {
+              "BarPlotID": 1,
+              "BarValuesID": 9,
+              "PlotProperties": {
+                "FontName": "Times New Roman",
+                "FontSize": 15,
+                "IsBold": true,
+                "IsItalic": false,
+                "FontColor": "Black"
+              },
+              "Sectors": [
+                "L",
+                "L1",
+                "L2",
+                "W",
+                "H2",
+                "C1",
+                "I1",
+                "H3"
+              ]
+            }
+          ],
+          "PieChart": [
+            {
+              "PieChartID": 1,
+              "PieChartValueID": 0,
+              "PlotProperties": {
+                "FontName": "Times New Roman",
+                "FontSize": 15,
+                "IsBold": true,
+                "IsItalic": false,
+                "FontColor": "Black"
+              },
+              "Sectors": [
+                "Pass",
+                "Fail"
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

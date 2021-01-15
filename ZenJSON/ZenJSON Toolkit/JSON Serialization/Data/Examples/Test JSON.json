@@ -1,0 +1,150 @@
+{
+"String1": "string1",
+"String2": "string2",
+"U321": "number1",
+"U322": "number2",
+"boolean1": true,
+"boolean2": false,
+"double1": 1.0,
+"double2": 323.43432,
+"double3": -31231.0,
+"SignedInteger1": -12,
+"Cluster1": {
+"String1": "string1",
+"num1": 12,
+"boolean": true
+},
+"Cluster2": {
+"String1": "string1",
+"num1": 12,
+"boolean": true,
+"NestedCluster1": {
+"String1": "string1",
+"num1": 12,
+"boolean": true,
+"NestedCluster11": {
+"String1": "string1",
+"num1": 12,
+"boolean": true
+}
+}
+},
+"ArrayOfString": ["abc","def","ghi","jkl","mnop","qrs","twu","vxy","z"],
+"ArrayOfBoolean": [true,false,true,true,false],
+"ArrayOfU64": [32,43,54],
+"ArrayOfI32": [-32,43,54,-12],
+"ArrayOfDouble": [2.0,4.0,5.0],
+"ArrayOfClusters1": [
+{
+"String1": "string 1.1",
+"num1": 12,
+"boolean": true
+},
+{
+"String1": "string 1.2",
+"num1": 12,
+"boolean": true
+},
+{
+"String1": "string 1.3",
+"num1": 13,
+"boolean": true
+},
+{
+"String1": "string 4",
+"num1": 14,
+"boolean": true
+}
+],
+"ArrayOfClusters2": [
+{
+"String1": "string 1.1",
+"num1": 12,
+"boolean": true,
+"ArrayOfClusters": [
+{
+"String1": "string 2.1",
+"num1": 12,
+"boolean": true
+},
+{
+"String1": "string 2.2",
+"num1": 12,
+"boolean": true
+},
+{
+"String1": "string 2.3",
+"num1": 13,
+"boolean": true
+},
+{
+"String1": "string 2.4",
+"num1": 14,
+"boolean": true
+}
+]
+},
+{
+"String1": "string 1.1",
+"num1": 12,
+"boolean": true,
+"ArrayOfClusters": [
+{
+"String1": "string 3.1",
+"num1": 12,
+"boolean": true
+},
+{
+"String1": "string 3.2",
+"num1": 12,
+"boolean": true
+},
+{
+"String1": "string 3.3",
+"num1": 13,
+"boolean": true
+},
+{
+"String1": "string 3.4",
+"num1": 14,
+"boolean": true
+}
+]
+},
+{
+"String1": "string 1.1",
+"num1": 12,
+"boolean": true,
+"ArrayOfClusters": [
+{
+"String1": "string 4.1",
+"num1": 12,
+"boolean": true
+},
+{
+"String1": "string 4.2",
+"num1": 12,
+"boolean": true
+},
+{
+"String1": "string 4.3",
+"num1": 13,
+"boolean": true
+},
+{
+"String1": "string 4.4",
+"num1": 14,
+"boolean": true
+}
+]
+}
+],
+"2DArray": [
+[1,2,3],
+[3,4,5],
+[6,7,8]
+]
+}
+
+
+

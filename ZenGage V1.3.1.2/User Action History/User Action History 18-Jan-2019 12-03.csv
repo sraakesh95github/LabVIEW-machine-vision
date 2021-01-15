@@ -1,0 +1,4 @@
+BatchID,	FailID,	InspectionMcID,	Event Name,	Event Time,	Event Reason,	Non Utilised Time
+None,None,None,Start,18-Jan-2019 12:03:19,Machine Start,0
+None,None,GTRON_V1.3_TT_TT-VASAI-MC5_26-09-2018,Ready,18-Jan-2019 12:03:20,Inspection Ready,0
+None,None,GTRON_V1.3_TT_TT-VASAI-MC5_26-09-2018,Exit,18-Jan-2019 12:04:07,Software Exit,47

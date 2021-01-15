@@ -1,0 +1,2 @@
+1. Circle dia and circle radius ROI not decreasing on zooming in
+2. Point is big after "Zoom in and out"

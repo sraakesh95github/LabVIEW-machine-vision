@@ -1,0 +1,60 @@
+<VI_Documentation>
+	<Owning_Library Checkbox = "True">
+		<Owning_library_name>Zen JSON File Handling</Owning_library_name>
+		<Owning_library_path></Owning_library_path>
+	</Owning_Library>
+	<Names_of_required_libraries>JKI JSON, OpenG Toolkit</Names_of_required_libraries>
+	<Names_of_platforms>Windows</Names_of_platforms>
+	<VI_Description>The input array of strings represent the <b>JSON paths</b> to specific elements in the JSON string. These elements are accessed through the path input and the output is provided in the form of <b>VCluster</b> (the bundled form of the input path elements). 
+Furthermore, you may use the <b>Variant to Data</b> SubVI to convert back the Variant to the required Cluster type you want.</VI_Description>
+	<Detailed_help_link>False</Detailed_help_link>
+	<Scrollable_window>False</Scrollable_window>
+	<Details Checkbox = "True">
+		<Details_text><br><br>
+<b>JSON String/LabVIEW Constraints</b><br><br><ol>
+<li>LabVIEW does not support the following datatype:
+	<br>-> Array of arrays (Such types can be considered as array of clusters instead)
+	<br>-> Array of different datatypes(different cluster structures)</li>
+<br>
+<li>The Unflatten from JSON JKI does not support the following datatypes:
+	<br>-> 2D arrays</li>
+<br>
+<li>Perform the following to get Enumerated datatype:
+	<br>-> In JSON String : give the Enum in the Numeric syntax (Eg: "enum": 0)
+	<br>-> In LabVIEW : Give the <b>type</b> input input to the <b>Variants to Data.vi</b> as the required Enum.</li><br>
+<li>The timestamp is converted in the form of string. You can use the <b>Scan From String.vi</b> to convert the string into the required timestamp data.
+	</ol>
+</Details_text>
+	</Details>
+	<Examples Checkbox = "True">
+		<Path_to_example_image>E:\JSON File Handling Files\JSON File Handler\JSON File Handling(Internal Test) - Copy - Copy\JSON String to Variant\Data\Help\ExampleImage.png</Path_to_example_image>
+		<Example_VI_name>Query Variant-Example</Example_VI_name>
+		<Example_VI_path>E:\JSON File Handling Files\JSON File Handler\JSON File Handling(Internal Test) - Copy - Copy\JSON String to Variant\Data\Examples\Test Cases\Query Variants\Multi Path 1.png</Example_VI_path>	
+	</Examples>
+	<Start_path>VI_folder</Start_path>
+	<Table Checkbox = "False">
+		<Object>
+			</Object>
+		<Link>
+			</Link>
+		<Description>
+			</Description>
+	</Table>	
+</VI_Documentation>e : JSON path provided :<P></P>[0] => $.cluster.errorArray<P></P>[1] => $.errorCluster.array<P></P></br><P></P><strong>Error Message:</strong><P></P>[0]:errorArray<P></P>[1]:errorCluster <P></P><P></P><P></P><strong><P></P>JSON String/LabVIEW Constraints</strong><P></P><P></P><strong>LabVIEW does not support the following datatype: </strong><P></P><P></P>-> Array of arrays (Such types can be considered as array of clusters instead) <P></P><P></P>-> Array of different datatypes(different cluster structures)<P></P><P></P>The Unflatten from JSON JKI does not support the following datatypes: <P></P><P></P>-> 2D arrays<P></P><P></P>Perform the following to get Enumerated datatype: <P></P><P></P>-> In JSON String : give the Enum in the Numeric syntax (Eg: "enum": 0) <P></P><P></P>-> In LabVIEW : Give the type input input to the Variants to Data.vi as the required Enum.<P></P><P></P>The timestamp is converted in the form of string. You can use the Scan From String.vi to convert the string into the required timestamp data.<P></P><P></P></p>
+</Details_text>
+	</Details>
+	<Examples Checkbox = "True">
+		<Path_to_example_image>E:\JSON File Handling Files\JSON File Handler\JSON File Handling(Internal Test) - Copy - Copy\JSON String to Variant\Data\Examples\Test Cases\Query Variants\Multi Path 1.png</Path_to_example_image>
+		<Example_VI_name>Query Variant-Example</Example_VI_name>
+		<Example_VI_path>E:\JSON File Handling Files\JSON File Handler\JSON File Handling(Internal Test) - Copy - Copy\JSON String to Variant\Data\Examples\Query Variant-Example.vi</Example_VI_path>	
+	</Examples>
+	<Start_path>VI_folder</Start_path>
+	<Table Checkbox = "False">
+		<Object>
+			</Object>
+		<Link>
+			</Link>
+		<Description>
+			</Description>
+	</Table>	
+</VI_Documentation>

@@ -1,0 +1,4840 @@
+{
+  "SpecificationVersion": "1",
+  "CompatibleSoftwareVersions": [
+    "1.0"
+  ],
+  "AlgoParameters": {
+    "PartsList": [
+      {
+        "Name": "TT-1478",
+        "ImageStreams": [
+          {
+            "ThreadName": "TopRack",
+            "RackEnable": true,
+            "ThreadId": 0,
+            "RackId": 0,
+            "DifferenceParameter": 0,
+            "SplitCameraIDs": [
+              0
+            ],
+            "ImagingViews": [
+              {
+                "ViewName": "Top",
+                "ViewEnable": true,
+                "ImageID": 0,
+                "CameraID": 0,
+                "CalibrationFilePath": "Algorithm\\Calibration\\TT Top Calib",
+                "CalibImageFormat": "png",
+                "ReferenceCoordSystem": {
+                  "Method": {
+                    "Algo": "Dhoot Series Top 2",
+                    "BaseReference": {
+                      "OriginX": 114,
+                      "OriginY": 150,
+                      "Angle": 0,
+                      "AxisReference": 0
+                    }
+                  },
+                  "ROI": [
+                    {
+                      "ROI": {
+                        "Left": 60,
+                        "Top": 75,
+                        "Right": 140,
+                        "Bottom": 480,
+                        "Rotation": 0
+                      },
+                      "EdgeOptions": {
+                        "EdgePolarity": 2,
+                        "KernelSize": 5,
+                        "Width": 5,
+                        "MinimumEdgeStrength": 50,
+                        "InterpolationType": 0,
+                        "DataProcessingMethod": 0
+                      },
+                      "LineOptions": {
+                        "NumberofLines": 1,
+                        "Type": 0,
+                        "MinScore": 10,
+                        "MaxScore": 1000,
+                        "Orientation": 0,
+                        "AngleRange": 45,
+                        "AngleTolerance": 1,
+                        "StepSize": 12,
+                        "MinSNR": 0,
+                        "MinPoints": 25,
+                        "HoughIterations": 5
+                      },
+                      "Process": 0,
+                      "StepSize": 1,
+                      "SearchDirection": 0,
+                      "CircleEdgeOptions": {
+                        "SearchDirection": 0,
+                        "EdgeOptions": {
+                          "EdgePolarity": 0,
+                          "KernelSize": 5,
+                          "Width": 5,
+                          "MinimumEdgeStrength": 50,
+                          "InterpolationType": 0,
+                          "DataProcessingMethod": 0
+                        }
+                      },
+                      "CircleFitOptions": {
+                        "Process": 3,
+                        "StepSize": 3,
+                        "MAxPixelRadius": 3
+                      },
+                      "CircleSearchDirection": 1,
+                      "CurveParameters": {
+                        "ExtractionMode": 0,
+                        "EdgeThreshold": 50,
+                        "EdgeFilterSize": 0,
+                        "MinLength": 25,
+                        "RowSearchStepSize": 15,
+                        "ColSearchStepSize": 15,
+                        "MaxEndpointGap": 10,
+                        "Closed": true,
+                        "Subpixel": true
+                      },
+                      "MinimumMatchScore": 800,
+                      "CircleDescriptor": {
+                        "MinRadius": 3,
+                        "MaxRadius": 200
+                      },
+                      "EllipseDescriptor": {
+                        "MinMajorRadius": 3,
+                        "MaxMajorRadius": 200,
+                        "MinMinorRadius": 3,
+                        "MaxMinorRadius": 100
+                      },
+                      "ParallelLines": {
+                        "First": 80,
+                        "Second": 100,
+                        "Third": 120
+                      }
+                    },
+                    {
+                      "ROI": {
+                        "Left": 200,
+                        "Top": 200,
+                        "Right": 100,
+                        "Bottom": 300,
+                        "Rotation": 0
+                      },
+                      "EdgeOptions": {
+                        "EdgePolarity": 2,
+                        "KernelSize": 5,
+                        "Width": 5,
+                        "MinimumEdgeStrength": 30,
+                        "InterpolationType": 0,
+                        "DataProcessingMethod": 0
+                      },
+                      "LineOptions": {
+                        "NumberofLines": 1,
+                        "Type": 0,
+                        "MinScore": 10,
+                        "MaxScore": 1000,
+                        "Orientation": 0,
+                        "AngleRange": 60,
+                        "AngleTolerance": 10,
+                        "StepSize": 15,
+                        "MinSNR": 10,
+                        "MinPoints": 25,
+                        "HoughIterations": 5
+                      },
+                      "Process": 1,
+                      "StepSize": 1,
+                      "SearchDirection": 2,
+                      "CircleEdgeOptions": {
+                        "SearchDirection": 0,
+                        "EdgeOptions": {
+                          "EdgePolarity": 0,
+                          "KernelSize": 5,
+                          "Width": 5,
+                          "MinimumEdgeStrength": 50,
+                          "InterpolationType": 0,
+                          "DataProcessingMethod": 0
+                        }
+                      },
+                      "CircleFitOptions": {
+                        "Process": 3,
+                        "StepSize": 3,
+                        "MAxPixelRadius": 3
+                      },
+                      "CircleSearchDirection": 1,
+                      "CurveParameters": {
+                        "ExtractionMode": 0,
+                        "EdgeThreshold": 50,
+                        "EdgeFilterSize": 0,
+                        "MinLength": 25,
+                        "RowSearchStepSize": 15,
+                        "ColSearchStepSize": 15,
+                        "MaxEndpointGap": 10,
+                        "Closed": true,
+                        "Subpixel": true
+                      },
+                      "MinimumMatchScore": 800,
+                      "CircleDescriptor": {
+                        "MinRadius": 3,
+                        "MaxRadius": 200
+                      },
+                      "EllipseDescriptor": {
+                        "MinMajorRadius": 3,
+                        "MaxMajorRadius": 200,
+                        "MinMinorRadius": 3,
+                        "MaxMinorRadius": 100
+                      },
+                      "ParallelLines": {
+                        "First": 80,
+                        "Second": 100,
+                        "Third": 120
+                      }
+                    }
+                  ],
+                  "Name": "FirstReference",
+                  "OverlayOptions": {
+                    "OverlayEnable": true,
+                    "OverlayText": "Height",
+                    "OverlayCoords": [
+                      5,
+                      8
+                    ],
+                    "OverlayAngle": 56,
+                    "OverlayTextSize": 6,
+                    "OverlayTextColor": "Blue",
+                    "OverlayROI": true,
+                    "OverlayRakeLine": true,
+                    "OverlayPoints": true
+                  }
+                },
+                "CameraAngle": [
+                  0
+                ]
+              },
+              {
+                "ViewName": "Front",
+                "ViewEnable": true,
+                "ImageID": 1,
+                "CameraID": 1,
+                "CalibrationFilePath": "Algorithm\\Calibration\\TT Side Calib",
+                "CalibImageFormat": "png",
+                "ReferenceCoordSystem": {
+                  "Method": {
+                    "Algo": "Series Front and Back",
+                    "BaseReference": {
+                      "OriginX": 611,
+                      "OriginY": 807,
+                      "Angle": 0,
+                      "AxisReference": 0
+                    }
+                  },
+                  "ROI": [
+                    {
+                      "ROI": {
+                        "Left": -550,
+                        "Top": 169,
+                        "Right": -650,
+                        "Bottom": 470,
+                        "Rotation": 0
+                      },
+                      "EdgeOptions": {
+                        "EdgePolarity": 0,
+                        "KernelSize": 5,
+                        "Width": 5,
+                        "MinimumEdgeStrength": 50,
+                        "InterpolationType": 0,
+                        "DataProcessingMethod": 0
+                      },
+                      "LineOptions": {
+                        "NumberofLines": 1,
+                        "Type": 0,
+                        "MinScore": 10,
+                        "MaxScore": 1000,
+                        "Orientation": 0,
+                        "AngleRange": 45,
+                        "AngleTolerance": 1,
+                        "StepSize": 12,
+                        "MinSNR": 0,
+                        "MinPoints": 25,
+                        "HoughIterations": 5
+                      },
+                      "Process": 1,
+                      "StepSize": 10,
+                      "SearchDirection": 2,
+                      "CircleEdgeOptions": {
+                        "SearchDirection": 1,
+                        "EdgeOptions": {
+                          "EdgePolarity": 0,
+                          "KernelSize": 5,
+                          "Width": 5,
+                          "MinimumEdgeStrength": 50,
+                          "InterpolationType": 0,
+                          "DataProcessingMethod": 0
+                        }
+                      },
+                      "CircleFitOptions": {
+                        "Process": 3,
+                        "StepSize": 3,
+                        "MAxPixelRadius": 3
+                      },
+                      "CircleSearchDirection": 1,
+                      "CurveParameters": {
+                        "ExtractionMode": 0,
+                        "EdgeThreshold": 50,
+                        "EdgeFilterSize": 0,
+                        "MinLength": 25,
+                        "RowSearchStepSize": 15,
+                        "ColSearchStepSize": 15,
+                        "MaxEndpointGap": 10,
+                        "Closed": true,
+                        "Subpixel": true
+                      },
+                      "MinimumMatchScore": 800,
+                      "CircleDescriptor": {
+                        "MinRadius": 3,
+                        "MaxRadius": 200
+                      },
+                      "EllipseDescriptor": {
+                        "MinMajorRadius": 3,
+                        "MaxMajorRadius": 200,
+                        "MinMinorRadius": 3,
+                        "MaxMinorRadius": 100
+                      },
+                      "ParallelLines": {
+                        "First": 80,
+                        "Second": 100,
+                        "Third": 120
+                      }
+                    },
+                    {
+                      "ROI": {
+                        "Left": 730,
+                        "Top": 200,
+                        "Right": 840,
+                        "Bottom": 460,
+                        "Rotation": 0
+                      },
+                      "EdgeOptions": {
+                        "EdgePolarity": 0,
+                        "KernelSize": 3,
+                        "Width": 3,
+                        "MinimumEdgeStrength": 50,
+                        "InterpolationType": 1,
+                        "DataProcessingMethod": 0
+                      },
+                      "LineOptions": {
+                        "NumberofLines": 1,
+                        "Type": 0,
+                        "MinScore": 10,
+                        "MaxScore": 1000,
+                        "Orientation": 0,
+                        "AngleRange": 60,
+                        "AngleTolerance": 30,
+                        "StepSize": 5,
+                        "MinSNR": 10,
+                        "MinPoints": 25,
+                        "HoughIterations": 5
+                      },
+                      "Process": 1,
+                      "StepSize": 8,
+                      "SearchDirection": 2,
+                      "CircleEdgeOptions": {
+                        "SearchDirection": 1,
+                        "EdgeOptions": {
+                          "EdgePolarity": 2,
+                          "KernelSize": 5,
+                          "Width": 5,
+                          "MinimumEdgeStrength": 50,
+                          "InterpolationType": 0,
+                          "DataProcessingMethod": 0
+                        }
+                      },
+                      "CircleFitOptions": {
+                        "Process": 3,
+                        "StepSize": 3,
+                        "MAxPixelRadius": 3
+                      },
+                      "CircleSearchDirection": 1,
+                      "CurveParameters": {
+                        "ExtractionMode": 0,
+                        "EdgeThreshold": 50,
+                        "EdgeFilterSize": 0,
+                        "MinLength": 25,
+                        "RowSearchStepSize": 15,
+                        "ColSearchStepSize": 15,
+                        "MaxEndpointGap": 10,
+                        "Closed": true,
+                        "Subpixel": true
+                      },
+                      "MinimumMatchScore": 800,
+                      "CircleDescriptor": {
+                        "MinRadius": 3,
+                        "MaxRadius": 200
+                      },
+                      "EllipseDescriptor": {
+                        "MinMajorRadius": 3,
+                        "MaxMajorRadius": 200,
+                        "MinMinorRadius": 3,
+                        "MaxMinorRadius": 100
+                      },
+                      "ParallelLines": {
+                        "First": 80,
+                        "Second": 100,
+                        "Third": 120
+                      }
+                    },
+                    {
+                      "ROI": {
+                        "Left": 100,
+                        "Top": 150,
+                        "Right": 20,
+                        "Bottom": 490,
+                        "Rotation": 0
+                      },
+                      "EdgeOptions": {
+                        "EdgePolarity": 2,
+                        "KernelSize": 5,
+                        "Width": 5,
+                        "MinimumEdgeStrength": 50,
+                        "InterpolationType": 0,
+                        "DataProcessingMethod": 0
+                      },
+                      "LineOptions": {
+                        "NumberofLines": 1,
+                        "Type": 0,
+                        "MinScore": 10,
+                        "MaxScore": 1000,
+                        "Orientation": 0,
+                        "AngleRange": 60,
+                        "AngleTolerance": 30,
+                        "StepSize": 5,
+                        "MinSNR": 3,
+                        "MinPoints": 25,
+                        "HoughIterations": 5
+                      },
+                      "Process": 0,
+                      "StepSize": 10,
+                      "SearchDirection": 1,
+                      "CircleEdgeOptions": {
+                        "SearchDirection": 1,
+                        "EdgeOptions": {
+                          "EdgePolarity": 2,
+                          "KernelSize": 5,
+                          "Width": 5,
+                          "MinimumEdgeStrength": 50,
+                          "InterpolationType": 0,
+                          "DataProcessingMethod": 0
+                        }
+                      },
+                      "CircleFitOptions": {
+                        "Process": 3,
+                        "StepSize": 3,
+                        "MAxPixelRadius": 3
+                      },
+                      "CircleSearchDirection": 1,
+                      "CurveParameters": {
+                        "ExtractionMode": 0,
+                        "EdgeThreshold": 50,
+                        "EdgeFilterSize": 0,
+                        "MinLength": 25,
+                        "RowSearchStepSize": 15,
+                        "ColSearchStepSize": 15,
+                        "MaxEndpointGap": 10,
+                        "Closed": true,
+                        "Subpixel": true
+                      },
+                      "MinimumMatchScore": 800,
+                      "CircleDescriptor": {
+                        "MinRadius": 3,
+                        "MaxRadius": 200
+                      },
+                      "EllipseDescriptor": {
+                        "MinMajorRadius": 3,
+                        "MaxMajorRadius": 200,
+                        "MinMinorRadius": 3,
+                        "MaxMinorRadius": 100
+                      },
+                      "ParallelLines": {
+                        "First": 80,
+                        "Second": 100,
+                        "Third": 120
+                      }
+                    }
+                  ],
+                  "Name": "FirstReference",
+                  "OverlayOptions": {
+                    "OverlayEnable": true,
+                    "OverlayText": "Height",
+                    "OverlayCoords": [
+                      5,
+                      8
+                    ],
+                    "OverlayAngle": 56,
+                    "OverlayTextSize": 6,
+                    "OverlayTextColor": "Blue",
+                    "OverlayROI": true,
+                    "OverlayRakeLine": true,
+                    "OverlayPoints": true
+                  }
+                },
+                "CameraAngle": [
+                  15.2
+                ]
+              },
+              {
+                "ViewName": "Back",
+                "ViewEnable": true,
+                "ImageID": 2,
+                "CameraID": 2,
+                "CalibrationFilePath": "Algorithm\\Calibration\\TT Side Calib",
+                "CalibImageFormat": "png",
+                "ReferenceCoordSystem": {
+                  "Method": {
+                    "Algo": "Series Front and Back",
+                    "BaseReference": {
+                      "OriginX": 257,
+                      "OriginY": 196,
+                      "Angle": 0,
+                      "AxisReference": 0
+                    }
+                  },
+                  "ROI": [
+                    {
+                      "ROI": {
+                        "Left": 600,
+                        "Top": 120,
+                        "Right": 700,
+                        "Bottom": 400,
+                        "Rotation": 0
+                      },
+                      "EdgeOptions": {
+                        "EdgePolarity": 2,
+                        "KernelSize": 5,
+                        "Width": 5,
+                        "MinimumEdgeStrength": 50,
+                        "InterpolationType": 0,
+                        "DataProcessingMethod": 0
+                      },
+                      "LineOptions": {
+                        "NumberofLines": 1,
+                        "Type": 0,
+                        "MinScore": 10,
+                        "MaxScore": 1000,
+                        "Orientation": 0,
+                        "AngleRange": 45,
+                        "AngleTolerance": 1,
+                        "StepSize": 10,
+                        "MinSNR": 0,
+                        "MinPoints": 25,
+                        "HoughIterations": 5
+                      },
+                      "Process": 1,
+                      "StepSize": 10,
+                      "SearchDirection": 2,
+                      "CircleEdgeOptions": {
+                        "SearchDirection": 1,
+                        "EdgeOptions": {
+                          "EdgePolarity": 0,
+                          "KernelSize": 5,
+                          "Width": 5,
+                          "MinimumEdgeStrength": 50,
+                          "InterpolationType": 0,
+                          "DataProcessingMethod": 0
+                        }
+                      },
+                      "CircleFitOptions": {
+                        "Process": 3,
+                        "StepSize": 3,
+                        "MAxPixelRadius": 3
+                      },
+                      "CircleSearchDirection": 1,
+                      "CurveParameters": {
+                        "ExtractionMode": 0,
+                        "EdgeThreshold": 50,
+                        "EdgeFilterSize": 0,
+                        "MinLength": 25,
+                        "RowSearchStepSize": 15,
+                        "ColSearchStepSize": 15,
+                        "MaxEndpointGap": 10,
+                        "Closed": true,
+                        "Subpixel": true
+                      },
+                      "MinimumMatchScore": 800,
+                      "CircleDescriptor": {
+                        "MinRadius": 3,
+                        "MaxRadius": 200
+                      },
+                      "EllipseDescriptor": {
+                        "MinMajorRadius": 3,
+                        "MaxMajorRadius": 200,
+                        "MinMinorRadius": 3,
+                        "MaxMinorRadius": 100
+                      },
+                      "ParallelLines": {
+                        "First": 80,
+                        "Second": 100,
+                        "Third": 120
+                      }
+                    },
+                    {
+                      "ROI": {
+                        "Left": 215,
+                        "Top": 370,
+                        "Right": 625,
+                        "Bottom": 100,
+                        "Rotation": 0
+                      },
+                      "EdgeOptions": {
+                        "EdgePolarity": 0,
+                        "KernelSize": 3,
+                        "Width": 3,
+                        "MinimumEdgeStrength": 50,
+                        "InterpolationType": 0,
+                        "DataProcessingMethod": 0
+                      },
+                      "LineOptions": {
+                        "NumberofLines": 1,
+                        "Type": 0,
+                        "MinScore": 10,
+                        "MaxScore": 1000,
+                        "Orientation": 0,
+                        "AngleRange": 60,
+                        "AngleTolerance": 30,
+                        "StepSize": 5,
+                        "MinSNR": 10,
+                        "MinPoints": 25,
+                        "HoughIterations": 5
+                      },
+                      "Process": 1,
+                      "StepSize": 8,
+                      "SearchDirection": 2,
+                      "CircleEdgeOptions": {
+                        "SearchDirection": 1,
+                        "EdgeOptions": {
+                          "EdgePolarity": 2,
+                          "KernelSize": 5,
+                          "Width": 5,
+                          "MinimumEdgeStrength": 50,
+                          "InterpolationType": 0,
+                          "DataProcessingMethod": 0
+                        }
+                      },
+                      "CircleFitOptions": {
+                        "Process": 3,
+                        "StepSize": 3,
+                        "MAxPixelRadius": 3
+                      },
+                      "CircleSearchDirection": 1,
+                      "CurveParameters": {
+                        "ExtractionMode": 0,
+                        "EdgeThreshold": 50,
+                        "EdgeFilterSize": 0,
+                        "MinLength": 25,
+                        "RowSearchStepSize": 15,
+                        "ColSearchStepSize": 15,
+                        "MaxEndpointGap": 10,
+                        "Closed": true,
+                        "Subpixel": true
+                      },
+                      "MinimumMatchScore": 800,
+                      "CircleDescriptor": {
+                        "MinRadius": 3,
+                        "MaxRadius": 200
+                      },
+                      "EllipseDescriptor": {
+                        "MinMajorRadius": 3,
+                        "MaxMajorRadius": 200,
+                        "MinMinorRadius": 3,
+                        "MaxMinorRadius": 100
+                      },
+                      "ParallelLines": {
+                        "First": 80,
+                        "Second": 100,
+                        "Third": 120
+                      }
+                    },
+                    {
+                      "ROI": {
+                        "Left": 0,
+                        "Top": 138,
+                        "Right": 130,
+                        "Bottom": 400,
+                        "Rotation": 0
+                      },
+                      "EdgeOptions": {
+                        "EdgePolarity": 2,
+                        "KernelSize": 5,
+                        "Width": 5,
+                        "MinimumEdgeStrength": 50,
+                        "InterpolationType": 0,
+                        "DataProcessingMethod": 0
+                      },
+                      "LineOptions": {
+                        "NumberofLines": 1,
+                        "Type": 0,
+                        "MinScore": 10,
+                        "MaxScore": 1000,
+                        "Orientation": 0,
+                        "AngleRange": 60,
+                        "AngleTolerance": 30,
+                        "StepSize": 5,
+                        "MinSNR": 10,
+                        "MinPoints": 25,
+                        "HoughIterations": 5
+                      },
+                      "Process": 1,
+                      "StepSize": 4,
+                      "SearchDirection": 0,
+                      "CircleEdgeOptions": {
+                        "SearchDirection": 1,
+                        "EdgeOptions": {
+                          "EdgePolarity": 2,
+                          "KernelSize": 5,
+                          "Width": 5,
+                          "MinimumEdgeStrength": 50,
+                          "InterpolationType": 0,
+                          "DataProcessingMethod": 0
+                        }
+                      },
+                      "CircleFitOptions": {
+                        "Process": 3,
+                        "StepSize": 3,
+                        "MAxPixelRadius": 3
+                      },
+                      "CircleSearchDirection": 1,
+                      "CurveParameters": {
+                        "ExtractionMode": 0,
+                        "EdgeThreshold": 50,
+                        "EdgeFilterSize": 0,
+                        "MinLength": 25,
+                        "RowSearchStepSize": 15,
+                        "ColSearchStepSize": 15,
+                        "MaxEndpointGap": 10,
+                        "Closed": true,
+                        "Subpixel": true
+                      },
+                      "MinimumMatchScore": 800,
+                      "CircleDescriptor": {
+                        "MinRadius": 3,
+                        "MaxRadius": 200
+                      },
+                      "EllipseDescriptor": {
+                        "MinMajorRadius": 3,
+                        "MaxMajorRadius": 200,
+                        "MinMinorRadius": 3,
+                        "MaxMinorRadius": 100
+                      },
+                      "ParallelLines": {
+                        "First": 80,
+                        "Second": 100,
+                        "Third": 120
+                      }
+                    }
+                  ],
+                  "Name": "FirstReference",
+                  "OverlayOptions": {
+                    "OverlayEnable": true,
+                    "OverlayText": "Height",
+                    "OverlayCoords": [
+                      5,
+                      8
+                    ],
+                    "OverlayAngle": 56,
+                    "OverlayTextSize": 6,
+                    "OverlayTextColor": "true",
+                    "OverlayROI": true,
+                    "OverlayRakeLine": true,
+                    "OverlayPoints": true
+                  }
+                },
+                "CameraAngle": [
+                  15.2
+                ]
+              }
+            ]
+          }
+        ],
+        "Measurements": [
+          {
+            "RackID": 0,
+            "ImageID": 0,
+            "CameraID": 0,
+            "MeasurementId": 1,
+            "Name": "Curl Width",
+            "AlgoName": "AET",
+            "Type": "Average",
+            "MeasurementEnable": true,
+            "AlgorithmSequence": {
+              "RefernceEdge": {
+                "Enable": true,
+                "Method": "LineFinding",
+                "RefROI": {
+                  "Left": 275,
+                  "Top": 116,
+                  "Right": 290,
+                  "Bottom": 236,
+                  "Rotation": 0
+                },
+                "EdgeOptions": {
+                  "EdgePoarity": 2,
+                  "KernelSize": 5,
+                  "Width": 5,
+                  "MinimumEdgeStrength": 50,
+                  "InterpolationType": 0,
+                  "DataProcessingMethod": 0
+                },
+                "LineOptions": {
+                  "NumberofLines": 1,
+                  "Type": 0,
+                  "MinScore": 10,
+                  "MaxScore": 1000,
+                  "Orientation": 5,
+                  "AngleRange": 45,
+                  "AngleTolerance": 1,
+                  "StepSize": 3,
+                  "MinSNR": 0,
+                  "MinPoints": 25,
+                  "HoughIterations": 5
+                },
+                "SearchDirection": 2
+              },
+              "Measurement": {
+                "ROI1": {
+                  "Enable": true,
+                  "ROI": {
+                    "Left": 300,
+                    "Top": 53,
+                    "Right": 320,
+                    "Bottom": 460,
+                    "Rotation": 0
+                  },
+                  "EdgeOptions": {
+                    "EdgePoarity": 0,
+                    "KernelSize": 5,
+                    "Width": 5,
+                    "MinimumEdgeStrength": 50,
+                    "InterpolationType": 0,
+                    "DataProcessingMethod": 0
+                  },
+                  "LineOptions": {
+                    "NumberofLines": 1,
+                    "Type": 1,
+                    "MinScore": 10,
+                    "MaxScore": 1000,
+                    "Orientation": 0,
+                    "AngleRange": 30,
+                    "AngleTolerance": 1,
+                    "StepSize": 3,
+                    "MinSNR": 0,
+                    "MinPoints": 25,
+                    "HoughIterations": 5
+                  },
+                  "Process": 1,
+                  "StepSize": 8,
+                  "SearchDirection": 2,
+                  "CircleEdgeOptions": {
+                    "SearchDirection": 0,
+                    "EdgeOptions": {
+                      "EdgePoarity": 2,
+                      "KernelSize": 5,
+                      "Width": 5,
+                      "MinimumEdgeStrength": 50,
+                      "InterpolationType": 1,
+                      "DataProcessingMethod": 1
+                    }
+                  },
+                  "CircleFitOptions": {
+                    "Process": 3,
+                    "StepSize": 3,
+                    "MAxPixelRadius": 3.85
+                  },
+                  "CircleSearchDirection": 1,
+                  "CurveParameters": {
+                    "ExtractionMode": 0,
+                    "EdgeThreshold": 50,
+                    "EdgeFilterSize": 0,
+                    "MinLength": 25,
+                    "RowSearchStepSize": 15,
+                    "ColSearchStepSize": 15,
+                    "MaxEndpointGap": 10,
+                    "Closed": true,
+                    "Subpixel": true
+                  },
+                  "MinimumMatchScore": 800,
+                  "CircleDescriptor": {
+                    "MinRadius": 3,
+                    "MaxRadius": 200
+                  },
+                  "EllipseDescriptor": {
+                    "MinMajorRadius": 2,
+                    "MaxMajorRadius": 200,
+                    "MinMinorRadius": 2,
+                    "MaxMinorRadius": 100
+                  }
+                },
+                "ROI2": {
+                  "Enable": false,
+                  "ROI": {
+                    "Left": 20,
+                    "Top": 308,
+                    "Right": 110,
+                    "Bottom": 372,
+                    "Rotation": 0
+                  },
+                  "EdgeOptions": {
+                    "EdgePoarity": 0,
+                    "KernelSize": 5,
+                    "Width": 5,
+                    "MinimumEdgeStrength": 50,
+                    "InterpolationType": 0,
+                    "DataProcessingMethod": 0
+                  },
+                  "LineOptions": {
+                    "NumberofLines": 1,
+                    "Type": 1,
+                    "MinScore": 10,
+                    "MaxScore": 1000,
+                    "Orientation": 0,
+                    "AngleRange": 30,
+                    "AngleTolerance": 1,
+                    "StepSize": 3,
+                    "MinSNR": 0,
+                    "MinPoints": 25,
+                    "HoughIterations": 5
+                  },
+                  "Process": 0,
+                  "StepSize": 6,
+                  "SearchDirection": 0,
+                  "CircleEdgeOptions": {
+                    "SearchDirection": 0,
+                    "EdgeOptions": {
+                      "EdgePoarity": 0,
+                      "KernelSize": 5,
+                      "Width": 5,
+                      "MinimumEdgeStrength": 50,
+                      "InterpolationType": 1,
+                      "DataProcessingMethod": 1
+                    }
+                  },
+                  "CircleFitOptions": {
+                    "Process": 3,
+                    "StepSize": 3,
+                    "MAxPixelRadius": 3.85
+                  },
+                  "CircleSearchDirection": 1,
+                  "CurveParameters": {
+                    "ExtractionMode": 0,
+                    "EdgeThreshold": 50,
+                    "EdgeFilterSize": 0,
+                    "MinLength": 25,
+                    "RowSearchStepSize": 15,
+                    "ColSearchStepSize": 15,
+                    "MaxEndpointGap": 10,
+                    "Closed": true,
+                    "Subpixel": true
+                  },
+                  "MinimumMatchScore": 800,
+                  "CircleDescriptor": {
+                    "MinRadius": 3,
+                    "MaxRadius": 200
+                  },
+                  "EllipseDescriptor": {
+                    "MinMajorRadius": 2,
+                    "MaxMajorRadius": 200,
+                    "MinMinorRadius": 2,
+                    "MaxMinorRadius": 100
+                  }
+                }
+              }
+            },
+            "MathExpression": {
+              "Algorithm": "Default",
+              "MathExpression": "b = 1*b + 0",
+              "ResultVariable": "b"
+            },
+            "MathCorrectionParameters": {
+              "Radius": 1.1,
+              "CurlGap": 0.9,
+              "Thickness": 0.32,
+              "MeasurementIndices": [
+                0
+              ],
+              "MathAlgoName": "Test",
+              "MathAlgoFormula": "Test2",
+              "CorrectionForAngle": [
+                0
+              ],
+              "NumericAray": [
+                1.1
+              ],
+              "StringArray": [
+                "Test"
+              ]
+            },
+            "ResultVariableCluster": {
+              "RVName": "b",
+              "RVSequence": "MeasROI1",
+              "RVIndex": 1,
+              "RVID": 1,
+              "RVValue": 22.6
+            },
+            "CalibrationCoefficients": {
+              "A1": 1.68,
+              "A2": 1.78,
+              "A3": 1.76
+            },
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": -0.046
+            },
+            "SpecValues": {
+              "LCL": 4.7,
+              "UCL": 5.3,
+              "LSL": 4.7,
+              "USL": 5.3,
+              "NominalValue": 5
+            },
+            "OverlayOptions": {
+              "OverlayEnable": true,
+              "OverlayText": "Width",
+              "OverlayCoords": [
+                5,
+                8
+              ],
+              "OverlayAngle": 56,
+              "OverlayTextSize": 6,
+              "OverlayTextColor": "Blue",
+              "OverlayROI": true,
+              "OverlayRakeLine": true,
+              "OverlayPoints": true
+            },
+            "DatalogEnable": true,
+            "DisplayIcon": "C:\\Desktop\\displayimage.png"
+          },
+          {
+            "RackID": 0,
+            "ImageID": 0,
+            "CameraID": 0,
+            "MeasurementId": 2,
+            "Name": "C.B Width",
+            "AlgoName": "AET",
+            "Type": "Average",
+            "MeasurementEnable": true,
+            "AlgorithmSequence": {
+              "RefernceEdge": {
+                "Enable": true,
+                "Method": "LineFinding",
+                "RefROI": {
+                  "Left": 900,
+                  "Top": 50,
+                  "Right": 970,
+                  "Bottom": 320,
+                  "Rotation": 0
+                },
+                "EdgeOptions": {
+                  "EdgePoarity": 2,
+                  "KernelSize": 5,
+                  "Width": 5,
+                  "MinimumEdgeStrength": 50,
+                  "InterpolationType": 0,
+                  "DataProcessingMethod": 0
+                },
+                "LineOptions": {
+                  "NumberofLines": 1,
+                  "Type": 0,
+                  "MinScore": 10,
+                  "MaxScore": 1000,
+                  "Orientation": 5,
+                  "AngleRange": 45,
+                  "AngleTolerance": 1,
+                  "StepSize": 3,
+                  "MinSNR": 0,
+                  "MinPoints": 25,
+                  "HoughIterations": 5
+                },
+                "SearchDirection": 2
+              },
+              "Measurement": {
+                "ROI1": {
+                  "Enable": true,
+                  "ROI": {
+                    "Left": 620,
+                    "Top": 150,
+                    "Right": 640,
+                    "Bottom": 370,
+                    "Rotation": 0
+                  },
+                  "EdgeOptions": {
+                    "EdgePoarity": 0,
+                    "KernelSize": 5,
+                    "Width": 5,
+                    "MinimumEdgeStrength": 50,
+                    "InterpolationType": 0,
+                    "DataProcessingMethod": 0
+                  },
+                  "LineOptions": {
+                    "NumberofLines": 1,
+                    "Type": 1,
+                    "MinScore": 10,
+                    "MaxScore": 1000,
+                    "Orientation": 0,
+                    "AngleRange": 30,
+                    "AngleTolerance": 1,
+                    "StepSize": 3,
+                    "MinSNR": 0,
+                    "MinPoints": 25,
+                    "HoughIterations": 5
+                  },
+                  "Process": 1,
+                  "StepSize": 8,
+                  "SearchDirection": 2,
+                  "CircleEdgeOptions": {
+                    "SearchDirection": 0,
+                    "EdgeOptions": {
+                      "EdgePoarity": 2,
+                      "KernelSize": 5,
+                      "Width": 5,
+                      "MinimumEdgeStrength": 50,
+                      "InterpolationType": 1,
+                      "DataProcessingMethod": 1
+                    }
+                  },
+                  "CircleFitOptions": {
+                    "Process": 3,
+                    "StepSize": 3,
+                    "MAxPixelRadius": 3.85
+                  },
+                  "CircleSearchDirection": 1,
+                  "CurveParameters": {
+                    "ExtractionMode": 0,
+                    "EdgeThreshold": 50,
+                    "EdgeFilterSize": 0,
+                    "MinLength": 25,
+                    "RowSearchStepSize": 15,
+                    "ColSearchStepSize": 15,
+                    "MaxEndpointGap": 10,
+                    "Closed": true,
+                    "Subpixel": true
+                  },
+                  "MinimumMatchScore": 800,
+                  "CircleDescriptor": {
+                    "MinRadius": 3,
+                    "MaxRadius": 200
+                  },
+                  "EllipseDescriptor": {
+                    "MinMajorRadius": 2,
+                    "MaxMajorRadius": 200,
+                    "MinMinorRadius": 2,
+                    "MaxMinorRadius": 100
+                  }
+                },
+                "ROI2": {
+                  "Enable": false,
+                  "ROI": {
+                    "Left": 20,
+                    "Top": 308,
+                    "Right": 110,
+                    "Bottom": 372,
+                    "Rotation": 0
+                  },
+                  "EdgeOptions": {
+                    "EdgePoarity": 0,
+                    "KernelSize": 5,
+                    "Width": 5,
+                    "MinimumEdgeStrength": 50,
+                    "InterpolationType": 0,
+                    "DataProcessingMethod": 0
+                  },
+                  "LineOptions": {
+                    "NumberofLines": 1,
+                    "Type": 1,
+                    "MinScore": 10,
+                    "MaxScore": 1000,
+                    "Orientation": 0,
+                    "AngleRange": 30,
+                    "AngleTolerance": 1,
+                    "StepSize": 3,
+                    "MinSNR": 0,
+                    "MinPoints": 25,
+                    "HoughIterations": 5
+                  },
+                  "Process": 0,
+                  "StepSize": 6,
+                  "SearchDirection": 0,
+                  "CircleEdgeOptions": {
+                    "SearchDirection": 0,
+                    "EdgeOptions": {
+                      "EdgePoarity": 0,
+                      "KernelSize": 5,
+                      "Width": 5,
+                      "MinimumEdgeStrength": 50,
+                      "InterpolationType": 1,
+                      "DataProcessingMethod": 1
+                    }
+                  },
+                  "CircleFitOptions": {
+                    "Process": 3,
+                    "StepSize": 3,
+                    "MAxPixelRadius": 3.85
+                  },
+                  "CircleSearchDirection": 1,
+                  "CurveParameters": {
+                    "ExtractionMode": 0,
+                    "EdgeThreshold": 50,
+                    "EdgeFilterSize": 0,
+                    "MinLength": 25,
+                    "RowSearchStepSize": 15,
+                    "ColSearchStepSize": 15,
+                    "MaxEndpointGap": 10,
+                    "Closed": true,
+                    "Subpixel": true
+                  },
+                  "MinimumMatchScore": 800,
+                  "CircleDescriptor": {
+                    "MinRadius": 3,
+                    "MaxRadius": 200
+                  },
+                  "EllipseDescriptor": {
+                    "MinMajorRadius": 2,
+                    "MaxMajorRadius": 200,
+                    "MinMinorRadius": 2,
+                    "MaxMinorRadius": 100
+                  }
+                }
+              }
+            },
+            "MathExpression": {
+              "Algorithm": "Default",
+              "MathExpression": "b = 1*b + 0",
+              "ResultVariable": "b"
+            },
+            "MathCorrectionParameters": {
+              "Radius": 1.1,
+              "CurlGap": 0.9,
+              "Thickness": 0.32,
+              "MeasurementIndices": [
+                1
+              ],
+              "MathAlgoName": "Test",
+              "MathAlgoFormula": "Test2",
+              "CorrectionForAngle": [
+                0
+              ],
+              "NumericAray": [
+                1.1
+              ],
+              "StringArray": [
+                "Test"
+              ]
+            },
+            "ResultVariableCluster": {
+              "RVName": "b",
+              "RVSequence": "MeasROI1",
+              "RVIndex": 1,
+              "RVID": 1,
+              "RVValue": 22.6
+            },
+            "CalibrationCoefficients": {
+              "A1": 1.68,
+              "A2": 1.78,
+              "A3": 1.76
+            },
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 0.9,
+              "UserCorrectionBiasCoeff": 0.2822
+            },
+            "SpecValues": {
+              "LCL": 4.7,
+              "UCL": 5.3,
+              "LSL": 4.7,
+              "USL": 5.3,
+              "NominalValue": 5
+            },
+            "OverlayOptions": {
+              "OverlayEnable": false,
+              "OverlayText": "Width",
+              "OverlayCoords": [
+                5,
+                8
+              ],
+              "OverlayAngle": 56,
+              "OverlayTextSize": 6,
+              "OverlayTextColor": "Blue",
+              "OverlayROI": false,
+              "OverlayRakeLine": false,
+              "OverlayPoints": false
+            },
+            "DatalogEnable": true,
+            "DisplayIcon": "C:\\Desktop\\displayimage.png"
+          },
+          {
+            "RackID": 0,
+            "ImageID": 0,
+            "CameraID": 0,
+            "MeasurementId": 3,
+            "Name": "F.B Width",
+            "AlgoName": "AET",
+            "Type": "Average",
+            "MeasurementEnable": true,
+            "AlgorithmSequence": {
+              "RefernceEdge": {
+                "Enable": true,
+                "Method": "LineFinding",
+                "RefROI": {
+                  "Left": 900,
+                  "Top": 50,
+                  "Right": 970,
+                  "Bottom": 320,
+                  "Rotation": 0
+                },
+                "EdgeOptions": {
+                  "EdgePoarity": 2,
+                  "KernelSize": 5,
+                  "Width": 5,
+                  "MinimumEdgeStrength": 50,
+                  "InterpolationType": 0,
+                  "DataProcessingMethod": 0
+                },
+                "LineOptions": {
+                  "NumberofLines": 1,
+                  "Type": 0,
+                  "MinScore": 10,
+                  "MaxScore": 1000,
+                  "Orientation": 5,
+                  "AngleRange": 45,
+                  "AngleTolerance": 1,
+                  "StepSize": 3,
+                  "MinSNR": 0,
+                  "MinPoints": 25,
+                  "HoughIterations": 5
+                },
+                "SearchDirection": 2
+              },
+              "Measurement": {
+                "ROI1": {
+                  "Enable": true,
+                  "ROI": {
+                    "Left": 620,
+                    "Top": 150,
+                    "Right": 640,
+                    "Bottom": 370,
+                    "Rotation": 0
+                  },
+                  "EdgeOptions": {
+                    "EdgePoarity": 0,
+                    "KernelSize": 5,
+                    "Width": 5,
+                    "MinimumEdgeStrength": 50,
+                    "InterpolationType": 0,
+                    "DataProcessingMethod": 0
+                  },
+                  "LineOptions": {
+                    "NumberofLines": 1,
+                    "Type": 1,
+                    "MinScore": 10,
+                    "MaxScore": 1000,
+                    "Orientation": 0,
+                    "AngleRange": 30,
+                    "AngleTolerance": 1,
+                    "StepSize": 3,
+                    "MinSNR": 0,
+                    "MinPoints": 25,
+                    "HoughIterations": 5
+                  },
+                  "Process": 1,
+                  "StepSize": 8,
+                  "SearchDirection": 2,
+                  "CircleEdgeOptions": {
+                    "SearchDirection": 0,
+                    "EdgeOptions": {
+                      "EdgePoarity": 2,
+                      "KernelSize": 5,
+                      "Width": 5,
+                      "MinimumEdgeStrength": 50,
+                      "InterpolationType": 1,
+                      "DataProcessingMethod": 1
+                    }
+                  },
+                  "CircleFitOptions": {
+                    "Process": 3,
+                    "StepSize": 3,
+                    "MAxPixelRadius": 3.85
+                  },
+                  "CircleSearchDirection": 1,
+                  "CurveParameters": {
+                    "ExtractionMode": 0,
+                    "EdgeThreshold": 50,
+                    "EdgeFilterSize": 0,
+                    "MinLength": 25,
+                    "RowSearchStepSize": 15,
+                    "ColSearchStepSize": 15,
+                    "MaxEndpointGap": 10,
+                    "Closed": true,
+                    "Subpixel": true
+                  },
+                  "MinimumMatchScore": 800,
+                  "CircleDescriptor": {
+                    "MinRadius": 3,
+                    "MaxRadius": 200
+                  },
+                  "EllipseDescriptor": {
+                    "MinMajorRadius": 2,
+                    "MaxMajorRadius": 200,
+                    "MinMinorRadius": 2,
+                    "MaxMinorRadius": 100
+                  }
+                },
+                "ROI2": {
+                  "Enable": false,
+                  "ROI": {
+                    "Left": 20,
+                    "Top": 308,
+                    "Right": 110,
+                    "Bottom": 372,
+                    "Rotation": 0
+                  },
+                  "EdgeOptions": {
+                    "EdgePoarity": 0,
+                    "KernelSize": 5,
+                    "Width": 5,
+                    "MinimumEdgeStrength": 50,
+                    "InterpolationType": 0,
+                    "DataProcessingMethod": 0
+                  },
+                  "LineOptions": {
+                    "NumberofLines": 1,
+                    "Type": 1,
+                    "MinScore": 10,
+                    "MaxScore": 1000,
+                    "Orientation": 0,
+                    "AngleRange": 30,
+                    "AngleTolerance": 1,
+                    "StepSize": 3,
+                    "MinSNR": 0,
+                    "MinPoints": 25,
+                    "HoughIterations": 5
+                  },
+                  "Process": 0,
+                  "StepSize": 6,
+                  "SearchDirection": 0,
+                  "CircleEdgeOptions": {
+                    "SearchDirection": 0,
+                    "EdgeOptions": {
+                      "EdgePoarity": 0,
+                      "KernelSize": 5,
+                      "Width": 5,
+                      "MinimumEdgeStrength": 50,
+                      "InterpolationType": 1,
+                      "DataProcessingMethod": 1
+                    }
+                  },
+                  "CircleFitOptions": {
+                    "Process": 3,
+                    "StepSize": 3,
+                    "MAxPixelRadius": 3.85
+                  },
+                  "CircleSearchDirection": 1,
+                  "CurveParameters": {
+                    "ExtractionMode": 0,
+                    "EdgeThreshold": 50,
+                    "EdgeFilterSize": 0,
+                    "MinLength": 25,
+                    "RowSearchStepSize": 15,
+                    "ColSearchStepSize": 15,
+                    "MaxEndpointGap": 10,
+                    "Closed": true,
+                    "Subpixel": true
+                  },
+                  "MinimumMatchScore": 800,
+                  "CircleDescriptor": {
+                    "MinRadius": 3,
+                    "MaxRadius": 200
+                  },
+                  "EllipseDescriptor": {
+                    "MinMajorRadius": 2,
+                    "MaxMajorRadius": 200,
+                    "MinMinorRadius": 2,
+                    "MaxMinorRadius": 100
+                  }
+                }
+              }
+            },
+            "MathExpression": {
+              "Algorithm": "Default",
+              "MathExpression": "b = 1*b + 0",
+              "ResultVariable": "b"
+            },
+            "MathCorrectionParameters": {
+              "Radius": 1.1,
+              "CurlGap": 0.9,
+              "Thickness": 0.32,
+              "MeasurementIndices": [
+                1
+              ],
+              "MathAlgoName": "Test",
+              "MathAlgoFormula": "Test2",
+              "CorrectionForAngle": [
+                0
+              ],
+              "NumericAray": [
+                1.1
+              ],
+              "StringArray": [
+                "Test"
+              ]
+            },
+            "ResultVariableCluster": {
+              "RVName": "b",
+              "RVSequence": "MeasROI1",
+              "RVIndex": 1,
+              "RVID": 1,
+              "RVValue": 22.6
+            },
+            "CalibrationCoefficients": {
+              "A1": 1.68,
+              "A2": 1.78,
+              "A3": 1.76
+            },
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 0.9,
+              "UserCorrectionBiasCoeff": 0.2822
+            },
+            "SpecValues": {
+              "LCL": 4.7,
+              "UCL": 5.3,
+              "LSL": 4.7,
+              "USL": 5.3,
+              "NominalValue": 5
+            },
+            "OverlayOptions": {
+              "OverlayEnable": false,
+              "OverlayText": "Width",
+              "OverlayCoords": [
+                5,
+                8
+              ],
+              "OverlayAngle": 56,
+              "OverlayTextSize": 6,
+              "OverlayTextColor": "Blue",
+              "OverlayROI": false,
+              "OverlayRakeLine": false,
+              "OverlayPoints": false
+            },
+            "DatalogEnable": true,
+            "DisplayIcon": "C:\\Desktop\\displayimage.png"
+          },
+          {
+            "RackID": 0,
+            "ImageID": 1,
+            "CameraID": 1,
+            "MeasurementId": 4,
+            "Name": "F.C.B Height",
+            "AlgoName": "AET",
+            "Type": "Max",
+            "MeasurementEnable": true,
+            "AlgorithmSequence": {
+              "RefernceEdge": {
+                "Enable": true,
+                "Method": "LineFinding",
+                "RefROI": {
+                  "Left": 1413,
+                  "Top": 569,
+                  "Right": 1493,
+                  "Bottom": 980,
+                  "Rotation": 0
+                },
+                "EdgeOptions": {
+                  "EdgePoarity": 2,
+                  "KernelSize": 5,
+                  "Width": 5,
+                  "MinimumEdgeStrength": 50,
+                  "InterpolationType": 0,
+                  "DataProcessingMethod": 0
+                },
+                "LineOptions": {
+                  "NumberofLines": 1,
+                  "Type": 0,
+                  "MinScore": 10,
+                  "MaxScore": 1000,
+                  "Orientation": 5,
+                  "AngleRange": 70,
+                  "AngleTolerance": 1,
+                  "StepSize": 5,
+                  "MinSNR": 0,
+                  "MinPoints": 25,
+                  "HoughIterations": 5
+                },
+                "SearchDirection": 2
+              },
+              "Measurement": {
+                "ROI1": {
+                  "Enable": true,
+                  "ROI": {
+                    "Left": 350,
+                    "Top": 700,
+                    "Right": 400,
+                    "Bottom": 1000,
+                    "Rotation": 0
+                  },
+                  "EdgeOptions": {
+                    "EdgePoarity": 0,
+                    "KernelSize": 5,
+                    "Width": 5,
+                    "MinimumEdgeStrength": 50,
+                    "InterpolationType": 0,
+                    "DataProcessingMethod": 0
+                  },
+                  "LineOptions": {
+                    "NumberofLines": 1,
+                    "Type": 1,
+                    "MinScore": 10,
+                    "MaxScore": 1000,
+                    "Orientation": 0,
+                    "AngleRange": 30,
+                    "AngleTolerance": 1,
+                    "StepSize": 3,
+                    "MinSNR": 0,
+                    "MinPoints": 25,
+                    "HoughIterations": 5
+                  },
+                  "Process": 1,
+                  "StepSize": 2,
+                  "SearchDirection": 2,
+                  "CircleEdgeOptions": {
+                    "SearchDirection": 0,
+                    "EdgeOptions": {
+                      "EdgePoarity": 2,
+                      "KernelSize": 5,
+                      "Width": 5,
+                      "MinimumEdgeStrength": 50,
+                      "InterpolationType": 1,
+                      "DataProcessingMethod": 1
+                    }
+                  },
+                  "CircleFitOptions": {
+                    "Process": 3,
+                    "StepSize": 3,
+                    "MAxPixelRadius": 3.85
+                  },
+                  "CircleSearchDirection": 1,
+                  "CurveParameters": {
+                    "ExtractionMode": 0,
+                    "EdgeThreshold": 50,
+                    "EdgeFilterSize": 0,
+                    "MinLength": 25,
+                    "RowSearchStepSize": 15,
+                    "ColSearchStepSize": 15,
+                    "MaxEndpointGap": 10,
+                    "Closed": true,
+                    "Subpixel": true
+                  },
+                  "MinimumMatchScore": 800,
+                  "CircleDescriptor": {
+                    "MinRadius": 3,
+                    "MaxRadius": 200
+                  },
+                  "EllipseDescriptor": {
+                    "MinMajorRadius": 2,
+                    "MaxMajorRadius": 200,
+                    "MinMinorRadius": 2,
+                    "MaxMinorRadius": 100
+                  }
+                },
+                "ROI2": {
+                  "Enable": false,
+                  "ROI": {
+                    "Left": 739,
+                    "Top": 305,
+                    "Right": 763,
+                    "Bottom": 538,
+                    "Rotation": 0
+                  },
+                  "EdgeOptions": {
+                    "EdgePoarity": 0,
+                    "KernelSize": 5,
+                    "Width": 5,
+                    "MinimumEdgeStrength": 50,
+                    "InterpolationType": 0,
+                    "DataProcessingMethod": 0
+                  },
+                  "LineOptions": {
+                    "NumberofLines": 1,
+                    "Type": 1,
+                    "MinScore": 10,
+                    "MaxScore": 1000,
+                    "Orientation": 0,
+                    "AngleRange": 30,
+                    "AngleTolerance": 1,
+                    "StepSize": 3,
+                    "MinSNR": 0,
+                    "MinPoints": 25,
+                    "HoughIterations": 5
+                  },
+                  "Process": 1,
+                  "StepSize": 2,
+                  "SearchDirection": 2,
+                  "CircleEdgeOptions": {
+                    "SearchDirection": 0,
+                    "EdgeOptions": {
+                      "EdgePoarity": 2,
+                      "KernelSize": 3,
+                      "Width": 3,
+                      "MinimumEdgeStrength": 50,
+                      "InterpolationType": 1,
+                      "DataProcessingMethod": 1
+                    }
+                  },
+                  "CircleFitOptions": {
+                    "Process": 3,
+                    "StepSize": 3,
+                    "MAxPixelRadius": 3.85
+                  },
+                  "CircleSearchDirection": 1,
+                  "CurveParameters": {
+                    "ExtractionMode": 0,
+                    "EdgeThreshold": 50,
+                    "EdgeFilterSize": 0,
+                    "MinLength": 25,
+                    "RowSearchStepSize": 15,
+                    "ColSearchStepSize": 15,
+                    "MaxEndpointGap": 10,
+                    "Closed": true,
+                    "Subpixel": true
+                  },
+                  "MinimumMatchScore": 800,
+                  "CircleDescriptor": {
+                    "MinRadius": 3,
+                    "MaxRadius": 200
+                  },
+                  "EllipseDescriptor": {
+                    "MinMajorRadius": 2,
+                    "MaxMajorRadius": 200,
+                    "MinMinorRadius": 2,
+                    "MaxMinorRadius": 100
+                  }
+                }
+              }
+            },
+            "MathExpression": {
+              "Algorithm": "Copper Height",
+              "MathExpression": "c = 1*c + 0",
+              "ResultVariable": "c"
+            },
+            "MathCorrectionParameters": {
+              "Radius": 0.77,
+              "CurlGap": 0.9,
+              "Thickness": 0.32,
+              "MeasurementIndices": [
+                1,
+                3
+              ],
+              "MathAlgoName": "Test",
+              "MathAlgoFormula": "Test2",
+              "CorrectionForAngle": [
+                2
+              ],
+              "NumericAray": [
+                1.1
+              ],
+              "StringArray": [
+                "Test"
+              ]
+            },
+            "ResultVariableCluster": {
+              "RVName": "c",
+              "RVSequence": "MeasROI1",
+              "RVIndex": 1,
+              "RVID": 1,
+              "RVValue": 22.6
+            },
+            "CalibrationCoefficients": {
+              "A1": 1.68,
+              "A2": 1.78,
+              "A3": 1.76
+            },
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 0.65,
+              "UserCorrectionBiasCoeff": 1.11005
+            },
+            "SpecValues": {
+              "LCL": 4.7,
+              "UCL": 5.3,
+              "LSL": 4.7,
+              "USL": 5.3,
+              "NominalValue": 5
+            },
+            "OverlayOptions": {
+              "OverlayEnable": true,
+              "OverlayText": "Width",
+              "OverlayCoords": [
+                5,
+                8
+              ],
+              "OverlayAngle": 56,
+              "OverlayTextSize": 6,
+              "OverlayTextColor": "Blue",
+              "OverlayROI": true,
+              "OverlayRakeLine": true,
+              "OverlayPoints": true
+            },
+            "DatalogEnable": true,
+            "DisplayIcon": "C:\\Desktop\\displayimage.png"
+          },
+          {
+            "RackID": 0,
+            "ImageID": 1,
+            "CameraID": 1,
+            "MeasurementId": 5,
+            "Name": "F.P.B Height",
+            "AlgoName": "AET",
+            "Type": "Max",
+            "MeasurementEnable": true,
+            "AlgorithmSequence": {
+              "RefernceEdge": {
+                "Enable": true,
+                "Method": "LineFinding",
+                "RefROI": {
+                  "Left": 1413,
+                  "Top": 569,
+                  "Right": 1493,
+                  "Bottom": 980,
+                  "Rotation": 0
+                },
+                "EdgeOptions": {
+                  "EdgePoarity": 2,
+                  "KernelSize": 5,
+                  "Width": 5,
+                  "MinimumEdgeStrength": 50,
+                  "InterpolationType": 0,
+                  "DataProcessingMethod": 0
+                },
+                "LineOptions": {
+                  "NumberofLines": 1,
+                  "Type": 0,
+                  "MinScore": 10,
+                  "MaxScore": 1000,
+                  "Orientation": 5,
+                  "AngleRange": 70,
+                  "AngleTolerance": 1,
+                  "StepSize": 5,
+                  "MinSNR": 0,
+                  "MinPoints": 25,
+                  "HoughIterations": 5
+                },
+                "SearchDirection": 2
+              },
+              "Measurement": {
+                "ROI1": {
+                  "Enable": true,
+                  "ROI": {
+                    "Left": 350,
+                    "Top": 700,
+                    "Right": 400,
+                    "Bottom": 1000,
+                    "Rotation": 0
+                  },
+                  "EdgeOptions": {
+                    "EdgePoarity": 0,
+                    "KernelSize": 5,
+                    "Width": 5,
+                    "MinimumEdgeStrength": 50,
+                    "InterpolationType": 0,
+                    "DataProcessingMethod": 0
+                  },
+                  "LineOptions": {
+                    "NumberofLines": 1,
+                    "Type": 1,
+                    "MinScore": 10,
+                    "MaxScore": 1000,
+                    "Orientation": 0,
+                    "AngleRange": 30,
+                    "AngleTolerance": 1,
+                    "StepSize": 3,
+                    "MinSNR": 0,
+                    "MinPoints": 25,
+                    "HoughIterations": 5
+                  },
+                  "Process": 1,
+                  "StepSize": 2,
+                  "SearchDirection": 2,
+                  "CircleEdgeOptions": {
+                    "SearchDirection": 0,
+                    "EdgeOptions": {
+                      "EdgePoarity": 2,
+                      "KernelSize": 5,
+                      "Width": 5,
+                      "MinimumEdgeStrength": 50,
+                      "InterpolationType": 1,
+                      "DataProcessingMethod": 1
+                    }
+                  },
+                  "CircleFitOptions": {
+                    "Process": 3,
+                    "StepSize": 3,
+                    "MAxPixelRadius": 3.85
+                  },
+                  "CircleSearchDirection": 1,
+                  "CurveParameters": {
+                    "ExtractionMode": 0,
+                    "EdgeThreshold": 50,
+                    "EdgeFilterSize": 0,
+                    "MinLength": 25,
+                    "RowSearchStepSize": 15,
+                    "ColSearchStepSize": 15,
+                    "MaxEndpointGap": 10,
+                    "Closed": true,
+                    "Subpixel": true
+                  },
+                  "MinimumMatchScore": 800,
+                  "CircleDescriptor": {
+                    "MinRadius": 3,
+                    "MaxRadius": 200
+                  },
+                  "EllipseDescriptor": {
+                    "MinMajorRadius": 2,
+                    "MaxMajorRadius": 200,
+                    "MinMinorRadius": 2,
+                    "MaxMinorRadius": 100
+                  }
+                },
+                "ROI2": {
+                  "Enable": false,
+                  "ROI": {
+                    "Left": 739,
+                    "Top": 305,
+                    "Right": 763,
+                    "Bottom": 538,
+                    "Rotation": 0
+                  },
+                  "EdgeOptions": {
+                    "EdgePoarity": 0,
+                    "KernelSize": 5,
+                    "Width": 5,
+                    "MinimumEdgeStrength": 50,
+                    "InterpolationType": 0,
+                    "DataProcessingMethod": 0
+                  },
+                  "LineOptions": {
+                    "NumberofLines": 1,
+                    "Type": 1,
+                    "MinScore": 10,
+                    "MaxScore": 1000,
+                    "Orientation": 0,
+                    "AngleRange": 30,
+                    "AngleTolerance": 1,
+                    "StepSize": 3,
+                    "MinSNR": 0,
+                    "MinPoints": 25,
+                    "HoughIterations": 5
+                  },
+                  "Process": 1,
+                  "StepSize": 2,
+                  "SearchDirection": 2,
+                  "CircleEdgeOptions": {
+                    "SearchDirection": 0,
+                    "EdgeOptions": {
+                      "EdgePoarity": 2,
+                      "KernelSize": 3,
+                      "Width": 3,
+                      "MinimumEdgeStrength": 50,
+                      "InterpolationType": 1,
+                      "DataProcessingMethod": 1
+                    }
+                  },
+                  "CircleFitOptions": {
+                    "Process": 3,
+                    "StepSize": 3,
+                    "MAxPixelRadius": 3.85
+                  },
+                  "CircleSearchDirection": 1,
+                  "CurveParameters": {
+                    "ExtractionMode": 0,
+                    "EdgeThreshold": 50,
+                    "EdgeFilterSize": 0,
+                    "MinLength": 25,
+                    "RowSearchStepSize": 15,
+                    "ColSearchStepSize": 15,
+                    "MaxEndpointGap": 10,
+                    "Closed": true,
+                    "Subpixel": true
+                  },
+                  "MinimumMatchScore": 800,
+                  "CircleDescriptor": {
+                    "MinRadius": 3,
+                    "MaxRadius": 200
+                  },
+                  "EllipseDescriptor": {
+                    "MinMajorRadius": 2,
+                    "MaxMajorRadius": 200,
+                    "MinMinorRadius": 2,
+                    "MaxMinorRadius": 100
+                  }
+                }
+              }
+            },
+            "MathExpression": {
+              "Algorithm": "Copper Height",
+              "MathExpression": "c = 1*c + 0",
+              "ResultVariable": "c"
+            },
+            "MathCorrectionParameters": {
+              "Radius": 0.77,
+              "CurlGap": 0.9,
+              "Thickness": 0.32,
+              "MeasurementIndices": [
+                1,
+                3
+              ],
+              "MathAlgoName": "Test",
+              "MathAlgoFormula": "Test2",
+              "CorrectionForAngle": [
+                2
+              ],
+              "NumericAray": [
+                1.1
+              ],
+              "StringArray": [
+                "Test"
+              ]
+            },
+            "ResultVariableCluster": {
+              "RVName": "c",
+              "RVSequence": "MeasROI1",
+              "RVIndex": 1,
+              "RVID": 1,
+              "RVValue": 22.6
+            },
+            "CalibrationCoefficients": {
+              "A1": 1.68,
+              "A2": 1.78,
+              "A3": 1.76
+            },
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 0.65,
+              "UserCorrectionBiasCoeff": 1.11005
+            },
+            "SpecValues": {
+              "LCL": 4.7,
+              "UCL": 5.3,
+              "LSL": 4.7,
+              "USL": 5.3,
+              "NominalValue": 5
+            },
+            "OverlayOptions": {
+              "OverlayEnable": true,
+              "OverlayText": "Width",
+              "OverlayCoords": [
+                5,
+                8
+              ],
+              "OverlayAngle": 56,
+              "OverlayTextSize": 6,
+              "OverlayTextColor": "Blue",
+              "OverlayROI": true,
+              "OverlayRakeLine": true,
+              "OverlayPoints": true
+            },
+            "DatalogEnable": true,
+            "DisplayIcon": "C:\\Desktop\\displayimage.png"
+          },
+          {
+            "RackID": 0,
+            "ImageID": 1,
+            "CameraID": 1,
+            "MeasurementId": 6,
+            "Name": "F.Curl Height",
+            "AlgoName": "AET",
+            "Type": "Max",
+            "MeasurementEnable": true,
+            "AlgorithmSequence": {
+              "RefernceEdge": {
+                "Enable": true,
+                "Method": "LineFinding",
+                "RefROI": {
+                  "Left": 1413,
+                  "Top": 569,
+                  "Right": 1493,
+                  "Bottom": 980,
+                  "Rotation": 0
+                },
+                "EdgeOptions": {
+                  "EdgePoarity": 2,
+                  "KernelSize": 5,
+                  "Width": 5,
+                  "MinimumEdgeStrength": 50,
+                  "InterpolationType": 0,
+                  "DataProcessingMethod": 0
+                },
+                "LineOptions": {
+                  "NumberofLines": 1,
+                  "Type": 0,
+                  "MinScore": 10,
+                  "MaxScore": 1000,
+                  "Orientation": 5,
+                  "AngleRange": 70,
+                  "AngleTolerance": 1,
+                  "StepSize": 5,
+                  "MinSNR": 0,
+                  "MinPoints": 25,
+                  "HoughIterations": 5
+                },
+                "SearchDirection": 2
+              },
+              "Measurement": {
+                "ROI1": {
+                  "Enable": true,
+                  "ROI": {
+                    "Left": 350,
+                    "Top": 700,
+                    "Right": 400,
+                    "Bottom": 1000,
+                    "Rotation": 0
+                  },
+                  "EdgeOptions": {
+                    "EdgePoarity": 0,
+                    "KernelSize": 5,
+                    "Width": 5,
+                    "MinimumEdgeStrength": 50,
+                    "InterpolationType": 0,
+                    "DataProcessingMethod": 0
+                  },
+                  "LineOptions": {
+                    "NumberofLines": 1,
+                    "Type": 1,
+                    "MinScore": 10,
+                    "MaxScore": 1000,
+                    "Orientation": 0,
+                    "AngleRange": 30,
+                    "AngleTolerance": 1,
+                    "StepSize": 3,
+                    "MinSNR": 0,
+                    "MinPoints": 25,
+                    "HoughIterations": 5
+                  },
+                  "Process": 1,
+                  "StepSize": 2,
+                  "SearchDirection": 2,
+                  "CircleEdgeOptions": {
+                    "SearchDirection": 0,
+                    "EdgeOptions": {
+                      "EdgePoarity": 2,
+                      "KernelSize": 5,
+                      "Width": 5,
+                      "MinimumEdgeStrength": 50,
+                      "InterpolationType": 1,
+                      "DataProcessingMethod": 1
+                    }
+                  },
+                  "CircleFitOptions": {
+                    "Process": 3,
+                    "StepSize": 3,
+                    "MAxPixelRadius": 3.85
+                  },
+                  "CircleSearchDirection": 1,
+                  "CurveParameters": {
+                    "ExtractionMode": 0,
+                    "EdgeThreshold": 50,
+                    "EdgeFilterSize": 0,
+                    "MinLength": 25,
+                    "RowSearchStepSize": 15,
+                    "ColSearchStepSize": 15,
+                    "MaxEndpointGap": 10,
+                    "Closed": true,
+                    "Subpixel": true
+                  },
+                  "MinimumMatchScore": 800,
+                  "CircleDescriptor": {
+                    "MinRadius": 3,
+                    "MaxRadius": 200
+                  },
+                  "EllipseDescriptor": {
+                    "MinMajorRadius": 2,
+                    "MaxMajorRadius": 200,
+                    "MinMinorRadius": 2,
+                    "MaxMinorRadius": 100
+                  }
+                },
+                "ROI2": {
+                  "Enable": false,
+                  "ROI": {
+                    "Left": 739,
+                    "Top": 305,
+                    "Right": 763,
+                    "Bottom": 538,
+                    "Rotation": 0
+                  },
+                  "EdgeOptions": {
+                    "EdgePoarity": 0,
+                    "KernelSize": 5,
+                    "Width": 5,
+                    "MinimumEdgeStrength": 50,
+                    "InterpolationType": 0,
+                    "DataProcessingMethod": 0
+                  },
+                  "LineOptions": {
+                    "NumberofLines": 1,
+                    "Type": 1,
+                    "MinScore": 10,
+                    "MaxScore": 1000,
+                    "Orientation": 0,
+                    "AngleRange": 30,
+                    "AngleTolerance": 1,
+                    "StepSize": 3,
+                    "MinSNR": 0,
+                    "MinPoints": 25,
+                    "HoughIterations": 5
+                  },
+                  "Process": 1,
+                  "StepSize": 2,
+                  "SearchDirection": 2,
+                  "CircleEdgeOptions": {
+                    "SearchDirection": 0,
+                    "EdgeOptions": {
+                      "EdgePoarity": 2,
+                      "KernelSize": 3,
+                      "Width": 3,
+                      "MinimumEdgeStrength": 50,
+                      "InterpolationType": 1,
+                      "DataProcessingMethod": 1
+                    }
+                  },
+                  "CircleFitOptions": {
+                    "Process": 3,
+                    "StepSize": 3,
+                    "MAxPixelRadius": 3.85
+                  },
+                  "CircleSearchDirection": 1,
+                  "CurveParameters": {
+                    "ExtractionMode": 0,
+                    "EdgeThreshold": 50,
+                    "EdgeFilterSize": 0,
+                    "MinLength": 25,
+                    "RowSearchStepSize": 15,
+                    "ColSearchStepSize": 15,
+                    "MaxEndpointGap": 10,
+                    "Closed": true,
+                    "Subpixel": true
+                  },
+                  "MinimumMatchScore": 800,
+                  "CircleDescriptor": {
+                    "MinRadius": 3,
+                    "MaxRadius": 200
+                  },
+                  "EllipseDescriptor": {
+                    "MinMajorRadius": 2,
+                    "MaxMajorRadius": 200,
+                    "MinMinorRadius": 2,
+                    "MaxMinorRadius": 100
+                  }
+                }
+              }
+            },
+            "MathExpression": {
+              "Algorithm": "Copper Height",
+              "MathExpression": "c = 1*c + 0",
+              "ResultVariable": "c"
+            },
+            "MathCorrectionParameters": {
+              "Radius": 0.77,
+              "CurlGap": 0.9,
+              "Thickness": 0.32,
+              "MeasurementIndices": [
+                1,
+                3
+              ],
+              "MathAlgoName": "Test",
+              "MathAlgoFormula": "Test2",
+              "CorrectionForAngle": [
+                2
+              ],
+              "NumericAray": [
+                1.1
+              ],
+              "StringArray": [
+                "Test"
+              ]
+            },
+            "ResultVariableCluster": {
+              "RVName": "c",
+              "RVSequence": "MeasROI1",
+              "RVIndex": 1,
+              "RVID": 1,
+              "RVValue": 22.6
+            },
+            "CalibrationCoefficients": {
+              "A1": 1.68,
+              "A2": 1.78,
+              "A3": 1.76
+            },
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 0.65,
+              "UserCorrectionBiasCoeff": 1.11005
+            },
+            "SpecValues": {
+              "LCL": 4.7,
+              "UCL": 5.3,
+              "LSL": 4.7,
+              "USL": 5.3,
+              "NominalValue": 5
+            },
+            "OverlayOptions": {
+              "OverlayEnable": true,
+              "OverlayText": "Width",
+              "OverlayCoords": [
+                5,
+                8
+              ],
+              "OverlayAngle": 56,
+              "OverlayTextSize": 6,
+              "OverlayTextColor": "Blue",
+              "OverlayROI": true,
+              "OverlayRakeLine": true,
+              "OverlayPoints": true
+            },
+            "DatalogEnable": true,
+            "DisplayIcon": "C:\\Desktop\\displayimage.png"
+          },
+          {
+            "RackID": 0,
+            "ImageID": 2,
+            "CameraID": 2,
+            "MeasurementId": 7,
+            "Name": "B Curl Height",
+            "AlgoName": "AET",
+            "Type": "Max",
+            "MeasurementEnable": true,
+            "AlgorithmSequence": {
+              "RefernceEdge": {
+                "Enable": true,
+                "Method": "LineFinding",
+                "RefROI": {
+                  "Left": 560,
+                  "Top": 630,
+                  "Right": 610,
+                  "Bottom": 1150,
+                  "Rotation": 0
+                },
+                "EdgeOptions": {
+                  "EdgePoarity": 2,
+                  "KernelSize": 5,
+                  "Width": 5,
+                  "MinimumEdgeStrength": 50,
+                  "InterpolationType": 0,
+                  "DataProcessingMethod": 0
+                },
+                "LineOptions": {
+                  "NumberofLines": 1,
+                  "Type": 0,
+                  "MinScore": 10,
+                  "MaxScore": 1000,
+                  "Orientation": 5,
+                  "AngleRange": 70,
+                  "AngleTolerance": 1,
+                  "StepSize": 5,
+                  "MinSNR": 0,
+                  "MinPoints": 25,
+                  "HoughIterations": 5
+                },
+                "SearchDirection": 2
+              },
+              "Measurement": {
+                "ROI1": {
+                  "Enable": false,
+                  "ROI": {
+                    "Left": 700,
+                    "Top": 162,
+                    "Right": 770,
+                    "Bottom": 415,
+                    "Rotation": 0
+                  },
+                  "EdgeOptions": {
+                    "EdgePoarity": 0,
+                    "KernelSize": 5,
+                    "Width": 5,
+                    "MinimumEdgeStrength": 50,
+                    "InterpolationType": 0,
+                    "DataProcessingMethod": 0
+                  },
+                  "LineOptions": {
+                    "NumberofLines": 1,
+                    "Type": 1,
+                    "MinScore": 10,
+                    "MaxScore": 1000,
+                    "Orientation": 0,
+                    "AngleRange": 30,
+                    "AngleTolerance": 1,
+                    "StepSize": 3,
+                    "MinSNR": 0,
+                    "MinPoints": 25,
+                    "HoughIterations": 5
+                  },
+                  "Process": 1,
+                  "StepSize": 2,
+                  "SearchDirection": 2,
+                  "CircleEdgeOptions": {
+                    "SearchDirection": 0,
+                    "EdgeOptions": {
+                      "EdgePoarity": 2,
+                      "KernelSize": 5,
+                      "Width": 5,
+                      "MinimumEdgeStrength": 50,
+                      "InterpolationType": 1,
+                      "DataProcessingMethod": 1
+                    }
+                  },
+                  "CircleFitOptions": {
+                    "Process": 3,
+                    "StepSize": 3,
+                    "MAxPixelRadius": 3.85
+                  },
+                  "CircleSearchDirection": 1,
+                  "CurveParameters": {
+                    "ExtractionMode": 0,
+                    "EdgeThreshold": 50,
+                    "EdgeFilterSize": 0,
+                    "MinLength": 25,
+                    "RowSearchStepSize": 15,
+                    "ColSearchStepSize": 15,
+                    "MaxEndpointGap": 10,
+                    "Closed": true,
+                    "Subpixel": true
+                  },
+                  "MinimumMatchScore": 800,
+                  "CircleDescriptor": {
+                    "MinRadius": 3,
+                    "MaxRadius": 200
+                  },
+                  "EllipseDescriptor": {
+                    "MinMajorRadius": 2,
+                    "MaxMajorRadius": 200,
+                    "MinMinorRadius": 2,
+                    "MaxMinorRadius": 100
+                  }
+                },
+                "ROI2": {
+                  "Enable": true,
+                  "ROI": {
+                    "Left": 700,
+                    "Top": 162,
+                    "Right": 760,
+                    "Bottom": 415,
+                    "Rotation": 0
+                  },
+                  "EdgeOptions": {
+                    "EdgePoarity": 2,
+                    "KernelSize": 5,
+                    "Width": 5,
+                    "MinimumEdgeStrength": 50,
+                    "InterpolationType": 0,
+                    "DataProcessingMethod": 0
+                  },
+                  "LineOptions": {
+                    "NumberofLines": 1,
+                    "Type": 1,
+                    "MinScore": 10,
+                    "MaxScore": 1000,
+                    "Orientation": 0,
+                    "AngleRange": 30,
+                    "AngleTolerance": 1,
+                    "StepSize": 3,
+                    "MinSNR": 0,
+                    "MinPoints": 25,
+                    "HoughIterations": 5
+                  },
+                  "Process": 0,
+                  "StepSize": 2,
+                  "SearchDirection": 2,
+                  "CircleEdgeOptions": {
+                    "SearchDirection": 0,
+                    "EdgeOptions": {
+                      "EdgePoarity": 2,
+                      "KernelSize": 3,
+                      "Width": 3,
+                      "MinimumEdgeStrength": 50,
+                      "InterpolationType": 1,
+                      "DataProcessingMethod": 1
+                    }
+                  },
+                  "CircleFitOptions": {
+                    "Process": 3,
+                    "StepSize": 3,
+                    "MAxPixelRadius": 3.85
+                  },
+                  "CircleSearchDirection": 1,
+                  "CurveParameters": {
+                    "ExtractionMode": 0,
+                    "EdgeThreshold": 50,
+                    "EdgeFilterSize": 0,
+                    "MinLength": 25,
+                    "RowSearchStepSize": 15,
+                    "ColSearchStepSize": 15,
+                    "MaxEndpointGap": 10,
+                    "Closed": true,
+                    "Subpixel": true
+                  },
+                  "MinimumMatchScore": 800,
+                  "CircleDescriptor": {
+                    "MinRadius": 3,
+                    "MaxRadius": 200
+                  },
+                  "EllipseDescriptor": {
+                    "MinMajorRadius": 2,
+                    "MaxMajorRadius": 200,
+                    "MinMinorRadius": 2,
+                    "MaxMinorRadius": 100
+                  }
+                }
+              }
+            },
+            "MathExpression": {
+              "Algorithm": "Curl Height Step 2",
+              "MathExpression": "c = 1*c + 0",
+              "ResultVariable": "c"
+            },
+            "MathCorrectionParameters": {
+              "Radius": 1.1,
+              "CurlGap": 0.9,
+              "Thickness": 0.32,
+              "MeasurementIndices": [
+                13
+              ],
+              "MathAlgoName": "Test",
+              "MathAlgoFormula": "Test2",
+              "CorrectionForAngle": [
+                0
+              ],
+              "NumericAray": [
+                1.1
+              ],
+              "StringArray": [
+                "Test"
+              ]
+            },
+            "ResultVariableCluster": {
+              "RVName": "c",
+              "RVSequence": "MeasROI1",
+              "RVIndex": 1,
+              "RVID": 1,
+              "RVValue": 22.6
+            },
+            "CalibrationCoefficients": {
+              "A1": 1.68,
+              "A2": 1.78,
+              "A3": 1.76
+            },
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 0.8,
+              "UserCorrectionBiasCoeff": 0.6076
+            },
+            "SpecValues": {
+              "LCL": 7.6,
+              "UCL": 8,
+              "LSL": 7.6,
+              "USL": 8,
+              "NominalValue": 7.8
+            },
+            "OverlayOptions": {
+              "OverlayEnable": false,
+              "OverlayText": "Width",
+              "OverlayCoords": [
+                5,
+                8
+              ],
+              "OverlayAngle": 56,
+              "OverlayTextSize": 6,
+              "OverlayTextColor": "Blue",
+              "OverlayROI": true,
+              "OverlayRakeLine": true,
+              "OverlayPoints": true
+            },
+            "DatalogEnable": false,
+            "DisplayIcon": "C:\\Desktop\\displayimage.png"
+          },
+          {
+            "RackID": 0,
+            "ImageID": 2,
+            "CameraID": 2,
+            "MeasurementId": 8,
+            "Name": "B.C.B Height",
+            "AlgoName": "AET",
+            "Type": "Max",
+            "MeasurementEnable": true,
+            "AlgorithmSequence": {
+              "RefernceEdge": {
+                "Enable": true,
+                "Method": "LineFinding",
+                "RefROI": {
+                  "Left": 560,
+                  "Top": 630,
+                  "Right": 610,
+                  "Bottom": 1150,
+                  "Rotation": 0
+                },
+                "EdgeOptions": {
+                  "EdgePoarity": 2,
+                  "KernelSize": 5,
+                  "Width": 5,
+                  "MinimumEdgeStrength": 50,
+                  "InterpolationType": 0,
+                  "DataProcessingMethod": 0
+                },
+                "LineOptions": {
+                  "NumberofLines": 1,
+                  "Type": 0,
+                  "MinScore": 10,
+                  "MaxScore": 1000,
+                  "Orientation": 5,
+                  "AngleRange": 70,
+                  "AngleTolerance": 1,
+                  "StepSize": 5,
+                  "MinSNR": 0,
+                  "MinPoints": 25,
+                  "HoughIterations": 5
+                },
+                "SearchDirection": 2
+              },
+              "Measurement": {
+                "ROI1": {
+                  "Enable": false,
+                  "ROI": {
+                    "Left": 700,
+                    "Top": 162,
+                    "Right": 770,
+                    "Bottom": 415,
+                    "Rotation": 0
+                  },
+                  "EdgeOptions": {
+                    "EdgePoarity": 0,
+                    "KernelSize": 5,
+                    "Width": 5,
+                    "MinimumEdgeStrength": 50,
+                    "InterpolationType": 0,
+                    "DataProcessingMethod": 0
+                  },
+                  "LineOptions": {
+                    "NumberofLines": 1,
+                    "Type": 1,
+                    "MinScore": 10,
+                    "MaxScore": 1000,
+                    "Orientation": 0,
+                    "AngleRange": 30,
+                    "AngleTolerance": 1,
+                    "StepSize": 3,
+                    "MinSNR": 0,
+                    "MinPoints": 25,
+                    "HoughIterations": 5
+                  },
+                  "Process": 1,
+                  "StepSize": 2,
+                  "SearchDirection": 2,
+                  "CircleEdgeOptions": {
+                    "SearchDirection": 0,
+                    "EdgeOptions": {
+                      "EdgePoarity": 2,
+                      "KernelSize": 5,
+                      "Width": 5,
+                      "MinimumEdgeStrength": 50,
+                      "InterpolationType": 1,
+                      "DataProcessingMethod": 1
+                    }
+                  },
+                  "CircleFitOptions": {
+                    "Process": 3,
+                    "StepSize": 3,
+                    "MAxPixelRadius": 3.85
+                  },
+                  "CircleSearchDirection": 1,
+                  "CurveParameters": {
+                    "ExtractionMode": 0,
+                    "EdgeThreshold": 50,
+                    "EdgeFilterSize": 0,
+                    "MinLength": 25,
+                    "RowSearchStepSize": 15,
+                    "ColSearchStepSize": 15,
+                    "MaxEndpointGap": 10,
+                    "Closed": true,
+                    "Subpixel": true
+                  },
+                  "MinimumMatchScore": 800,
+                  "CircleDescriptor": {
+                    "MinRadius": 3,
+                    "MaxRadius": 200
+                  },
+                  "EllipseDescriptor": {
+                    "MinMajorRadius": 2,
+                    "MaxMajorRadius": 200,
+                    "MinMinorRadius": 2,
+                    "MaxMinorRadius": 100
+                  }
+                },
+                "ROI2": {
+                  "Enable": true,
+                  "ROI": {
+                    "Left": 700,
+                    "Top": 162,
+                    "Right": 760,
+                    "Bottom": 415,
+                    "Rotation": 0
+                  },
+                  "EdgeOptions": {
+                    "EdgePoarity": 2,
+                    "KernelSize": 5,
+                    "Width": 5,
+                    "MinimumEdgeStrength": 50,
+                    "InterpolationType": 0,
+                    "DataProcessingMethod": 0
+                  },
+                  "LineOptions": {
+                    "NumberofLines": 1,
+                    "Type": 1,
+                    "MinScore": 10,
+                    "MaxScore": 1000,
+                    "Orientation": 0,
+                    "AngleRange": 30,
+                    "AngleTolerance": 1,
+                    "StepSize": 3,
+                    "MinSNR": 0,
+                    "MinPoints": 25,
+                    "HoughIterations": 5
+                  },
+                  "Process": 0,
+                  "StepSize": 2,
+                  "SearchDirection": 2,
+                  "CircleEdgeOptions": {
+                    "SearchDirection": 0,
+                    "EdgeOptions": {
+                      "EdgePoarity": 2,
+                      "KernelSize": 3,
+                      "Width": 3,
+                      "MinimumEdgeStrength": 50,
+                      "InterpolationType": 1,
+                      "DataProcessingMethod": 1
+                    }
+                  },
+                  "CircleFitOptions": {
+                    "Process": 3,
+                    "StepSize": 3,
+                    "MAxPixelRadius": 3.85
+                  },
+                  "CircleSearchDirection": 1,
+                  "CurveParameters": {
+                    "ExtractionMode": 0,
+                    "EdgeThreshold": 50,
+                    "EdgeFilterSize": 0,
+                    "MinLength": 25,
+                    "RowSearchStepSize": 15,
+                    "ColSearchStepSize": 15,
+                    "MaxEndpointGap": 10,
+                    "Closed": true,
+                    "Subpixel": true
+                  },
+                  "MinimumMatchScore": 800,
+                  "CircleDescriptor": {
+                    "MinRadius": 3,
+                    "MaxRadius": 200
+                  },
+                  "EllipseDescriptor": {
+                    "MinMajorRadius": 2,
+                    "MaxMajorRadius": 200,
+                    "MinMinorRadius": 2,
+                    "MaxMinorRadius": 100
+                  }
+                }
+              }
+            },
+            "MathExpression": {
+              "Algorithm": "Curl Height Step 2",
+              "MathExpression": "c = 1*c + 0",
+              "ResultVariable": "c"
+            },
+            "MathCorrectionParameters": {
+              "Radius": 1.1,
+              "CurlGap": 0.9,
+              "Thickness": 0.32,
+              "MeasurementIndices": [
+                13
+              ],
+              "MathAlgoName": "Test",
+              "MathAlgoFormula": "Test2",
+              "CorrectionForAngle": [
+                0
+              ],
+              "NumericAray": [
+                1.1
+              ],
+              "StringArray": [
+                "Test"
+              ]
+            },
+            "ResultVariableCluster": {
+              "RVName": "c",
+              "RVSequence": "MeasROI1",
+              "RVIndex": 1,
+              "RVID": 1,
+              "RVValue": 22.6
+            },
+            "CalibrationCoefficients": {
+              "A1": 1.68,
+              "A2": 1.78,
+              "A3": 1.76
+            },
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 0.8,
+              "UserCorrectionBiasCoeff": 0.6076
+            },
+            "SpecValues": {
+              "LCL": 7.6,
+              "UCL": 8,
+              "LSL": 7.6,
+              "USL": 8,
+              "NominalValue": 7.8
+            },
+            "OverlayOptions": {
+              "OverlayEnable": false,
+              "OverlayText": "Width",
+              "OverlayCoords": [
+                5,
+                8
+              ],
+              "OverlayAngle": 56,
+              "OverlayTextSize": 6,
+              "OverlayTextColor": "Blue",
+              "OverlayROI": true,
+              "OverlayRakeLine": true,
+              "OverlayPoints": true
+            },
+            "DatalogEnable": false,
+            "DisplayIcon": "C:\\Desktop\\displayimage.png"
+          },
+          {
+            "RackID": 0,
+            "ImageID": 2,
+            "CameraID": 2,
+            "MeasurementId": 9,
+            "Name": "B.P.B Height",
+            "AlgoName": "AET",
+            "Type": "Max",
+            "MeasurementEnable": true,
+            "AlgorithmSequence": {
+              "RefernceEdge": {
+                "Enable": true,
+                "Method": "LineFinding",
+                "RefROI": {
+                  "Left": 560,
+                  "Top": 630,
+                  "Right": 610,
+                  "Bottom": 1150,
+                  "Rotation": 0
+                },
+                "EdgeOptions": {
+                  "EdgePoarity": 2,
+                  "KernelSize": 5,
+                  "Width": 5,
+                  "MinimumEdgeStrength": 50,
+                  "InterpolationType": 0,
+                  "DataProcessingMethod": 0
+                },
+                "LineOptions": {
+                  "NumberofLines": 1,
+                  "Type": 0,
+                  "MinScore": 10,
+                  "MaxScore": 1000,
+                  "Orientation": 5,
+                  "AngleRange": 70,
+                  "AngleTolerance": 1,
+                  "StepSize": 5,
+                  "MinSNR": 0,
+                  "MinPoints": 25,
+                  "HoughIterations": 5
+                },
+                "SearchDirection": 2
+              },
+              "Measurement": {
+                "ROI1": {
+                  "Enable": false,
+                  "ROI": {
+                    "Left": 700,
+                    "Top": 162,
+                    "Right": 770,
+                    "Bottom": 415,
+                    "Rotation": 0
+                  },
+                  "EdgeOptions": {
+                    "EdgePoarity": 0,
+                    "KernelSize": 5,
+                    "Width": 5,
+                    "MinimumEdgeStrength": 50,
+                    "InterpolationType": 0,
+                    "DataProcessingMethod": 0
+                  },
+                  "LineOptions": {
+                    "NumberofLines": 1,
+                    "Type": 1,
+                    "MinScore": 10,
+                    "MaxScore": 1000,
+                    "Orientation": 0,
+                    "AngleRange": 30,
+                    "AngleTolerance": 1,
+                    "StepSize": 3,
+                    "MinSNR": 0,
+                    "MinPoints": 25,
+                    "HoughIterations": 5
+                  },
+                  "Process": 1,
+                  "StepSize": 2,
+                  "SearchDirection": 2,
+                  "CircleEdgeOptions": {
+                    "SearchDirection": 0,
+                    "EdgeOptions": {
+                      "EdgePoarity": 2,
+                      "KernelSize": 5,
+                      "Width": 5,
+                      "MinimumEdgeStrength": 50,
+                      "InterpolationType": 1,
+                      "DataProcessingMethod": 1
+                    }
+                  },
+                  "CircleFitOptions": {
+                    "Process": 3,
+                    "StepSize": 3,
+                    "MAxPixelRadius": 3.85
+                  },
+                  "CircleSearchDirection": 1,
+                  "CurveParameters": {
+                    "ExtractionMode": 0,
+                    "EdgeThreshold": 50,
+                    "EdgeFilterSize": 0,
+                    "MinLength": 25,
+                    "RowSearchStepSize": 15,
+                    "ColSearchStepSize": 15,
+                    "MaxEndpointGap": 10,
+                    "Closed": true,
+                    "Subpixel": true
+                  },
+                  "MinimumMatchScore": 800,
+                  "CircleDescriptor": {
+                    "MinRadius": 3,
+                    "MaxRadius": 200
+                  },
+                  "EllipseDescriptor": {
+                    "MinMajorRadius": 2,
+                    "MaxMajorRadius": 200,
+                    "MinMinorRadius": 2,
+                    "MaxMinorRadius": 100
+                  }
+                },
+                "ROI2": {
+                  "Enable": true,
+                  "ROI": {
+                    "Left": 700,
+                    "Top": 162,
+                    "Right": 760,
+                    "Bottom": 415,
+                    "Rotation": 0
+                  },
+                  "EdgeOptions": {
+                    "EdgePoarity": 2,
+                    "KernelSize": 5,
+                    "Width": 5,
+                    "MinimumEdgeStrength": 50,
+                    "InterpolationType": 0,
+                    "DataProcessingMethod": 0
+                  },
+                  "LineOptions": {
+                    "NumberofLines": 1,
+                    "Type": 1,
+                    "MinScore": 10,
+                    "MaxScore": 1000,
+                    "Orientation": 0,
+                    "AngleRange": 30,
+                    "AngleTolerance": 1,
+                    "StepSize": 3,
+                    "MinSNR": 0,
+                    "MinPoints": 25,
+                    "HoughIterations": 5
+                  },
+                  "Process": 0,
+                  "StepSize": 2,
+                  "SearchDirection": 2,
+                  "CircleEdgeOptions": {
+                    "SearchDirection": 0,
+                    "EdgeOptions": {
+                      "EdgePoarity": 2,
+                      "KernelSize": 3,
+                      "Width": 3,
+                      "MinimumEdgeStrength": 50,
+                      "InterpolationType": 1,
+                      "DataProcessingMethod": 1
+                    }
+                  },
+                  "CircleFitOptions": {
+                    "Process": 3,
+                    "StepSize": 3,
+                    "MAxPixelRadius": 3.85
+                  },
+                  "CircleSearchDirection": 1,
+                  "CurveParameters": {
+                    "ExtractionMode": 0,
+                    "EdgeThreshold": 50,
+                    "EdgeFilterSize": 0,
+                    "MinLength": 25,
+                    "RowSearchStepSize": 15,
+                    "ColSearchStepSize": 15,
+                    "MaxEndpointGap": 10,
+                    "Closed": true,
+                    "Subpixel": true
+                  },
+                  "MinimumMatchScore": 800,
+                  "CircleDescriptor": {
+                    "MinRadius": 3,
+                    "MaxRadius": 200
+                  },
+                  "EllipseDescriptor": {
+                    "MinMajorRadius": 2,
+                    "MaxMajorRadius": 200,
+                    "MinMinorRadius": 2,
+                    "MaxMinorRadius": 100
+                  }
+                }
+              }
+            },
+            "MathExpression": {
+              "Algorithm": "Curl Height Step 2",
+              "MathExpression": "c = 1*c + 0",
+              "ResultVariable": "c"
+            },
+            "MathCorrectionParameters": {
+              "Radius": 1.1,
+              "CurlGap": 0.9,
+              "Thickness": 0.32,
+              "MeasurementIndices": [
+                13
+              ],
+              "MathAlgoName": "Test",
+              "MathAlgoFormula": "Test2",
+              "CorrectionForAngle": [
+                0
+              ],
+              "NumericAray": [
+                1.1
+              ],
+              "StringArray": [
+                "Test"
+              ]
+            },
+            "ResultVariableCluster": {
+              "RVName": "c",
+              "RVSequence": "MeasROI1",
+              "RVIndex": 1,
+              "RVID": 1,
+              "RVValue": 22.6
+            },
+            "CalibrationCoefficients": {
+              "A1": 1.68,
+              "A2": 1.78,
+              "A3": 1.76
+            },
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 0.8,
+              "UserCorrectionBiasCoeff": 0.6076
+            },
+            "SpecValues": {
+              "LCL": 7.6,
+              "UCL": 8,
+              "LSL": 7.6,
+              "USL": 8,
+              "NominalValue": 7.8
+            },
+            "OverlayOptions": {
+              "OverlayEnable": false,
+              "OverlayText": "Width",
+              "OverlayCoords": [
+                5,
+                8
+              ],
+              "OverlayAngle": 56,
+              "OverlayTextSize": 6,
+              "OverlayTextColor": "Blue",
+              "OverlayROI": true,
+              "OverlayRakeLine": true,
+              "OverlayPoints": true
+            },
+            "DatalogEnable": false,
+            "DisplayIcon": "C:\\Desktop\\displayimage.png"
+          },
+          {
+            "RackID": 0,
+            "ImageID": 2,
+            "CameraID": 2,
+            "MeasurementId": 10,
+            "Name": "Twist",
+            "AlgoName": "AET",
+            "Type": "Max",
+            "MeasurementEnable": true,
+            "AlgorithmSequence": {
+              "RefernceEdge": {
+                "Enable": true,
+                "Method": "LineFinding",
+                "RefROI": {
+                  "Left": 560,
+                  "Top": 630,
+                  "Right": 610,
+                  "Bottom": 1150,
+                  "Rotation": 0
+                },
+                "EdgeOptions": {
+                  "EdgePoarity": 2,
+                  "KernelSize": 5,
+                  "Width": 5,
+                  "MinimumEdgeStrength": 50,
+                  "InterpolationType": 0,
+                  "DataProcessingMethod": 0
+                },
+                "LineOptions": {
+                  "NumberofLines": 1,
+                  "Type": 0,
+                  "MinScore": 10,
+                  "MaxScore": 1000,
+                  "Orientation": 5,
+                  "AngleRange": 70,
+                  "AngleTolerance": 1,
+                  "StepSize": 5,
+                  "MinSNR": 0,
+                  "MinPoints": 25,
+                  "HoughIterations": 5
+                },
+                "SearchDirection": 2
+              },
+              "Measurement": {
+                "ROI1": {
+                  "Enable": false,
+                  "ROI": {
+                    "Left": 700,
+                    "Top": 162,
+                    "Right": 770,
+                    "Bottom": 415,
+                    "Rotation": 0
+                  },
+                  "EdgeOptions": {
+                    "EdgePoarity": 0,
+                    "KernelSize": 5,
+                    "Width": 5,
+                    "MinimumEdgeStrength": 50,
+                    "InterpolationType": 0,
+                    "DataProcessingMethod": 0
+                  },
+                  "LineOptions": {
+                    "NumberofLines": 1,
+                    "Type": 1,
+                    "MinScore": 10,
+                    "MaxScore": 1000,
+                    "Orientation": 0,
+                    "AngleRange": 30,
+                    "AngleTolerance": 1,
+                    "StepSize": 3,
+                    "MinSNR": 0,
+                    "MinPoints": 25,
+                    "HoughIterations": 5
+                  },
+                  "Process": 1,
+                  "StepSize": 2,
+                  "SearchDirection": 2,
+                  "CircleEdgeOptions": {
+                    "SearchDirection": 0,
+                    "EdgeOptions": {
+                      "EdgePoarity": 2,
+                      "KernelSize": 5,
+                      "Width": 5,
+                      "MinimumEdgeStrength": 50,
+                      "InterpolationType": 1,
+                      "DataProcessingMethod": 1
+                    }
+                  },
+                  "CircleFitOptions": {
+                    "Process": 3,
+                    "StepSize": 3,
+                    "MAxPixelRadius": 3.85
+                  },
+                  "CircleSearchDirection": 1,
+                  "CurveParameters": {
+                    "ExtractionMode": 0,
+                    "EdgeThreshold": 50,
+                    "EdgeFilterSize": 0,
+                    "MinLength": 25,
+                    "RowSearchStepSize": 15,
+                    "ColSearchStepSize": 15,
+                    "MaxEndpointGap": 10,
+                    "Closed": true,
+                    "Subpixel": true
+                  },
+                  "MinimumMatchScore": 800,
+                  "CircleDescriptor": {
+                    "MinRadius": 3,
+                    "MaxRadius": 200
+                  },
+                  "EllipseDescriptor": {
+                    "MinMajorRadius": 2,
+                    "MaxMajorRadius": 200,
+                    "MinMinorRadius": 2,
+                    "MaxMinorRadius": 100
+                  }
+                },
+                "ROI2": {
+                  "Enable": true,
+                  "ROI": {
+                    "Left": 700,
+                    "Top": 162,
+                    "Right": 760,
+                    "Bottom": 415,
+                    "Rotation": 0
+                  },
+                  "EdgeOptions": {
+                    "EdgePoarity": 2,
+                    "KernelSize": 5,
+                    "Width": 5,
+                    "MinimumEdgeStrength": 50,
+                    "InterpolationType": 0,
+                    "DataProcessingMethod": 0
+                  },
+                  "LineOptions": {
+                    "NumberofLines": 1,
+                    "Type": 1,
+                    "MinScore": 10,
+                    "MaxScore": 1000,
+                    "Orientation": 0,
+                    "AngleRange": 30,
+                    "AngleTolerance": 1,
+                    "StepSize": 3,
+                    "MinSNR": 0,
+                    "MinPoints": 25,
+                    "HoughIterations": 5
+                  },
+                  "Process": 0,
+                  "StepSize": 2,
+                  "SearchDirection": 2,
+                  "CircleEdgeOptions": {
+                    "SearchDirection": 0,
+                    "EdgeOptions": {
+                      "EdgePoarity": 2,
+                      "KernelSize": 3,
+                      "Width": 3,
+                      "MinimumEdgeStrength": 50,
+                      "InterpolationType": 1,
+                      "DataProcessingMethod": 1
+                    }
+                  },
+                  "CircleFitOptions": {
+                    "Process": 3,
+                    "StepSize": 3,
+                    "MAxPixelRadius": 3.85
+                  },
+                  "CircleSearchDirection": 1,
+                  "CurveParameters": {
+                    "ExtractionMode": 0,
+                    "EdgeThreshold": 50,
+                    "EdgeFilterSize": 0,
+                    "MinLength": 25,
+                    "RowSearchStepSize": 15,
+                    "ColSearchStepSize": 15,
+                    "MaxEndpointGap": 10,
+                    "Closed": true,
+                    "Subpixel": true
+                  },
+                  "MinimumMatchScore": 800,
+                  "CircleDescriptor": {
+                    "MinRadius": 3,
+                    "MaxRadius": 200
+                  },
+                  "EllipseDescriptor": {
+                    "MinMajorRadius": 2,
+                    "MaxMajorRadius": 200,
+                    "MinMinorRadius": 2,
+                    "MaxMinorRadius": 100
+                  }
+                }
+              }
+            },
+            "MathExpression": {
+              "Algorithm": "Curl Height Step 2",
+              "MathExpression": "c = 1*c + 0",
+              "ResultVariable": "c"
+            },
+            "MathCorrectionParameters": {
+              "Radius": 1.1,
+              "CurlGap": 0.9,
+              "Thickness": 0.32,
+              "MeasurementIndices": [
+                13
+              ],
+              "MathAlgoName": "Test",
+              "MathAlgoFormula": "Test2",
+              "CorrectionForAngle": [
+                0
+              ],
+              "NumericAray": [
+                1.1
+              ],
+              "StringArray": [
+                "Test"
+              ]
+            },
+            "ResultVariableCluster": {
+              "RVName": "c",
+              "RVSequence": "MeasROI1",
+              "RVIndex": 1,
+              "RVID": 1,
+              "RVValue": 22.6
+            },
+            "CalibrationCoefficients": {
+              "A1": 1.68,
+              "A2": 1.78,
+              "A3": 1.76
+            },
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 0.8,
+              "UserCorrectionBiasCoeff": 0.6076
+            },
+            "SpecValues": {
+              "LCL": 7.6,
+              "UCL": 8,
+              "LSL": 7.6,
+              "USL": 8,
+              "NominalValue": 7.8
+            },
+            "OverlayOptions": {
+              "OverlayEnable": false,
+              "OverlayText": "Width",
+              "OverlayCoords": [
+                5,
+                8
+              ],
+              "OverlayAngle": 56,
+              "OverlayTextSize": 6,
+              "OverlayTextColor": "Blue",
+              "OverlayROI": true,
+              "OverlayRakeLine": true,
+              "OverlayPoints": true
+            },
+            "DatalogEnable": false,
+            "DisplayIcon": "C:\\Desktop\\displayimage.png"
+          },
+          {
+            "RackID": 0,
+            "ImageID": 2,
+            "CameraID": 2,
+            "MeasurementId": 11,
+            "Name": "11'",
+            "AlgoName": "AET",
+            "Type": "Max",
+            "MeasurementEnable": true,
+            "AlgorithmSequence": {
+              "RefernceEdge": {
+                "Enable": true,
+                "Method": "LineFinding",
+                "RefROI": {
+                  "Left": 560,
+                  "Top": 630,
+                  "Right": 610,
+                  "Bottom": 1150,
+                  "Rotation": 0
+                },
+                "EdgeOptions": {
+                  "EdgePoarity": 2,
+                  "KernelSize": 5,
+                  "Width": 5,
+                  "MinimumEdgeStrength": 50,
+                  "InterpolationType": 0,
+                  "DataProcessingMethod": 0
+                },
+                "LineOptions": {
+                  "NumberofLines": 1,
+                  "Type": 0,
+                  "MinScore": 10,
+                  "MaxScore": 1000,
+                  "Orientation": 5,
+                  "AngleRange": 70,
+                  "AngleTolerance": 1,
+                  "StepSize": 5,
+                  "MinSNR": 0,
+                  "MinPoints": 25,
+                  "HoughIterations": 5
+                },
+                "SearchDirection": 2
+              },
+              "Measurement": {
+                "ROI1": {
+                  "Enable": false,
+                  "ROI": {
+                    "Left": 700,
+                    "Top": 162,
+                    "Right": 770,
+                    "Bottom": 415,
+                    "Rotation": 0
+                  },
+                  "EdgeOptions": {
+                    "EdgePoarity": 0,
+                    "KernelSize": 5,
+                    "Width": 5,
+                    "MinimumEdgeStrength": 50,
+                    "InterpolationType": 0,
+                    "DataProcessingMethod": 0
+                  },
+                  "LineOptions": {
+                    "NumberofLines": 1,
+                    "Type": 1,
+                    "MinScore": 10,
+                    "MaxScore": 1000,
+                    "Orientation": 0,
+                    "AngleRange": 30,
+                    "AngleTolerance": 1,
+                    "StepSize": 3,
+                    "MinSNR": 0,
+                    "MinPoints": 25,
+                    "HoughIterations": 5
+                  },
+                  "Process": 1,
+                  "StepSize": 2,
+                  "SearchDirection": 2,
+                  "CircleEdgeOptions": {
+                    "SearchDirection": 0,
+                    "EdgeOptions": {
+                      "EdgePoarity": 2,
+                      "KernelSize": 5,
+                      "Width": 5,
+                      "MinimumEdgeStrength": 50,
+                      "InterpolationType": 1,
+                      "DataProcessingMethod": 1
+                    }
+                  },
+                  "CircleFitOptions": {
+                    "Process": 3,
+                    "StepSize": 3,
+                    "MAxPixelRadius": 3.85
+                  },
+                  "CircleSearchDirection": 1,
+                  "CurveParameters": {
+                    "ExtractionMode": 0,
+                    "EdgeThreshold": 50,
+                    "EdgeFilterSize": 0,
+                    "MinLength": 25,
+                    "RowSearchStepSize": 15,
+                    "ColSearchStepSize": 15,
+                    "MaxEndpointGap": 10,
+                    "Closed": true,
+                    "Subpixel": true
+                  },
+                  "MinimumMatchScore": 800,
+                  "CircleDescriptor": {
+                    "MinRadius": 3,
+                    "MaxRadius": 200
+                  },
+                  "EllipseDescriptor": {
+                    "MinMajorRadius": 2,
+                    "MaxMajorRadius": 200,
+                    "MinMinorRadius": 2,
+                    "MaxMinorRadius": 100
+                  }
+                },
+                "ROI2": {
+                  "Enable": true,
+                  "ROI": {
+                    "Left": 700,
+                    "Top": 162,
+                    "Right": 760,
+                    "Bottom": 415,
+                    "Rotation": 0
+                  },
+                  "EdgeOptions": {
+                    "EdgePoarity": 2,
+                    "KernelSize": 5,
+                    "Width": 5,
+                    "MinimumEdgeStrength": 50,
+                    "InterpolationType": 0,
+                    "DataProcessingMethod": 0
+                  },
+                  "LineOptions": {
+                    "NumberofLines": 1,
+                    "Type": 1,
+                    "MinScore": 10,
+                    "MaxScore": 1000,
+                    "Orientation": 0,
+                    "AngleRange": 30,
+                    "AngleTolerance": 1,
+                    "StepSize": 3,
+                    "MinSNR": 0,
+                    "MinPoints": 25,
+                    "HoughIterations": 5
+                  },
+                  "Process": 0,
+                  "StepSize": 2,
+                  "SearchDirection": 2,
+                  "CircleEdgeOptions": {
+                    "SearchDirection": 0,
+                    "EdgeOptions": {
+                      "EdgePoarity": 2,
+                      "KernelSize": 3,
+                      "Width": 3,
+                      "MinimumEdgeStrength": 50,
+                      "InterpolationType": 1,
+                      "DataProcessingMethod": 1
+                    }
+                  },
+                  "CircleFitOptions": {
+                    "Process": 3,
+                    "StepSize": 3,
+                    "MAxPixelRadius": 3.85
+                  },
+                  "CircleSearchDirection": 1,
+                  "CurveParameters": {
+                    "ExtractionMode": 0,
+                    "EdgeThreshold": 50,
+                    "EdgeFilterSize": 0,
+                    "MinLength": 25,
+                    "RowSearchStepSize": 15,
+                    "ColSearchStepSize": 15,
+                    "MaxEndpointGap": 10,
+                    "Closed": true,
+                    "Subpixel": true
+                  },
+                  "MinimumMatchScore": 800,
+                  "CircleDescriptor": {
+                    "MinRadius": 3,
+                    "MaxRadius": 200
+                  },
+                  "EllipseDescriptor": {
+                    "MinMajorRadius": 2,
+                    "MaxMajorRadius": 200,
+                    "MinMinorRadius": 2,
+                    "MaxMinorRadius": 100
+                  }
+                }
+              }
+            },
+            "MathExpression": {
+              "Algorithm": "Curl Height Step 2",
+              "MathExpression": "c = 1*c + 0",
+              "ResultVariable": "c"
+            },
+            "MathCorrectionParameters": {
+              "Radius": 1.1,
+              "CurlGap": 0.9,
+              "Thickness": 0.32,
+              "MeasurementIndices": [
+                13
+              ],
+              "MathAlgoName": "Test",
+              "MathAlgoFormula": "Test2",
+              "CorrectionForAngle": [
+                0
+              ],
+              "NumericAray": [
+                1.1
+              ],
+              "StringArray": [
+                "Test"
+              ]
+            },
+            "ResultVariableCluster": {
+              "RVName": "c",
+              "RVSequence": "MeasROI1",
+              "RVIndex": 1,
+              "RVID": 1,
+              "RVValue": 22.6
+            },
+            "CalibrationCoefficients": {
+              "A1": 1.68,
+              "A2": 1.78,
+              "A3": 1.76
+            },
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 0.8,
+              "UserCorrectionBiasCoeff": 0.6076
+            },
+            "SpecValues": {
+              "LCL": 7.6,
+              "UCL": 8,
+              "LSL": 7.6,
+              "USL": 8,
+              "NominalValue": 7.8
+            },
+            "OverlayOptions": {
+              "OverlayEnable": false,
+              "OverlayText": "Width",
+              "OverlayCoords": [
+                5,
+                8
+              ],
+              "OverlayAngle": 56,
+              "OverlayTextSize": 6,
+              "OverlayTextColor": "Blue",
+              "OverlayROI": true,
+              "OverlayRakeLine": true,
+              "OverlayPoints": true
+            },
+            "DatalogEnable": false,
+            "DisplayIcon": "C:\\Desktop\\displayimage.png"
+          },
+          {
+            "RackID": 0,
+            "ImageID": 2,
+            "CameraID": 2,
+            "MeasurementId": 12,
+            "Name": "12'",
+            "AlgoName": "AET",
+            "Type": "Max",
+            "MeasurementEnable": true,
+            "AlgorithmSequence": {
+              "RefernceEdge": {
+                "Enable": true,
+                "Method": "LineFinding",
+                "RefROI": {
+                  "Left": 560,
+                  "Top": 630,
+                  "Right": 610,
+                  "Bottom": 1150,
+                  "Rotation": 0
+                },
+                "EdgeOptions": {
+                  "EdgePoarity": 2,
+                  "KernelSize": 5,
+                  "Width": 5,
+                  "MinimumEdgeStrength": 50,
+                  "InterpolationType": 0,
+                  "DataProcessingMethod": 0
+                },
+                "LineOptions": {
+                  "NumberofLines": 1,
+                  "Type": 0,
+                  "MinScore": 10,
+                  "MaxScore": 1000,
+                  "Orientation": 5,
+                  "AngleRange": 70,
+                  "AngleTolerance": 1,
+                  "StepSize": 5,
+                  "MinSNR": 0,
+                  "MinPoints": 25,
+                  "HoughIterations": 5
+                },
+                "SearchDirection": 2
+              },
+              "Measurement": {
+                "ROI1": {
+                  "Enable": false,
+                  "ROI": {
+                    "Left": 700,
+                    "Top": 162,
+                    "Right": 770,
+                    "Bottom": 415,
+                    "Rotation": 0
+                  },
+                  "EdgeOptions": {
+                    "EdgePoarity": 0,
+                    "KernelSize": 5,
+                    "Width": 5,
+                    "MinimumEdgeStrength": 50,
+                    "InterpolationType": 0,
+                    "DataProcessingMethod": 0
+                  },
+                  "LineOptions": {
+                    "NumberofLines": 1,
+                    "Type": 1,
+                    "MinScore": 10,
+                    "MaxScore": 1000,
+                    "Orientation": 0,
+                    "AngleRange": 30,
+                    "AngleTolerance": 1,
+                    "StepSize": 3,
+                    "MinSNR": 0,
+                    "MinPoints": 25,
+                    "HoughIterations": 5
+                  },
+                  "Process": 1,
+                  "StepSize": 2,
+                  "SearchDirection": 2,
+                  "CircleEdgeOptions": {
+                    "SearchDirection": 0,
+                    "EdgeOptions": {
+                      "EdgePoarity": 2,
+                      "KernelSize": 5,
+                      "Width": 5,
+                      "MinimumEdgeStrength": 50,
+                      "InterpolationType": 1,
+                      "DataProcessingMethod": 1
+                    }
+                  },
+                  "CircleFitOptions": {
+                    "Process": 3,
+                    "StepSize": 3,
+                    "MAxPixelRadius": 3.85
+                  },
+                  "CircleSearchDirection": 1,
+                  "CurveParameters": {
+                    "ExtractionMode": 0,
+                    "EdgeThreshold": 50,
+                    "EdgeFilterSize": 0,
+                    "MinLength": 25,
+                    "RowSearchStepSize": 15,
+                    "ColSearchStepSize": 15,
+                    "MaxEndpointGap": 10,
+                    "Closed": true,
+                    "Subpixel": true
+                  },
+                  "MinimumMatchScore": 800,
+                  "CircleDescriptor": {
+                    "MinRadius": 3,
+                    "MaxRadius": 200
+                  },
+                  "EllipseDescriptor": {
+                    "MinMajorRadius": 2,
+                    "MaxMajorRadius": 200,
+                    "MinMinorRadius": 2,
+                    "MaxMinorRadius": 100
+                  }
+                },
+                "ROI2": {
+                  "Enable": true,
+                  "ROI": {
+                    "Left": 700,
+                    "Top": 162,
+                    "Right": 760,
+                    "Bottom": 415,
+                    "Rotation": 0
+                  },
+                  "EdgeOptions": {
+                    "EdgePoarity": 2,
+                    "KernelSize": 5,
+                    "Width": 5,
+                    "MinimumEdgeStrength": 50,
+                    "InterpolationType": 0,
+                    "DataProcessingMethod": 0
+                  },
+                  "LineOptions": {
+                    "NumberofLines": 1,
+                    "Type": 1,
+                    "MinScore": 10,
+                    "MaxScore": 1000,
+                    "Orientation": 0,
+                    "AngleRange": 30,
+                    "AngleTolerance": 1,
+                    "StepSize": 3,
+                    "MinSNR": 0,
+                    "MinPoints": 25,
+                    "HoughIterations": 5
+                  },
+                  "Process": 0,
+                  "StepSize": 2,
+                  "SearchDirection": 2,
+                  "CircleEdgeOptions": {
+                    "SearchDirection": 0,
+                    "EdgeOptions": {
+                      "EdgePoarity": 2,
+                      "KernelSize": 3,
+                      "Width": 3,
+                      "MinimumEdgeStrength": 50,
+                      "InterpolationType": 1,
+                      "DataProcessingMethod": 1
+                    }
+                  },
+                  "CircleFitOptions": {
+                    "Process": 3,
+                    "StepSize": 3,
+                    "MAxPixelRadius": 3.85
+                  },
+                  "CircleSearchDirection": 1,
+                  "CurveParameters": {
+                    "ExtractionMode": 0,
+                    "EdgeThreshold": 50,
+                    "EdgeFilterSize": 0,
+                    "MinLength": 25,
+                    "RowSearchStepSize": 15,
+                    "ColSearchStepSize": 15,
+                    "MaxEndpointGap": 10,
+                    "Closed": true,
+                    "Subpixel": true
+                  },
+                  "MinimumMatchScore": 800,
+                  "CircleDescriptor": {
+                    "MinRadius": 3,
+                    "MaxRadius": 200
+                  },
+                  "EllipseDescriptor": {
+                    "MinMajorRadius": 2,
+                    "MaxMajorRadius": 200,
+                    "MinMinorRadius": 2,
+                    "MaxMinorRadius": 100
+                  }
+                }
+              }
+            },
+            "MathExpression": {
+              "Algorithm": "Curl Height Step 2",
+              "MathExpression": "c = 1*c + 0",
+              "ResultVariable": "c"
+            },
+            "MathCorrectionParameters": {
+              "Radius": 1.1,
+              "CurlGap": 0.9,
+              "Thickness": 0.32,
+              "MeasurementIndices": [
+                13
+              ],
+              "MathAlgoName": "Test",
+              "MathAlgoFormula": "Test2",
+              "CorrectionForAngle": [
+                0
+              ],
+              "NumericAray": [
+                1.1
+              ],
+              "StringArray": [
+                "Test"
+              ]
+            },
+            "ResultVariableCluster": {
+              "RVName": "c",
+              "RVSequence": "MeasROI1",
+              "RVIndex": 1,
+              "RVID": 1,
+              "RVValue": 22.6
+            },
+            "CalibrationCoefficients": {
+              "A1": 1.68,
+              "A2": 1.78,
+              "A3": 1.76
+            },
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 0.8,
+              "UserCorrectionBiasCoeff": 0.6076
+            },
+            "SpecValues": {
+              "LCL": 7.6,
+              "UCL": 8,
+              "LSL": 7.6,
+              "USL": 8,
+              "NominalValue": 7.8
+            },
+            "OverlayOptions": {
+              "OverlayEnable": false,
+              "OverlayText": "Width",
+              "OverlayCoords": [
+                5,
+                8
+              ],
+              "OverlayAngle": 56,
+              "OverlayTextSize": 6,
+              "OverlayTextColor": "Blue",
+              "OverlayROI": true,
+              "OverlayRakeLine": true,
+              "OverlayPoints": true
+            },
+            "DatalogEnable": false,
+            "DisplayIcon": "C:\\Desktop\\displayimage.png"
+          },
+          {
+            "RackID": 0,
+            "ImageID": 2,
+            "CameraID": 2,
+            "MeasurementId": 13,
+            "Name": "13'",
+            "AlgoName": "AET",
+            "Type": "Max",
+            "MeasurementEnable": true,
+            "AlgorithmSequence": {
+              "RefernceEdge": {
+                "Enable": true,
+                "Method": "LineFinding",
+                "RefROI": {
+                  "Left": 560,
+                  "Top": 630,
+                  "Right": 610,
+                  "Bottom": 1150,
+                  "Rotation": 0
+                },
+                "EdgeOptions": {
+                  "EdgePoarity": 2,
+                  "KernelSize": 5,
+                  "Width": 5,
+                  "MinimumEdgeStrength": 50,
+                  "InterpolationType": 0,
+                  "DataProcessingMethod": 0
+                },
+                "LineOptions": {
+                  "NumberofLines": 1,
+                  "Type": 0,
+                  "MinScore": 10,
+                  "MaxScore": 1000,
+                  "Orientation": 5,
+                  "AngleRange": 70,
+                  "AngleTolerance": 1,
+                  "StepSize": 5,
+                  "MinSNR": 0,
+                  "MinPoints": 25,
+                  "HoughIterations": 5
+                },
+                "SearchDirection": 2
+              },
+              "Measurement": {
+                "ROI1": {
+                  "Enable": false,
+                  "ROI": {
+                    "Left": 700,
+                    "Top": 162,
+                    "Right": 770,
+                    "Bottom": 415,
+                    "Rotation": 0
+                  },
+                  "EdgeOptions": {
+                    "EdgePoarity": 0,
+                    "KernelSize": 5,
+                    "Width": 5,
+                    "MinimumEdgeStrength": 50,
+                    "InterpolationType": 0,
+                    "DataProcessingMethod": 0
+                  },
+                  "LineOptions": {
+                    "NumberofLines": 1,
+                    "Type": 1,
+                    "MinScore": 10,
+                    "MaxScore": 1000,
+                    "Orientation": 0,
+                    "AngleRange": 30,
+                    "AngleTolerance": 1,
+                    "StepSize": 3,
+                    "MinSNR": 0,
+                    "MinPoints": 25,
+                    "HoughIterations": 5
+                  },
+                  "Process": 1,
+                  "StepSize": 2,
+                  "SearchDirection": 2,
+                  "CircleEdgeOptions": {
+                    "SearchDirection": 0,
+                    "EdgeOptions": {
+                      "EdgePoarity": 2,
+                      "KernelSize": 5,
+                      "Width": 5,
+                      "MinimumEdgeStrength": 50,
+                      "InterpolationType": 1,
+                      "DataProcessingMethod": 1
+                    }
+                  },
+                  "CircleFitOptions": {
+                    "Process": 3,
+                    "StepSize": 3,
+                    "MAxPixelRadius": 3.85
+                  },
+                  "CircleSearchDirection": 1,
+                  "CurveParameters": {
+                    "ExtractionMode": 0,
+                    "EdgeThreshold": 50,
+                    "EdgeFilterSize": 0,
+                    "MinLength": 25,
+                    "RowSearchStepSize": 15,
+                    "ColSearchStepSize": 15,
+                    "MaxEndpointGap": 10,
+                    "Closed": true,
+                    "Subpixel": true
+                  },
+                  "MinimumMatchScore": 800,
+                  "CircleDescriptor": {
+                    "MinRadius": 3,
+                    "MaxRadius": 200
+                  },
+                  "EllipseDescriptor": {
+                    "MinMajorRadius": 2,
+                    "MaxMajorRadius": 200,
+                    "MinMinorRadius": 2,
+                    "MaxMinorRadius": 100
+                  }
+                },
+                "ROI2": {
+                  "Enable": true,
+                  "ROI": {
+                    "Left": 700,
+                    "Top": 162,
+                    "Right": 760,
+                    "Bottom": 415,
+                    "Rotation": 0
+                  },
+                  "EdgeOptions": {
+                    "EdgePoarity": 2,
+                    "KernelSize": 5,
+                    "Width": 5,
+                    "MinimumEdgeStrength": 50,
+                    "InterpolationType": 0,
+                    "DataProcessingMethod": 0
+                  },
+                  "LineOptions": {
+                    "NumberofLines": 1,
+                    "Type": 1,
+                    "MinScore": 10,
+                    "MaxScore": 1000,
+                    "Orientation": 0,
+                    "AngleRange": 30,
+                    "AngleTolerance": 1,
+                    "StepSize": 3,
+                    "MinSNR": 0,
+                    "MinPoints": 25,
+                    "HoughIterations": 5
+                  },
+                  "Process": 0,
+                  "StepSize": 2,
+                  "SearchDirection": 2,
+                  "CircleEdgeOptions": {
+                    "SearchDirection": 0,
+                    "EdgeOptions": {
+                      "EdgePoarity": 2,
+                      "KernelSize": 3,
+                      "Width": 3,
+                      "MinimumEdgeStrength": 50,
+                      "InterpolationType": 1,
+                      "DataProcessingMethod": 1
+                    }
+                  },
+                  "CircleFitOptions": {
+                    "Process": 3,
+                    "StepSize": 3,
+                    "MAxPixelRadius": 3.85
+                  },
+                  "CircleSearchDirection": 1,
+                  "CurveParameters": {
+                    "ExtractionMode": 0,
+                    "EdgeThreshold": 50,
+                    "EdgeFilterSize": 0,
+                    "MinLength": 25,
+                    "RowSearchStepSize": 15,
+                    "ColSearchStepSize": 15,
+                    "MaxEndpointGap": 10,
+                    "Closed": true,
+                    "Subpixel": true
+                  },
+                  "MinimumMatchScore": 800,
+                  "CircleDescriptor": {
+                    "MinRadius": 3,
+                    "MaxRadius": 200
+                  },
+                  "EllipseDescriptor": {
+                    "MinMajorRadius": 2,
+                    "MaxMajorRadius": 200,
+                    "MinMinorRadius": 2,
+                    "MaxMinorRadius": 100
+                  }
+                }
+              }
+            },
+            "MathExpression": {
+              "Algorithm": "Curl Height Step 2",
+              "MathExpression": "c = 1*c + 0",
+              "ResultVariable": "c"
+            },
+            "MathCorrectionParameters": {
+              "Radius": 1.1,
+              "CurlGap": 0.9,
+              "Thickness": 0.32,
+              "MeasurementIndices": [
+                13
+              ],
+              "MathAlgoName": "Test",
+              "MathAlgoFormula": "Test2",
+              "CorrectionForAngle": [
+                0
+              ],
+              "NumericAray": [
+                1.1
+              ],
+              "StringArray": [
+                "Test"
+              ]
+            },
+            "ResultVariableCluster": {
+              "RVName": "c",
+              "RVSequence": "MeasROI1",
+              "RVIndex": 1,
+              "RVID": 1,
+              "RVValue": 22.6
+            },
+            "CalibrationCoefficients": {
+              "A1": 1.68,
+              "A2": 1.78,
+              "A3": 1.76
+            },
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 0.8,
+              "UserCorrectionBiasCoeff": 0.6076
+            },
+            "SpecValues": {
+              "LCL": 7.6,
+              "UCL": 8,
+              "LSL": 7.6,
+              "USL": 8,
+              "NominalValue": 7.8
+            },
+            "OverlayOptions": {
+              "OverlayEnable": false,
+              "OverlayText": "Width",
+              "OverlayCoords": [
+                5,
+                8
+              ],
+              "OverlayAngle": 56,
+              "OverlayTextSize": 6,
+              "OverlayTextColor": "Blue",
+              "OverlayROI": true,
+              "OverlayRakeLine": true,
+              "OverlayPoints": true
+            },
+            "DatalogEnable": false,
+            "DisplayIcon": "C:\\Desktop\\displayimage.png"
+          },
+          {
+            "RackID": 0,
+            "ImageID": 2,
+            "CameraID": 2,
+            "MeasurementId": 14,
+            "Name": "14'",
+            "AlgoName": "AET",
+            "Type": "Max",
+            "MeasurementEnable": true,
+            "AlgorithmSequence": {
+              "RefernceEdge": {
+                "Enable": true,
+                "Method": "LineFinding",
+                "RefROI": {
+                  "Left": 560,
+                  "Top": 630,
+                  "Right": 610,
+                  "Bottom": 1150,
+                  "Rotation": 0
+                },
+                "EdgeOptions": {
+                  "EdgePoarity": 2,
+                  "KernelSize": 5,
+                  "Width": 5,
+                  "MinimumEdgeStrength": 50,
+                  "InterpolationType": 0,
+                  "DataProcessingMethod": 0
+                },
+                "LineOptions": {
+                  "NumberofLines": 1,
+                  "Type": 0,
+                  "MinScore": 10,
+                  "MaxScore": 1000,
+                  "Orientation": 5,
+                  "AngleRange": 70,
+                  "AngleTolerance": 1,
+                  "StepSize": 5,
+                  "MinSNR": 0,
+                  "MinPoints": 25,
+                  "HoughIterations": 5
+                },
+                "SearchDirection": 2
+              },
+              "Measurement": {
+                "ROI1": {
+                  "Enable": false,
+                  "ROI": {
+                    "Left": 700,
+                    "Top": 162,
+                    "Right": 770,
+                    "Bottom": 415,
+                    "Rotation": 0
+                  },
+                  "EdgeOptions": {
+                    "EdgePoarity": 0,
+                    "KernelSize": 5,
+                    "Width": 5,
+                    "MinimumEdgeStrength": 50,
+                    "InterpolationType": 0,
+                    "DataProcessingMethod": 0
+                  },
+                  "LineOptions": {
+                    "NumberofLines": 1,
+                    "Type": 1,
+                    "MinScore": 10,
+                    "MaxScore": 1000,
+                    "Orientation": 0,
+                    "AngleRange": 30,
+                    "AngleTolerance": 1,
+                    "StepSize": 3,
+                    "MinSNR": 0,
+                    "MinPoints": 25,
+                    "HoughIterations": 5
+                  },
+                  "Process": 1,
+                  "StepSize": 2,
+                  "SearchDirection": 2,
+                  "CircleEdgeOptions": {
+                    "SearchDirection": 0,
+                    "EdgeOptions": {
+                      "EdgePoarity": 2,
+                      "KernelSize": 5,
+                      "Width": 5,
+                      "MinimumEdgeStrength": 50,
+                      "InterpolationType": 1,
+                      "DataProcessingMethod": 1
+                    }
+                  },
+                  "CircleFitOptions": {
+                    "Process": 3,
+                    "StepSize": 3,
+                    "MAxPixelRadius": 3.85
+                  },
+                  "CircleSearchDirection": 1,
+                  "CurveParameters": {
+                    "ExtractionMode": 0,
+                    "EdgeThreshold": 50,
+                    "EdgeFilterSize": 0,
+                    "MinLength": 25,
+                    "RowSearchStepSize": 15,
+                    "ColSearchStepSize": 15,
+                    "MaxEndpointGap": 10,
+                    "Closed": true,
+                    "Subpixel": true
+                  },
+                  "MinimumMatchScore": 800,
+                  "CircleDescriptor": {
+                    "MinRadius": 3,
+                    "MaxRadius": 200
+                  },
+                  "EllipseDescriptor": {
+                    "MinMajorRadius": 2,
+                    "MaxMajorRadius": 200,
+                    "MinMinorRadius": 2,
+                    "MaxMinorRadius": 100
+                  }
+                },
+                "ROI2": {
+                  "Enable": true,
+                  "ROI": {
+                    "Left": 700,
+                    "Top": 162,
+                    "Right": 760,
+                    "Bottom": 415,
+                    "Rotation": 0
+                  },
+                  "EdgeOptions": {
+                    "EdgePoarity": 2,
+                    "KernelSize": 5,
+                    "Width": 5,
+                    "MinimumEdgeStrength": 50,
+                    "InterpolationType": 0,
+                    "DataProcessingMethod": 0
+                  },
+                  "LineOptions": {
+                    "NumberofLines": 1,
+                    "Type": 1,
+                    "MinScore": 10,
+                    "MaxScore": 1000,
+                    "Orientation": 0,
+                    "AngleRange": 30,
+                    "AngleTolerance": 1,
+                    "StepSize": 3,
+                    "MinSNR": 0,
+                    "MinPoints": 25,
+                    "HoughIterations": 5
+                  },
+                  "Process": 0,
+                  "StepSize": 2,
+                  "SearchDirection": 2,
+                  "CircleEdgeOptions": {
+                    "SearchDirection": 0,
+                    "EdgeOptions": {
+                      "EdgePoarity": 2,
+                      "KernelSize": 3,
+                      "Width": 3,
+                      "MinimumEdgeStrength": 50,
+                      "InterpolationType": 1,
+                      "DataProcessingMethod": 1
+                    }
+                  },
+                  "CircleFitOptions": {
+                    "Process": 3,
+                    "StepSize": 3,
+                    "MAxPixelRadius": 3.85
+                  },
+                  "CircleSearchDirection": 1,
+                  "CurveParameters": {
+                    "ExtractionMode": 0,
+                    "EdgeThreshold": 50,
+                    "EdgeFilterSize": 0,
+                    "MinLength": 25,
+                    "RowSearchStepSize": 15,
+                    "ColSearchStepSize": 15,
+                    "MaxEndpointGap": 10,
+                    "Closed": true,
+                    "Subpixel": true
+                  },
+                  "MinimumMatchScore": 800,
+                  "CircleDescriptor": {
+                    "MinRadius": 3,
+                    "MaxRadius": 200
+                  },
+                  "EllipseDescriptor": {
+                    "MinMajorRadius": 2,
+                    "MaxMajorRadius": 200,
+                    "MinMinorRadius": 2,
+                    "MaxMinorRadius": 100
+                  }
+                }
+              }
+            },
+            "MathExpression": {
+              "Algorithm": "Curl Height Step 2",
+              "MathExpression": "c = 1*c + 0",
+              "ResultVariable": "c"
+            },
+            "MathCorrectionParameters": {
+              "Radius": 1.1,
+              "CurlGap": 0.9,
+              "Thickness": 0.32,
+              "MeasurementIndices": [
+                13
+              ],
+              "MathAlgoName": "Test",
+              "MathAlgoFormula": "Test2",
+              "CorrectionForAngle": [
+                0
+              ],
+              "NumericAray": [
+                1.1
+              ],
+              "StringArray": [
+                "Test"
+              ]
+            },
+            "ResultVariableCluster": {
+              "RVName": "c",
+              "RVSequence": "MeasROI1",
+              "RVIndex": 1,
+              "RVID": 1,
+              "RVValue": 22.6
+            },
+            "CalibrationCoefficients": {
+              "A1": 1.68,
+              "A2": 1.78,
+              "A3": 1.76
+            },
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 0.8,
+              "UserCorrectionBiasCoeff": 0.6076
+            },
+            "SpecValues": {
+              "LCL": 7.6,
+              "UCL": 8,
+              "LSL": 7.6,
+              "USL": 8,
+              "NominalValue": 7.8
+            },
+            "OverlayOptions": {
+              "OverlayEnable": false,
+              "OverlayText": "Width",
+              "OverlayCoords": [
+                5,
+                8
+              ],
+              "OverlayAngle": 56,
+              "OverlayTextSize": 6,
+              "OverlayTextColor": "Blue",
+              "OverlayROI": true,
+              "OverlayRakeLine": true,
+              "OverlayPoints": true
+            },
+            "DatalogEnable": false,
+            "DisplayIcon": "C:\\Desktop\\displayimage.png"
+          },
+          {
+            "RackID": 0,
+            "ImageID": 2,
+            "CameraID": 2,
+            "MeasurementId": 15,
+            "Name": "15'",
+            "AlgoName": "AET",
+            "Type": "Max",
+            "MeasurementEnable": true,
+            "AlgorithmSequence": {
+              "RefernceEdge": {
+                "Enable": true,
+                "Method": "LineFinding",
+                "RefROI": {
+                  "Left": 560,
+                  "Top": 630,
+                  "Right": 610,
+                  "Bottom": 1150,
+                  "Rotation": 0
+                },
+                "EdgeOptions": {
+                  "EdgePoarity": 2,
+                  "KernelSize": 5,
+                  "Width": 5,
+                  "MinimumEdgeStrength": 50,
+                  "InterpolationType": 0,
+                  "DataProcessingMethod": 0
+                },
+                "LineOptions": {
+                  "NumberofLines": 1,
+                  "Type": 0,
+                  "MinScore": 10,
+                  "MaxScore": 1000,
+                  "Orientation": 5,
+                  "AngleRange": 70,
+                  "AngleTolerance": 1,
+                  "StepSize": 5,
+                  "MinSNR": 0,
+                  "MinPoints": 25,
+                  "HoughIterations": 5
+                },
+                "SearchDirection": 2
+              },
+              "Measurement": {
+                "ROI1": {
+                  "Enable": false,
+                  "ROI": {
+                    "Left": 700,
+                    "Top": 162,
+                    "Right": 770,
+                    "Bottom": 415,
+                    "Rotation": 0
+                  },
+                  "EdgeOptions": {
+                    "EdgePoarity": 0,
+                    "KernelSize": 5,
+                    "Width": 5,
+                    "MinimumEdgeStrength": 50,
+                    "InterpolationType": 0,
+                    "DataProcessingMethod": 0
+                  },
+                  "LineOptions": {
+                    "NumberofLines": 1,
+                    "Type": 1,
+                    "MinScore": 10,
+                    "MaxScore": 1000,
+                    "Orientation": 0,
+                    "AngleRange": 30,
+                    "AngleTolerance": 1,
+                    "StepSize": 3,
+                    "MinSNR": 0,
+                    "MinPoints": 25,
+                    "HoughIterations": 5
+                  },
+                  "Process": 1,
+                  "StepSize": 2,
+                  "SearchDirection": 2,
+                  "CircleEdgeOptions": {
+                    "SearchDirection": 0,
+                    "EdgeOptions": {
+                      "EdgePoarity": 2,
+                      "KernelSize": 5,
+                      "Width": 5,
+                      "MinimumEdgeStrength": 50,
+                      "InterpolationType": 1,
+                      "DataProcessingMethod": 1
+                    }
+                  },
+                  "CircleFitOptions": {
+                    "Process": 3,
+                    "StepSize": 3,
+                    "MAxPixelRadius": 3.85
+                  },
+                  "CircleSearchDirection": 1,
+                  "CurveParameters": {
+                    "ExtractionMode": 0,
+                    "EdgeThreshold": 50,
+                    "EdgeFilterSize": 0,
+                    "MinLength": 25,
+                    "RowSearchStepSize": 15,
+                    "ColSearchStepSize": 15,
+                    "MaxEndpointGap": 10,
+                    "Closed": true,
+                    "Subpixel": true
+                  },
+                  "MinimumMatchScore": 800,
+                  "CircleDescriptor": {
+                    "MinRadius": 3,
+                    "MaxRadius": 200
+                  },
+                  "EllipseDescriptor": {
+                    "MinMajorRadius": 2,
+                    "MaxMajorRadius": 200,
+                    "MinMinorRadius": 2,
+                    "MaxMinorRadius": 100
+                  }
+                },
+                "ROI2": {
+                  "Enable": true,
+                  "ROI": {
+                    "Left": 700,
+                    "Top": 162,
+                    "Right": 760,
+                    "Bottom": 415,
+                    "Rotation": 0
+                  },
+                  "EdgeOptions": {
+                    "EdgePoarity": 2,
+                    "KernelSize": 5,
+                    "Width": 5,
+                    "MinimumEdgeStrength": 50,
+                    "InterpolationType": 0,
+                    "DataProcessingMethod": 0
+                  },
+                  "LineOptions": {
+                    "NumberofLines": 1,
+                    "Type": 1,
+                    "MinScore": 10,
+                    "MaxScore": 1000,
+                    "Orientation": 0,
+                    "AngleRange": 30,
+                    "AngleTolerance": 1,
+                    "StepSize": 3,
+                    "MinSNR": 0,
+                    "MinPoints": 25,
+                    "HoughIterations": 5
+                  },
+                  "Process": 0,
+                  "StepSize": 2,
+                  "SearchDirection": 2,
+                  "CircleEdgeOptions": {
+                    "SearchDirection": 0,
+                    "EdgeOptions": {
+                      "EdgePoarity": 2,
+                      "KernelSize": 3,
+                      "Width": 3,
+                      "MinimumEdgeStrength": 50,
+                      "InterpolationType": 1,
+                      "DataProcessingMethod": 1
+                    }
+                  },
+                  "CircleFitOptions": {
+                    "Process": 3,
+                    "StepSize": 3,
+                    "MAxPixelRadius": 3.85
+                  },
+                  "CircleSearchDirection": 1,
+                  "CurveParameters": {
+                    "ExtractionMode": 0,
+                    "EdgeThreshold": 50,
+                    "EdgeFilterSize": 0,
+                    "MinLength": 25,
+                    "RowSearchStepSize": 15,
+                    "ColSearchStepSize": 15,
+                    "MaxEndpointGap": 10,
+                    "Closed": true,
+                    "Subpixel": true
+                  },
+                  "MinimumMatchScore": 800,
+                  "CircleDescriptor": {
+                    "MinRadius": 3,
+                    "MaxRadius": 200
+                  },
+                  "EllipseDescriptor": {
+                    "MinMajorRadius": 2,
+                    "MaxMajorRadius": 200,
+                    "MinMinorRadius": 2,
+                    "MaxMinorRadius": 100
+                  }
+                }
+              }
+            },
+            "MathExpression": {
+              "Algorithm": "Curl Height Step 2",
+              "MathExpression": "c = 1*c + 0",
+              "ResultVariable": "c"
+            },
+            "MathCorrectionParameters": {
+              "Radius": 1.1,
+              "CurlGap": 0.9,
+              "Thickness": 0.32,
+              "MeasurementIndices": [
+                13
+              ],
+              "MathAlgoName": "Test",
+              "MathAlgoFormula": "Test2",
+              "CorrectionForAngle": [
+                0
+              ],
+              "NumericAray": [
+                1.1
+              ],
+              "StringArray": [
+                "Test"
+              ]
+            },
+            "ResultVariableCluster": {
+              "RVName": "c",
+              "RVSequence": "MeasROI1",
+              "RVIndex": 1,
+              "RVID": 1,
+              "RVValue": 22.6
+            },
+            "CalibrationCoefficients": {
+              "A1": 1.68,
+              "A2": 1.78,
+              "A3": 1.76
+            },
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 0.8,
+              "UserCorrectionBiasCoeff": 0.6076
+            },
+            "SpecValues": {
+              "LCL": 7.6,
+              "UCL": 8,
+              "LSL": 7.6,
+              "USL": 8,
+              "NominalValue": 7.8
+            },
+            "OverlayOptions": {
+              "OverlayEnable": false,
+              "OverlayText": "Width",
+              "OverlayCoords": [
+                5,
+                8
+              ],
+              "OverlayAngle": 56,
+              "OverlayTextSize": 6,
+              "OverlayTextColor": "Blue",
+              "OverlayROI": true,
+              "OverlayRakeLine": true,
+              "OverlayPoints": true
+            },
+            "DatalogEnable": false,
+            "DisplayIcon": "C:\\Desktop\\displayimage.png"
+          }
+        ]
+      }
+    ],
+    "AlgoDefaultParameters": {
+      "AlgoName": "MaxClamp",
+      "Enable": true,
+      "AlgorithmSequenceDefault": {
+        "RefernceEdgeDefault": {
+          "Method": "LineFinding",
+          "RefROI": {
+            "Left": 1014,
+            "Top": 95,
+            "Right": 1290,
+            "Bottom": 520,
+            "Rotation": 0
+          },
+          "EdgeOptions": {
+            "EdgePoarity": 0,
+            "KernelSize": 3,
+            "Width": 3,
+            "MinimumEdgeStrength": 50,
+            "InterpolationType": 1,
+            "DataProcessingMethod": 1
+          },
+          "LineOptions": {
+            "NumberofLines": 1,
+            "Type": 1,
+            "MinScore": 10,
+            "MaxScore": 1000,
+            "Orientation": 0,
+            "AngleRange": 10,
+            "AngleTolerance": 1,
+            "StepSize": 3,
+            "MinSNR": 0,
+            "MinPoints": 25,
+            "HoughIterations": 5
+          },
+          "SearchDirection": 2
+        },
+        "MeasurementDefault": {
+          "ROI1": {
+            "ROI": {
+              "Left": 100,
+              "Top": 150,
+              "Right": 400,
+              "Bottom": 700,
+              "Rotation": 0
+            },
+            "EdgeOptions": {
+              "EdgePoarity": 0,
+              "KernelSize": 3,
+              "Width": 3,
+              "MinimumEdgeStrength": 50,
+              "InterpolationType": 1,
+              "DataProcessingMethod": 1
+            },
+            "LineOptions": {
+              "NumberofLines": 1,
+              "Type": 1,
+              "MinScore": 10,
+              "MaxScore": 1000,
+              "Orientation": 0,
+              "AngleRange": 10,
+              "AngleTolerance": 1,
+              "StepSize": 3,
+              "MinSNR": 0,
+              "MinPoints": 25,
+              "HoughIterations": 5
+            },
+            "Process": 1,
+            "StepSize": 10,
+            "SearchDirection": 0,
+            "CircleEdgeOptions": {
+              "SearchDirection": 1,
+              "EdgeOptions": {
+                "EdgePoarity": 0,
+                "KernelSize": 3,
+                "Width": 3,
+                "MinimumEdgeStrength": 50,
+                "InterpolationType": 1,
+                "DataProcessingMethod": 1
+              }
+            },
+            "CircleFitOptions": {
+              "Process": 3,
+              "StepSize": 3,
+              "MAxPixelRadius": 3
+            },
+            "CircleSearchDirection": 1,
+            "CurveParameters": {
+              "ExtractionMode": 0,
+              "EdgeThreshold": 50,
+              "EdgeFilterSize": 0,
+              "MinLength": 25,
+              "RowSearchStepSize": 15,
+              "ColSearchStepSize": 15,
+              "MaxEndpointGap": 10,
+              "Closed": 0,
+              "Subpixel": 0
+            },
+            "MinimumMatchScore": 800,
+            "CircleDescriptor": {
+              "MinRadius": 3,
+              "MaxRadius": 200
+            },
+            "EllipseDescriptor": {
+              "MinMajorRadius": 2,
+              "MaxMajorRadius": 200,
+              "MinMinorRadius": 2,
+              "MaxMinorRadius": 100
+            },
+            "OverlayOptions": {
+              "OverlayEnable": true,
+              "OverlayText": "Collar Width",
+              "OverlayCoords": [
+                5,
+                8
+              ],
+              "OverlayAngle": 56,
+              "OverlayTextSize": 6,
+              "OverlayTextColor": "Red"
+            },
+            "ResultVariable": "M1"
+          },
+          "ROI2": {
+            "ROI": {
+              "Left": 100,
+              "Top": 150,
+              "Right": 400,
+              "Bottom": 700,
+              "Rotation": 0
+            },
+            "EdgeOptions": {
+              "EdgePoarity": 0,
+              "KernelSize": 3,
+              "Width": 3,
+              "MinimumEdgeStrength": 50,
+              "InterpolationType": 1,
+              "DataProcessingMethod": 1
+            },
+            "LineOptions": {
+              "NumberofLines": 1,
+              "Type": 1,
+              "MinScore": 10,
+              "MaxScore": 1000,
+              "Orientation": 0,
+              "AngleRange": 10,
+              "AngleTolerance": 1,
+              "StepSize": 3,
+              "MinSNR": 0,
+              "MinPoints": 25,
+              "HoughIterations": 5
+            },
+            "Process": 1,
+            "StepSize": 10,
+            "SearchDirection": 0,
+            "CircleEdgeOptions": {
+              "SearchDirection": 1,
+              "EdgeOptions": {
+                "EdgePoarity": 0,
+                "KernelSize": 3,
+                "Width": 3,
+                "MinimumEdgeStrength": 50,
+                "InterpolationType": 1,
+                "DataProcessingMethod": 1
+              }
+            },
+            "CircleFitOptions": {
+              "Process": 3,
+              "StepSize": 3,
+              "MaxPixelRadius": 3
+            },
+            "CircleSearchDirection": 1,
+            "CurveParameters": {
+              "ExtractionMode": 0,
+              "EdgeThreshold": 50,
+              "EdgeFilterSize": 0,
+              "MinLength": 25,
+              "RowSearchStepSize": 15,
+              "ColSearchStepSize": 15,
+              "MaxEndpointGap": 10,
+              "Closed": 0,
+              "Subpixel": 0
+            },
+            "MinimumMatchScore": 800,
+            "CircleDescriptor": {
+              "MinRadius": 3,
+              "MaxRadius": 200
+            },
+            "EllipseDescriptor": {
+              "MinMajorRadius": 2,
+              "MaxMajorRadius": 200,
+              "MinMinorRadius": 2,
+              "MaxMinorRadius": 100
+            },
+            "OverlayOptions": {
+              "OverlayEnable": true,
+              "OverlayText": "Collar Width",
+              "OverlayCoords": [
+                5,
+                8
+              ],
+              "OverlayAngle": 56,
+              "OverlayTextSize": 6,
+              "OverlayTextColor": "Red"
+            },
+            "ResultVariable": "M2"
+          }
+        },
+        "MathExpressionDefault": {
+          "Algorithm": "Math1",
+          "MathExpression": "M2-M1",
+          "ResultVariable": "M3"
+        }
+      },
+      "CalibrationCoefficients": {
+        "A1": 13,
+        "A2": 8.7,
+        "A3": 67.9
+      },
+      "UserCalibCoefficients": {
+        "UserCorrectionBiasCoeff": 56,
+        "UserCorrectionLinearityCoeff": 45
+      },
+      "OverlayOptions": {
+        "OverlayEnable": true,
+        "OverlayText": "Collar Width",
+        "OverlayCoords": [
+          5,
+          8
+        ],
+        "OverlayAngle": 56,
+        "OverlayTextSize": 6,
+        "OverlayTextColor": "Red"
+      },
+      "DatalogEnable": true,
+      "DisplayIcon": "C:\\Desktop\\displayimage.png"
+    }
+  }
+}

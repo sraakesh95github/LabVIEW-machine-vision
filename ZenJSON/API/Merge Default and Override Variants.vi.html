@@ -1,0 +1,90 @@
+<HTML>
+<HEAD>
+<TITLE>Merge Default and Override Variants.vi</TITLE>
+<link rel="stylesheet" type="text/css" href="Resources/help.css">
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="VI Gods Documentation Toolkit from www.vigods.com">
+</HEAD>
+<BODY>
+<div id="notScrollable">
+<A NAME="Merge Default and Override Variants.vi"></A><H1>Merge Default and Override Variants.vi</H1>
+
+<!--Owning Palette-->
+
+<p class="Body"><strong>Owning Palette:</strong> <a href="..\..\..\..\..\..\..">Zen JSON File Handling</a></p>
+
+<!--Package-->
+
+<p class="Body"><strong>Requires:</strong> OpenG Toolkit, JKI JSON</p>
+
+<!--Platform-->
+
+<p class="Body"><strong>Platform(s):</strong> Windows</p>
+
+<!-- VI/Function Description -->
+
+<p class="Body">Takes the two types of VClusters (A Variant which has the meta data as a cluster) as input. The two VClusters being <strong>Override</strong> and <strong>Default</strong> obtained from the two JSON files. The two VCluters are overridden to provide the output VCluster with the <strong>merger of the two JSONs</strong>.<P></P>The <strong>Default</strong> is assumed to contain the basic structure of the output VCluster which contains all the basic key - value pair whose values don't usually change.<P></P>The <strong>Override</strong> is assumed to contain the data that needs to be updated during the course of the main program and it's values may be over-written again and again during program execution.<P></P>The output <strong>Merged VCluster</strong> contains all the required keys and resembles the structure of the main JSON. Any key can be obtained by specifying the path for the required key. </p>
+
+<!-- Supplemental VI/Function Information -->
+
+
+
+<!-- Link to Additional VI/Function Information and Examples  -->
+
+<p class="Body">&nbsp;&nbsp;<a href="#examples">Example</a></p>
+
+
+<!-- Graphic Reference -->
+
+<p class="Anchor"><IMG SRC="Merge Default and Override Variants.vi.html_Images/Merge Default and Override Variants.vic.png" ALT="Merge Default and Override Variants.vi" border="1" style="margin: 2px; padding: 5px"></p>
+<hr>
+</div>
+
+<div id="styleDivScrolling" style="overflow: auto;>
+
+<!-- Table of VI/Function Parameters -->
+
+<P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Merge Default and Override Variants.vi.html_Images/cfxdt.png" ALT="cfxdt"></P><P></P></TD>
+<P></P><TD><P></P><strong>Override VCluster</strong> <P>VCLuster must be a variant turned cluster, which is usually obtained as the output of JSON Serialization. This project uses the JKI JSON toolkit exclusively, so it is recommended to use the JKI JSON UNflatten from JSON string SubVI. The VCLuster takes the output of the JKI JSON Unflatten SubVI. </P><P></P></TD>
+<P></P></TR><P></P></Table><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Merge Default and Override Variants.vi.html_Images/cfxdt.png" ALT="cfxdt"></P><P></P></TD>
+<P></P><TD><P></P><strong>Default VCluster</strong> <P>VCLuster must be a variant turned cluster, which is usually obtained as the output of JSON Serialization. This project uses the JKI JSON toolkit exclusively, so it is recommended to use the JKI JSON UNflatten from JSON string SubVI. The VCLuster takes the output of the JKI JSON Unflatten SubVI. </P><P></P></TD>
+<P></P></TR><P></P></Table><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Merge Default and Override Variants.vi.html_Images/cerrcodeclst.png" ALT="cerrcodeclst"></P><P></P></TD>
+<P></P><TD><P></P><strong>error in (no error)</strong> <P><strong>error in</strong> can accept error information wired from VIs previously called. Use this information to decide if any functionality should be bypassed in the event of errors from other VIs.</P><P></P><P></P><P></P><P>Right-click the <strong>error in</strong> control on the front panel and select <strong>Explain Error</strong> or <strong>Explain Warning</strong> from the shortcut menu for more information about the error. </P><P></P></TD>
+<P></P></TR><P></P></Table><P></P><UL><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Merge Default and Override Variants.vi.html_Images/cbool.png" ALT="cbool"></P><P></P></TD>
+<P></P><TD><P></P><strong>status</strong> <P><strong>status</strong> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P><P></P><P></P><P></P><P>Right-click the <strong>error in</strong> control on the front panel and select <strong>Explain Error</strong> or <strong>Explain Warning</strong> from the shortcut menu for more information about the error.</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Merge Default and Override Variants.vi.html_Images/ci32.png" ALT="ci32"></P><P></P></TD>
+<P></P><TD><P></P><strong>code</strong> <P><strong>code</strong> is the error or warning code.</P><P></P><P></P><P></P><P>Right-click the <strong>error in</strong> control on the front panel and select <strong>Explain Error</strong> or <strong>Explain Warning</strong> from the shortcut menu for more information about the error.</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Merge Default and Override Variants.vi.html_Images/cstr.png" ALT="cstr"></P><P></P></TD>
+<P></P><TD><P></P><strong>source</strong> <P><strong>source</strong> describes the origin of the error or warning.</P><P></P><P></P><P></P><P>Right-click the <strong>error in</strong> control on the front panel and select <strong>Explain Error</strong> or <strong>Explain Warning</strong> from the shortcut menu for more information about the error.</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P></UL><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Merge Default and Override Variants.vi.html_Images/c1dstr.png" ALT="c1dstr"></P><P></P></TD>
+<P></P><TD><P></P><strong>Array element check keys</strong> <P>Use the elements provided in the array to check for the Array of Clusters if certain clusters are present in the override and not in the default. These elements will be added in the default. For Example, if &quot;Name&quot; is provided, it will check for name in the cluster. </P><P></P></TD>
+<P></P></TR><P></P></Table><P></P><UL><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Merge Default and Override Variants.vi.html_Images/cstr.png" ALT="cstr"></P><P></P></TD>
+<P></P><TD><P></P><strong></strong> </TD>
+<P></P></TR><P></P></Table><P></P></UL><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Merge Default and Override Variants.vi.html_Images/ierrcodeclst.png" ALT="ierrcodeclst"></P><P></P></TD>
+<P></P><TD><P></P><strong>error out</strong> <P><strong>error in</strong> can accept error information wired from VIs previously called. Use this information to decide if any functionality should be bypassed in the event of errors from other VIs.</P><P></P><P></P><P></P><P>Right-click the <strong>error in</strong> control on the front panel and select <strong>Explain Error</strong> or <strong>Explain Warning</strong> from the shortcut menu for more information about the error.</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P><UL><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Merge Default and Override Variants.vi.html_Images/ibool.png" ALT="ibool"></P><P></P></TD>
+<P></P><TD><P></P><strong>status</strong> <P><strong>status</strong> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P><P></P><P></P><P></P><P>Right-click the <strong>error in</strong> control on the front panel and select <strong>Explain Error</strong> or <strong>Explain Warning</strong> from the shortcut menu for more information about the error.</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Merge Default and Override Variants.vi.html_Images/ii32.png" ALT="ii32"></P><P></P></TD>
+<P></P><TD><P></P><strong>code</strong> <P><strong>code</strong> is the error or warning code.</P><P></P><P></P><P></P><P>Right-click the <strong>error in</strong> control on the front panel and select <strong>Explain Error</strong> or <strong>Explain Warning</strong> from the shortcut menu for more information about the error.</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Merge Default and Override Variants.vi.html_Images/istr.png" ALT="istr"></P><P></P></TD>
+<P></P><TD><P></P><strong>source</strong> <P><strong>source</strong> describes the origin of the error or warning.</P><P></P><P></P><P></P><P>Right-click the <strong>error in</strong> control on the front panel and select <strong>Explain Error</strong> or <strong>Explain Warning</strong> from the shortcut menu for more information about the error.</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P></UL><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Merge Default and Override Variants.vi.html_Images/ifxdt.png" ALT="ifxdt"></P><P></P></TD>
+<P></P><TD><P></P><strong>Output Merged Cluster</strong> <P>The merged cluster from the &quot;Default&quot; and the &quot;Override&quot; is available at the output as a VCluster.</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P>
+
+<!-- Table of VI Descriptions --></table>
+
+<!-- Additional VI/Function Information --><!-- Example Information -->
+
+<h2><a name="examples">Example</a></h2>
+<p class="Anchor"><IMG SRC="Merge Default and Override Variants.vi.html_Images/Simple JSON.png"></p>
+<p class="Body">Refer to the <strong>Merge Default and Override-Example</strong> VI in the <span class="Monospace">E:\JSON File Handling Files\JSON File Handler\JSON File Handling(Internal Test) - Copy - Copy\JSON Default Override Merge\Data\Example\Merge Default and Override-Example.vi</span> for an example of using the <strong>Merge Default and Override Variants.vi</strong>.</p>
+
+</div>
+<script>
+	var notScrollableHeight = document.getElementById("notScrollable").offsetHeight;
+	var browserWindowHeight = window.innerHeight;
+	styleDivScrolling.style.height = browserWindowHeight - notScrollableHeight - 18;
+</script>
+</BODY>
+</HTML>

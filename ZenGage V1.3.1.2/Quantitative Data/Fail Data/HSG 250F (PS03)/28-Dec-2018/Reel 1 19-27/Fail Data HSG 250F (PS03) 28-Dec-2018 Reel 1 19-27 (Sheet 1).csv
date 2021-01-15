@@ -1,0 +1,5 @@
+Part Name,	Batch ID,	Operator Name,	Date,	Time,	A,	B,	C,	D,	Result,	Reason For Fail
+,	,	,	,	,	-10.0000-10.000,	2.0000-10.000,	-10.0000-10.000,	0.0000-10.000,	,	
+HSG 250F (PS03),Batch_1_DBEN_STM_1_HSG 250F (PS03)_3628850239,df,28-Dec-2018,19:27,3.005,0.090,-0.080,3.829,Fail,Damaged Terminal
+HSG 250F (PS03),Batch_1_DBEN_STM_1_HSG 250F (PS03)_3628850239,df,28-Dec-2018,19:28,3.030,0.090,-0.080,3.851,Fail,Dust Issue
+HSG 250F (PS03),Batch_1_DBEN_STM_1_HSG 250F (PS03)_3628850239,df,28-Dec-2018,19:28,3.023,0.090,-0.080,3.845,Fail,Damaged Terminal

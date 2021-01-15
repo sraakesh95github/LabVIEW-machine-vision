@@ -1,0 +1,343 @@
+{
+  "CameraControllerParameters": [
+    {
+      "ID": 0,
+      "FrontPanelOpen": true,
+      "NoOfCameras": 3,
+      "CameraID": [
+        0,
+        1,
+        2
+      ],
+      "NoOfReceivers": 1,
+      "Diagnostics": {
+        "Path": "xxxxxx",
+        "LightCameraSequence": [
+          {
+            "Name": "LightCameraSequence1",
+            "CameraID": 0,
+            "LightID": 1
+          },
+          {
+            "Name": "LightCameraSequence2",
+            "CameraID": 1,
+            "LightID": 2
+          },
+          {
+            "Name": "LightCameraSequence3",
+            "CameraID": 2,
+            "LightID": 3
+          }
+        ],
+        "Delaytime": 2000,
+        "DecisionParameters": {
+          "Range": [
+            70,
+            170
+          ],
+          "AcceptancePercentage": [
+            1,
+            20
+          ],
+          "Comparison": [
+            "LesserThan",
+            "LesserThan"
+          ],
+          "AcceptableBlackBinValue": 10000
+        },
+        "DiagnosticsReceiverSequence": {
+          "ReceiverName": "RC",
+          "ReceiverID": 0
+        }
+      },
+      "PartsList": [
+        {
+          "Name": "TT-1478",
+          "CameraIDs": [
+            0,
+            1,
+            2
+          ],
+          "ReceiverSequence": [
+            {
+              "ReceiverName": "Algorithm",
+              "ReceiverID": 0,
+              "NoOfActiveCameras": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ImageAcquisitionParameters": [
+    {
+      "Id": 0,
+      "SessionID": "Top",
+      "Type": "Top",
+      "Model": "Point grey CM3-U3-50S5m",
+      "InterfaceType": "USB3",
+      "SerialNumber": "x",
+      "Timeout": 500,
+      "GeneralCameraConfig": [
+        {
+          "ActiveAttribute": "TriggerMode",
+          "Value": "On"
+        },
+        {
+          "ActiveAttribute": "ExposureAuto",
+          "Value": ""
+        },
+        {
+          "ActiveAttribute": "ExposureTime",
+          "Value": "300"
+        },
+        {
+          "ActiveAttribute": "GainAuto",
+          "Value": "Off"
+        },
+        {
+          "ActiveAttribute": "Gain",
+          "Value": "15.0062000"
+        },
+        {
+          "ActiveAttribute": "TriggerSource",
+          "Value": "Line 0"
+        }
+      ],
+      "DefaultAOI": [
+        1280,
+        1024,
+        0,
+        0
+      ],
+      "DefaultReceiverSequence": [
+        {
+          "ReceiverID": 0,
+          "Index": 0
+        }
+      ],
+      "DefaultfileName": "ZenCAM\\Diagnostics\\Testimages\\Top",
+      "Continuous": 1,
+      "NumberOfBuffers": 50,
+      "BufferNumberMode": 0,
+      "acquisitionTimeout": 1000,
+      "ImageType": 0,
+      "Offline": true,
+      "FrontPanelOpen": true,
+      "ColorCameraParam": {
+        "PixelFormat": "BGRA 8 Packed",
+        "GammaEnable": true,
+        "GammaSelector": "sRGB",
+        "BalanceRationSelector": [
+          "Red",
+          "Blue",
+          "Green"
+        ],
+        "BalanceRationRaw": [
+          95,
+          105,
+          115
+        ],
+        "BalanceWhiteAuto": "Off",
+        "LightSourceSelector": "Daylight 5000 Kelvin"
+      },
+      "PartsList": [
+        {
+          "Name": "TT-1478",
+          "ReceiverSequence": [
+            {
+              "ReceiverID": 0,
+              "Index": 0
+            }
+          ],
+          "AOI": [
+            1008,
+            700,
+            208,
+            200
+          ],
+          "filePath": "ZenCAM\\Test Images\\TT-1638\\Top"
+        }
+      ]
+    },
+    {
+      "Id": 1,
+      "SessionID": "Front",
+      "Type": "Front",
+      "Model": "Point grey CM3-U3-50S5M",
+      "InterfaceType": "USB3",
+      "SerialNumber": "xC",
+      "Timeout": 500,
+      "GeneralCameraConfig": [
+        {
+          "ActiveAttribute": "TriggerMode",
+          "Value": "On"
+        },
+        {
+          "ActiveAttribute": "ExposureAuto",
+          "Value": "Off"
+        },
+        {
+          "ActiveAttribute": "ExposureTime",
+          "Value": "60"
+        },
+        {
+          "ActiveAttribute": "GainAuto",
+          "Value": "Off"
+        },
+        {
+          "ActiveAttribute": "Gain",
+          "Value": "12.0092076"
+        },
+        {
+          "ActiveAttribute": "TriggerSource",
+          "Value": "Line 1"
+        }
+      ],
+      "DefaultAOI": [
+        1280,
+        1024,
+        0,
+        0
+      ],
+      "DefaultReceiverSequence": [
+        {
+          "ReceiverID": 0,
+          "Index": 1
+        }
+      ],
+      "DefaultfileName": "ZenCAM\\Diagnostics\\Testimages\\Side",
+      "Continuous": 1,
+      "NumberOfBuffers": 50,
+      "BufferNumberMode": 0,
+      "acquisitionTimeout": 500,
+      "ImageType": 0,
+      "Offline": true,
+      "FrontPanelOpen": true,
+      "ColorCameraParam": {
+        "PixelFormat": "BGRA 8 Packed",
+        "GammaEnable": true,
+        "GammaSelector": "sRGB",
+        "BalanceRationSelector": [
+          "Red",
+          "Blue",
+          "Green"
+        ],
+        "BalanceRationRaw": [
+          95,
+          105,
+          115
+        ],
+        "BalanceWhiteAuto": "Off",
+        "LightSourceSelector": "Daylight 5000 Kelvin"
+      },
+      "PartsList": [
+        {
+          "Name": "TT-1478",
+          "ReceiverSequence": [
+            {
+              "ReceiverID": 0,
+              "Index": 1
+            }
+          ],
+          "AOI": [
+            1152,
+            550,
+            48,
+            250
+          ],
+          "filePath": "ZenCAM\\Test Images\\TT-1638\\Side"
+        }
+      ]
+    },
+    {
+      "Id": 2,
+      "SessionID": "Back",
+      "Type": "Back",
+      "Model": "Point grey CM3-U3-50S5M",
+      "InterfaceType": "USB3",
+      "SerialNumber": "xC",
+      "Timeout": 500,
+      "GeneralCameraConfig": [
+        {
+          "ActiveAttribute": "TriggerMode",
+          "Value": "On"
+        },
+        {
+          "ActiveAttribute": "ExposureAuto",
+          "Value": "Off"
+        },
+        {
+          "ActiveAttribute": "ExposureTime",
+          "Value": "60"
+        },
+        {
+          "ActiveAttribute": "GainAuto",
+          "Value": "Off"
+        },
+        {
+          "ActiveAttribute": "Gain",
+          "Value": "5.00552915"
+        },
+        {
+          "ActiveAttribute": "TriggerSource",
+          "Value": "Line 1"
+        }
+      ],
+      "DefaultAOI": [
+        1280,
+        1024,
+        0
+      ],
+      "DefaultReceiverSequence": [
+        {
+          "ReceiverID": 0,
+          "Index": 2
+        }
+      ],
+      "DefaultfileName": "ZenCAM\\Diagnostics\\Testimages\\Side",
+      "Continuous": 1,
+      "NumberOfBuffers": 50,
+      "BufferNumberMode": 0,
+      "acquisitionTimeout": 500,
+      "ImageType": 0,
+      "Offline": true,
+      "FrontPanelOpen": true,
+      "ColorCameraParam": {
+        "PixelFormat": "BGRA 8 Packed",
+        "GammaEnable": true,
+        "GammaSelector": "sRGB",
+        "BalanceRationSelector": [
+          "Red",
+          "Blue",
+          "Green"
+        ],
+        "BalanceRationRaw": [
+          95,
+          105,
+          115
+        ],
+        "BalanceWhiteAuto": "Off",
+        "LightSourceSelector": "Daylight 5000 Kelvin"
+      },
+      "PartsList": [
+        {
+          "Name": "TT-1478",
+          "ReceiverSequence": [
+            {
+              "ReceiverID": 0,
+              "Index": 2
+            }
+          ],
+          "AOI": [
+            1152,
+            550,
+            64,
+            150
+          ],
+          "filePath": "ZenCAM\\Test Images\\TT-1638\\Side"
+        }
+      ]
+    }
+  ]
+}

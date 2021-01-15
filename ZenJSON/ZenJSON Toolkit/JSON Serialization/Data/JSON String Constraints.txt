@@ -1,0 +1,17 @@
+1) LabVIEW does not support the following datatype:
+	-> Array of arrays (Such types can be considered as array of clusters instead)
+	-> Array of different datatypes(different cluster structures)
+
+2) The Unflatten from JSON JKI does not support the following datatypes:
+	-> 2D arrays
+	-> Timestamp (unless the types and defaults are provided)
+
+3) Perform the following to get Enumerated datatype:
+	-> In JSON String : give the Enum in the Numeric syntax (Eg: "enum": 0)
+	-> In LabVIEW : Give the <b>type</b> input input to the <b>Variants to Data.vi</b> as the required Enum.
+
+4) During the array search with Names,
+For Example : Array [ Name = 2.8DF], the string 2.8DF will be accepted only it is specified within the following set of string characters:
+".!@#$%^&*()_+{}|:;'<>?/," 
+
+"[]\"" are not accepted as it forms a part of the JSON file path syntax.

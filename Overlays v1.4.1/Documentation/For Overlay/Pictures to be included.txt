@@ -1,0 +1,4 @@
+Circularity GD&T in degrees of freedom
+Images at 3 zoom factors
+Type of pointing arrow heads
+Cursor hover highlight

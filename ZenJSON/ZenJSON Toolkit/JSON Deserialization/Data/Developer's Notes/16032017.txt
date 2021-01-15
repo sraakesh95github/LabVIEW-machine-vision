@@ -1,0 +1,3 @@
+1. The output of UNflatten from JSOn is a cluster of cluster, so it was creating a problem when parsing the required cluster out.
+2. The phenomenon will not be visible on the variant indicator. Only the inner cluster will be displaued along with its name and value.
+3. 

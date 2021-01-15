@@ -1,0 +1,16 @@
+1. Default resampling value to be provided in the cconfiguration.
+
+2. Take out the UseDefault boolean.
+
+3. Try with updating the following in the tables :
+i. Column header
+ii. Colummn width
+iii. Column text alignment
+
+3. Avoid duplication of information.
+
+4. mapping Table ID with the template created.
+
+5. Remove the part name from the configuration.
+
+6. Map the table ID with the dynamic inputs and the TEX template. 

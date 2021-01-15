@@ -1,0 +1,28 @@
+<VI_Documentation>
+	<Owning_Library Checkbox = "True">
+		<Owning_library_name>Zen JSON File Handling</Owning_library_name>
+		<Owning_library_path></Owning_library_path>
+	</Owning_Library>
+	<Names_of_required_libraries>JKI JSON</Names_of_required_libraries>
+	<Names_of_platforms>Windows</Names_of_platforms>
+	<VI_Description>This reads the JSON file provided as an input using a path, removes the comments from the JSON file and serializes the JSON string to provide a variant as an output. On the variant a <b>Querying</b> function can be used to obtain a required variant as an output.</VI_Description>
+	<Detailed_help_link>False</Detailed_help_link>
+	<Scrollable_window>False</Scrollable_window>
+	<Details Checkbox = "False">
+		<Details_text>Put details here</Details_text>
+	</Details>
+	<Examples Checkbox = "False">
+		<Path_to_example_image></Path_to_example_image>
+		<Example_VI_name></Example_VI_name>
+		<Example_VI_path></Example_VI_path>	
+	</Examples>
+	<Start_path>VI_folder</Start_path>
+	<Table Checkbox = "False">
+		<Object>
+			</Object>
+		<Link>
+			</Link>
+		<Description>
+			</Description>
+	</Table>	
+</VI_Documentation>

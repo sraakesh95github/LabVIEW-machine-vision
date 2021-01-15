@@ -1,0 +1,96 @@
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<link rel="stylesheet" type="text/css" href="Resources/help.css">
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="HELPer - VI Documentation Toolkit from www.vigods.com">
+</HEAD>
+<BODY>
+<A NAME=""></A><H1></H1>
+
+<!--Owning Palette-->
+
+<p class="Body"><strong>Owning Palette:</strong> <a href="..\..\..\..\..\..\..">Zen JSON File Handling</a></p>
+
+<!--Package-->
+
+<p class="Body"><strong>Requires:</strong> JKI JSON, OpenG Toolkit</p>
+
+<!--Platform-->
+
+<p class="Body"><strong>Platform(s):</strong> Windows</p>
+
+<!-- VI/Function Description -->
+
+<p class="Body">The input array of strings represent the <strong>JSON paths</strong> to specific elements in the JSON string. These elements are accessed through the path input and the output is provided in the form of <strong>VCluster</strong> (the bundled form of the input path elements). <P></P>Furthermore, you may use the <strong>Variant to Data</strong> SubVI to convert back the Variant to the required Cluster type you want.</p>
+
+<!-- Supplemental VI/Function Information -->
+
+
+
+<!-- Link to Additional VI/Function Information and Examples  -->
+
+<p class="Body"><a href="#details">Details</a>&nbsp;&nbsp;<a href="#examples">Example</a></p>
+
+
+<!-- Graphic Reference -->
+
+<p class="Anchor"><IMG SRC="Query Variant.vi.html_Images/Query Variant.vic.png" ALT="" border="1" style="margin: 2px; padding: 5px"></p>
+<hr>
+
+<div id="styleDivScrolling">
+
+<!-- Table of VI/Function Parameters -->
+
+<P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Query Variant.vi.html_Images/cstr.png" ALT="cstr"></P><P></P></TD>
+<P></P><TD><P></P><strong>basePath in</strong> <P>Represents the common elements in the querying path</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Query Variant.vi.html_Images/c1dstr.png" ALT="c1dstr"></P><P></P></TD>
+<P></P><TD><P></P><strong>pathList</strong> <P>Represents the querying of various elements with the help of JSON path in the following format:</P><P></P><P></P><P></P><P><strong>Path Structure :</strong></P><P></P><P></P><P></P><P>	Sample path : $.object.array1[0].array2[Id=1].array3[].Name</P><P></P><P></P><P></P><P>	The above path gives the &quot;Name&quot; key of all the elements pertaining to the array3 (output will be an array of strings).</P><P></P><P>	&lt;br&gt;&lt;br&gt;</P><P></P><P>	The basic syntax goes as following:&lt;br&gt;</P><P></P><P>&lt;	b&gt;$</strong> =&gt; Main Object&lt;br&gt;</P><P></P><P>	<strong>. </strong>=&gt; Seperates the level of the JSON structure/string (used to traverse through the levels of clusters/objects.&lt;br&gt;</P><P></P><P>	<strong>[]</strong> =&gt; To Specify the index of the array from which the data is to be obtained&lt;br&gt;</P><P></P><P>	The indices can be given as follows:&lt;br&gt;</P><P></P><P>	<strong>[index number]</strong> =&gt; gives the particular element corresponding to the index specified&lt;/li&gt;</P><P></P><P>	<strong>[key=value]</strong> =&gt; gives the array that matches the speccified key value pair</P><P></P><P>	<strong>[]</strong> =&gt; gives all the values of the elements that is given to the next level of the array(as given in the above example (array3 Names))</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P><UL><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Query Variant.vi.html_Images/cstr.png" ALT="cstr"></P><P></P></TD>
+<P></P><TD><P></P><strong>String</strong> </TD>
+<P></P></TR><P></P></Table><P></P></UL><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Query Variant.vi.html_Images/cerrcodeclst.png" ALT="cerrcodeclst"></P><P></P></TD>
+<P></P><TD><P></P><strong>error IO</strong> <P><strong>error in</strong> can accept error information wired from VIs previously called. Use this information to decide if any functionality should be bypassed in the event of errors from other VIs.</P><P></P><P></P><P></P><P>Right-click the <strong>error in</strong> control on the front panel and select <strong>Explain Error</strong> or <strong>Explain Warning</strong> from the shortcut menu for more information about the error.</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P><UL><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Query Variant.vi.html_Images/cbool.png" ALT="cbool"></P><P></P></TD>
+<P></P><TD><P></P><strong>status</strong> <P><strong>status</strong> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P><P></P><P></P><P></P><P>Right-click the <strong>error in</strong> control on the front panel and select <strong>Explain Error</strong> or <strong>Explain Warning</strong> from the shortcut menu for more information about the error.</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Query Variant.vi.html_Images/ci32.png" ALT="ci32"></P><P></P></TD>
+<P></P><TD><P></P><strong>code</strong> <P><strong>code</strong> is the error or warning code.</P><P></P><P></P><P></P><P>Right-click the <strong>error in</strong> control on the front panel and select <strong>Explain Error</strong> or <strong>Explain Warning</strong> from the shortcut menu for more information about the error.</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Query Variant.vi.html_Images/cstr.png" ALT="cstr"></P><P></P></TD>
+<P></P><TD><P></P><strong>source</strong> <P><strong>source</strong> describes the origin of the error or warning.</P><P></P><P></P><P></P><P>Right-click the <strong>error in</strong> control on the front panel and select <strong>Explain Error</strong> or <strong>Explain Warning</strong> from the shortcut menu for more information about the error.</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P></UL><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Query Variant.vi.html_Images/cfxdt.png" ALT="cfxdt"></P><P></P></TD>
+<P></P><TD><P></P><strong>VCluster in</strong> <P>VCLuster must be a variant turned cluster, which is usually obtained as the output of JSON Serialization. This project uses the JKI JSON toolkit exclusively, so it is recommended to use the JKI JSON UNflatten from JSON string SubVI. The VCLuster takes the output of the JKI JSON Unflatten SubVI. </P><P></P></TD>
+<P></P></TR><P></P></Table><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Query Variant.vi.html_Images/cbool.png" ALT="cbool"></P><P></P></TD>
+<P></P><TD><P></P><strong>Include 2D Arrays</strong> <P>Flag to include the processing of 2D Arrays at the output. If the input JSON string consists of <strong>Array of Arrays</strong>, this input is recommended to be <strong>True</strong>.&lt;br&gt;By Default, the flag is set to <strong>False</strong>.</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Query Variant.vi.html_Images/cfxdt.png" ALT="cfxdt"></P><P></P></TD>
+<P></P><TD><P></P><strong>Reference Variant</strong> <P>This cluster is used as a <strong>reference</strong> to the processed variant cluster in the <strong>order of elements of the output variant</strong></P><P></P></TD>
+<P></P></TR><P></P></Table><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Query Variant.vi.html_Images/cbool.png" ALT="cbool"></P><P></P></TD>
+<P></P><TD><P></P><strong>Reorder Variant</strong> <P>This features enables the reordering of the <strong>Vcluster in</strong> w.r.t the <strong>Reference Variant</strong> input and provide the output with the datastructure as that of Reference cluster and the data as that of VCluster in. </P><P></P></TD>
+<P></P></TR><P></P></Table><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Query Variant.vi.html_Images/ifxdt.png" ALT="ifxdt"></P><P></P></TD>
+<P></P><TD><P></P><strong>VCluster  out</strong> <P>Represents the output <strong>ordered</strong> and <strong>queried</strong> variant which can further be converted into a LabVIEW cluster.</P><P></P><P><strong>&lt;u&gt;Note:&lt;/u&gt;The output is a variant and to be used for the next method, please use the &quot;Variant to Data&quot; standard VI which is available in the &quot;Cluster, Class &amp; Variant&quot; subpalette.</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Query Variant.vi.html_Images/ierrcodeclst.png" ALT="ierrcodeclst"></P><P></P></TD>
+<P></P><TD><P></P><strong>error out</strong> <P><strong>error out</strong> passes error or warning information out of a VI to be used by other VIs.</P><P></P><P></P><P></P><P>Right-click the <strong>error out</strong> indicator on the front panel and select <strong>Explain Error</strong> or <strong>Explain Warning</strong> from the shortcut menu for more information about the error.</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P><UL><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Query Variant.vi.html_Images/ibool.png" ALT="ibool"></P><P></P></TD>
+<P></P><TD><P></P><strong>status</strong> <P><strong>status</strong> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P><P></P><P></P><P></P><P>Right-click the <strong>error out</strong> indicator on the front panel and select <strong>Explain Error</strong> or <strong>Explain Warning</strong> from the shortcut menu for more information about the error.</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Query Variant.vi.html_Images/ii32.png" ALT="ii32"></P><P></P></TD>
+<P></P><TD><P></P><strong>code</strong> <P><strong>code</strong> is the error or warning code.</P><P></P><P></P><P></P><P>Right-click the <strong>error out</strong> indicator on the front panel and select <strong>Explain Error</strong> or <strong>Explain Warning</strong> from the shortcut menu for more information about the error.</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Query Variant.vi.html_Images/istr.png" ALT="istr"></P><P></P></TD>
+<P></P><TD><P></P><strong>source</strong> <P><strong>source</strong> string describes the origin of the error or warning.</P><P></P><P></P><P></P><P>Right-click the <strong>error out</strong> indicator on the front panel and select <strong>Explain Error</strong> or <strong>Explain Warning</strong> from the shortcut menu for more information about the error.</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P></UL><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Query Variant.vi.html_Images/istr.png" ALT="istr"></P><P></P></TD>
+<P></P><TD><P></P><strong>Error Message</strong> <P>Gives the grammatical or syntax errors that have been encountered in the JSON path List array. The paths where errors have been encountered will be considered as void by default, i.e the output VCluster will conatin the void datatype at places where the required element was not found. It gives the error message in the below format</P><P></P><P></P><P></P><P>Structure :</P><P></P><P><strong>[pathIndex] : stringToBeCheckedForError</strong></P><P></P><P></P><P></P><P>Example : JSON path provided : </P><P></P><P>[0] =&gt; $.cluster.errorArray </P><P></P><P>[1] =&gt; $.errorCluster.array</P><P></P><P></P><P></P><P>Error Message:</P><P></P><P>[0]: errorArray</P><P></P><P>[1] : errorCluster</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P>
+
+<!-- Table of VI Descriptions --></table>
+
+<!-- Additional VI/Function Information -->
+
+<h2><a name="details">Details</a></h2>
+<p class="Body"><P></P><P></P><P></P><strong>JSON String/LabVIEW Constraints</strong><P></P><P></P><ol><P></P><li>LabVIEW does not support the following datatype:<P></P>	<P></P>-> Array of arrays (Such types can be considered as array of clusters instead)<P></P>	<P></P>-> Array of different datatypes(different cluster structures)</li><P></P><P></P><P></P><li>The Unflatten from JSON JKI does not support the following datatypes:<P></P>	<P></P>-> 2D arrays</li><P></P><P></P><P></P><li>Perform the following to get Enumerated datatype:<P></P>	<P></P>-> In JSON String : give the Enum in the Numeric syntax (Eg: "enum": 0)<P></P>	<P></P>-> In LabVIEW : Give the <strong>type</strong> input input to the <strong>Variants to Data.vi</strong> as the required Enum.</li><P></P><P></P><li>The timestamp is converted in the form of string. You can use the <strong>Scan From String.vi</strong> to convert the string into the required timestamp data.<P></P>	</ol><P></P></p>
+
+<!-- Example Information -->
+
+<h2><a name="examples">Example</a></h2>
+<p class="Anchor"><IMG SRC="Query Variant.vi.html_Images/ExampleImage.png"></p>
+<p class="Body">Refer to the <strong>Query Variant-Example</strong> VI in the <span class="Monospace">E:\JSON File Handling Files\JSON File Handler\JSON File Handling(Internal Test) - Copy - Copy\JSON String to Variant\Data\Examples\Test Cases\Query Variants\Multi Path 1.png</span> for an example of using the <strong></strong>.</p>
+
+</div>
+</BODY>
+</HTML>

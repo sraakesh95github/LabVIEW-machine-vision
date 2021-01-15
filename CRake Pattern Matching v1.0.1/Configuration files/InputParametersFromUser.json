@@ -1,0 +1,44 @@
+{
+"CRakeUserParameters" : {
+"Parameter1" : {
+"Label" : "Concentric Rake Step Size",
+"LowerLimit" : 3,
+"UpperLimit" : Inf,
+"StepSize" : 1,
+"Default" : 12
+},
+"Parameter2" : {
+"Label" : "Minimum Edge Strength",
+"LowerLimit" : 30,
+"UpperLimit" : 255,
+"StepSize" : 1,
+"Default" : 90
+},
+"Parameter3" : {
+"Label" : "Rake Interest Width",
+"LowerLimit" : 3,
+"UpperLimit" : 13,
+"StepSize" : 2,
+"Default" : 5
+},
+"Parameter4" : {
+"Label" : "Kernel Size",
+"LowerLimit" : 3,
+"UpperLimit" : 13,
+"StepSize" : 2,
+"Default" : 7
+},
+"Parameter5" : {
+"Label" : "Remove Dust?",
+"Default" : true
+},
+"Parameter6" : {
+"Label" : "Erosion Iteration",
+"LowerLimit" : 1,
+"UpperLimit" : 7,
+"StepSize" : 1,
+"Default" : 2
+}
+}
+"InstructionString" : "Please verify the following before setting the STEP SIZE : 1. Check if each of the feature has atleast 2 rake lines passing through distinct features on the part. The features may include the holes on the gear within the root circle and the teeth outside the root circle"
+}

@@ -1,0 +1,7 @@
+BatchID,	FailID,	InspectionMcID,	Event Name,	Event Time,	Event Reason,	Non Utilised Time
+None,None,None,Start,04-Apr-2019 11:48:51,Machine Start,0
+None,None,GTRON_V1.3_DHOOT_DHOOT-VIP 3_26-09-2018,Ready,04-Apr-2019 11:48:54,Inspection Ready,0
+None,None,GTRON_V1.3_DHOOT_DHOOT-VIP 3_26-09-2018,Select,04-Apr-2019 11:49:30,Part Select,36
+Batch_1_DAUR_STM_1_70101001-00_3637203572,None,GTRON_V1.3_DHOOT_DHOOT-VIP 3_26-09-2018,BatchStart,04-Apr-2019 11:49:32,Batch Start,2
+Batch_1_DAUR_STM_1_70101001-00_3637203572,None,GTRON_V1.3_DHOOT_DHOOT-VIP 3_26-09-2018,Stop,04-Apr-2019 11:49:46,Not Listed: Stop,0
+None,None,GTRON_V1.3_DHOOT_DHOOT-VIP 3_26-09-2018,Exit,04-Apr-2019 11:49:50,Software Exit,4

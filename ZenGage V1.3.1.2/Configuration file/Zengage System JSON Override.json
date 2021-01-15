@@ -1,0 +1,11 @@
+{
+    "SystemParameters":{
+        "SystemName":"GTRON",
+        "SystemID":"TT-VASAI-MC5",
+        "SoftwareFeatures":{
+            "DoorPokayokeEnable":false,
+            "FailCountDisplayEnable":true,
+            "FailCountReversalEnable":false
+        }
+    }
+}

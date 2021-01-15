@@ -1,0 +1,8 @@
+{
+"Name": "S.Raakesh",
+"Dpt": "System Software",
+"2DArray": [
+[1,2,3],
+[3,4,5]
+],
+}

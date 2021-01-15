@@ -1,0 +1,5 @@
+1) Clusters cannot be input to SuBVIs.
+2) Convert Numeric Variants to Strings (Used in the checking of Variants to check the index). - Temporarily works for Numeric and Strings
+3) Both of the following cases don't work :
+a. array in the first level of the main VCluster
+b. array in the subsequent levels of the main VCluster

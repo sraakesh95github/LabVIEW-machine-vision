@@ -1,0 +1,8 @@
+Version: 1.1
+Release Date: 02/08/2018
+
+Update: 
+1. Added Message in "User name" Contol as "Enter user name Here"
+2. Key focus will also clear the Message
+3. Password Hide and Show feature added
+4. Wrong UserName/ Password Indicated by making Lable to RED 

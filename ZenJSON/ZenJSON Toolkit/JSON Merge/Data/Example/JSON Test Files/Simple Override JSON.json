@@ -1,0 +1,19 @@
+{
+  "Name": "A",
+  "Dept": "Alpha",
+  "Array": [
+    1,
+    2,
+    4
+  ],
+  "ArrayOfClusters": [
+    {
+      "Name": "A1",
+      "Dept": "Alpha2"
+    },
+    {
+      "Name": "B1",
+      "Dept": "Beta1"
+    }
+  ]
+}

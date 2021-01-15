@@ -1,0 +1,28 @@
+<VI_Documentation>
+	<Owning_Library Checkbox = "True">
+		<Owning_library_name>Zen JSON File Handling</Owning_library_name>
+		<Owning_library_path></Owning_library_path>
+	</Owning_Library>
+	<Names_of_required_libraries>OpenG Toolkit</Names_of_required_libraries>
+	<Names_of_platforms>Windows</Names_of_platforms>
+	<VI_Description>This VI replaces the element specified by the <b>JSON Path Array</b> with the <b>VCLuster Data in</b> in the <b>Override JSON Variant</b>. </VI_Description>
+	<Detailed_help_link>False</Detailed_help_link>
+	<Scrollable_window>False</Scrollable_window>
+	<Details Checkbox = "False">
+		<Details_text>Put details here</Details_text>
+	</Details>
+	<Examples Checkbox = "True">
+		<Path_to_example_image>E:\JSON File Handling Files\JSON File Handler\JSON File Handling(Internal Test) - Copy - Copy\JSON Write Variant to File\data\Testing\Test Cases_Write to variant\Indexing with special characters.png</Path_to_example_image>
+		<Example_VI_name>Modify JSON-Example</Example_VI_name>
+		<Example_VI_path>E:\JSON File Handling Files\JSON File Handler\JSON File Handling(Internal Test) - Copy - Copy\JSON Write Variant to File\data\Example\Modify JSON-Example.vi</Example_VI_path>	
+	</Examples>
+	<Start_path>VI_folder</Start_path>
+	<Table Checkbox = "False">
+		<Object>
+			</Object>
+		<Link>
+			</Link>
+		<Description>
+			</Description>
+	</Table>	
+</VI_Documentation>

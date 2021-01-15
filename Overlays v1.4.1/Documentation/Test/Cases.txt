@@ -1,0 +1,5 @@
+1. Accidental moving of overlays beyond the canvas
+2. Multipart
+3. OVerlapping of overlays
+4. See the working of Keyence
+5. 

@@ -1,0 +1,48 @@
+Module ZenCAM
+Version 1.2
+Release Date 28.11.2017 - non tested
+
+1. Ensure that test images are added inside the ZenCAM folder.
+
+2. update the following JSON Keys
+
+CameraControllerParameters :
+
+1. "FrontPanelOpen": false,
+
+To be added after the key "ID" 
+FrontpanelOpen is the front panel status. 
+If "true" is given, front panel of Camera Controller will be opened and if "false" is given front panel will remain closed. 
+This should be used incase of debugging. 
+Default value : "false"
+Front panel will show Rack ID, Global Trigger Count, Error Code
+
+ImageAcquisitionParameters :
+
+Following key needs to be added for all the available/Configured Cameras
+
+To be added after "DefaultAOI".
+
+1.    "DefaultReceiverSequence": [
+            {
+              "ReceiverID": 0,
+              "Index": 0
+            }
+          ],  
+
+"ReceiverID" should be specified as 0 and "Index" can be 0/1/2/n based on the order that the reciever requires. 
+Default Value : Index 
+                       0 for Id 0,
+                       1 for Id 1,
+                       2 for Id 2 and so on.
+
+2.  "FrontPanelOpen": false,  
+
+To be added after the key "Offline".
+FrontpanelOpen is the front panel status.
+If "true" is given front panel of Image Acquisition will be opened and if "false" is given frontpanel will remain closed.
+This should be used incase of debugging.  
+Default Value: "false".
+Frontpanel will show Camera ID, Image name, Image trigger Count, Buffer Number and Image Buffer Count.
+
+

@@ -1,0 +1,4 @@
+PartName,	BatchID,	OperatorName,	Date,	Time,	L,	H,	W,	W1,	C1,	C2,	I1,	I2,	W3,	Result
+,	,	,	,	,	2.1500-2.350,	1.4000-1.800,	2.9000-3.100,	4.6000-5.000,	2.5000-2.900,	2.6000-3.200,	4.6000-5.000,	3.8000-4.400,	2.6000-3.000,	
+TT-1478,Batch_2_TVAS_STM_1_TT-1478_3630565627,qweet,17-Jan-2019,15:57,Disabled,1.545,2.996,4.776,Disabled,Disabled,Disabled,Disabled,Disabled,Pass
+TT-1478,Batch_2_TVAS_STM_1_TT-1478_3630565627,qweet,17-Jan-2019,15:57,Disabled,1.581,3.014,4.798,Disabled,Disabled,Disabled,Disabled,Disabled,Pass

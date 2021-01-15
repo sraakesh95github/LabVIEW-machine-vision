@@ -1,0 +1,6 @@
+1. The output cluster needs to be wired dynamically. The data needs to be known anyway.
+2. The datatype of the input to the next SubVI needs to be known.
+3. The datatype given as an input to the "Variant to Data" needs to be given as a typedef so that for any change in the datatype, it needs to be changed only at the typedef.
+4. During the use of the "String to Cluster / LabVIEW Datatype" use the have only one element for all the array to avoid the following:
+a. Change of datastructure for a particular element of an array and leaving out the remaining
+b. Speed of the creation of the main cluster

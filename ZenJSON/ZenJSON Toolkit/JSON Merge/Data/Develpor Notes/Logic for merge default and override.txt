@@ -1,0 +1,51 @@
+1. Let 
+i = Number of iterations for the number of elements in the Override JSON.
+j = Number of iterations for the number of elements in the Default JSON.
+
+2. Init i and j to 0.
+
+3. Get ith element from Override JSON
+
+4. Get jth element from Default JSON
+
+5. If ith element of Override JSON equals jth element of Default JSON.
+
+6. Find the datatype of the JSON element
+
+i. If primitive, replace the override element with the default element.
+ii. If cluster, get into the next cluster level and perform the same recursive function.
+iii. If Array of clusters,
+
+iii. a. Index the elements of the Override variant array out as mth element.
+     b. With the inputs of array of "Check keys", check which of the keys is present in the clsuter elements
+     c. Index the elements of the Default variant array out as the nth element.
+     
+     If mth element of Override array is equal to the jth element of the Default array
+     
+     -> Perform the recursive function
+     
+     Else if unequal
+     
+     -> If the end of the Default index has been reached
+        -> Append the cluster at the end of the Default JSOn to form the merged JSON.
+        -> Increment the value of m
+     -> Else if not reached,
+        -> Increment the value of n and repeat from step (6.iii.a)
+
+7. Else if ith element not equal to jth element of Default JSON,
+
+8. If end of Default elements reached,
+
+9. Append the element (not found in Default, but found in Override to the Default JSON to form the merged cluster.
+
+10. Increment the value of i by 1 and repeat from step (3)
+
+11. Else if end of Default elements is not reached,
+
+12. Increment the value of j by 1.
+
+13. If end of Override JSON not reached,
+
+14. Repeat from step (3)
+
+15. Else stop

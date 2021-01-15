@@ -1,0 +1,15 @@
+1. If (Element with "Insert key name" is found) or (Functionality is replace)
+  1.1 If (Overwrite flag is set to true)
+    -> Set Skip object verification to "true"
+  -> Else
+    -> If the element is a cluster?
+      -> If the cluster elements of element to be processed and that of parent data are equal
+         -> Set the "SKIP EQULAITY CHECK" to be "TRUE"
+      -> Else if not a cluster
+         -> Set the "SKIP EQULAITY CHECK" to be "FALSE"
+    -> Else if the element is a primitive datatype
+      -> If the datatypes are equaL
+         -> Set the "SKIP EQULAITY CHECK" to be "TRUE"
+      -> Else if not equal
+         -> Set the "SKIP EQULAITY CHECK" to be "FALSE"
+2. Else If (Is "Array of clusters") and (New element not found)

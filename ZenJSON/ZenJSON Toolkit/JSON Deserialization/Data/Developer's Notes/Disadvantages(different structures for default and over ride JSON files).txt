@@ -1,0 +1,5 @@
+1) Seperate pathLists for Default and the Override files.
+2) Can access only one level of an object using the Variant attribute.
+3) Difficult to redefine the override file from the default file, if both have different structure.
+4) Complex to compound the data from the Default and the Override files, to get the required output data.
+5) 

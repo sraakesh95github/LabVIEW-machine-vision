@@ -1,0 +1,543 @@
+{
+  "MachineInterfaceParameters": {
+    "SpecificationVersion": "V1.3",
+    "CompatibleSoftwareVersions": [
+      "a1.0"
+    ],
+    "FrontPanelOpen": true,
+    "DelayValuesInms": {
+      "TimingUnitSetup": 2000,
+      "StrobingForCamOpticsDiagnostics": 100,
+      "TowerLampDiagnostics": 1000,
+      "Run": 50,
+      "DisableSensors": 250
+    },
+    "HardwareConfigurationParameters": {
+      "BaudRate": 9600
+    },
+    "MachineInterfaceRecipeOpcodes": {
+      "DeviceReadiness": {
+        "Ping": [
+          "0A0F"
+        ],
+        "PingResponse": [
+          "11YES11"
+        ]
+      },
+      "Initialization": [
+        {
+          "Clear": [
+            ""
+          ]
+        },
+        {
+          "Debug": [
+            "0P0F"
+          ]
+        },
+        {
+          "PinModeConfiguration": [
+            "0O13s1F",
+            "0O36s1F",
+            "0O37s1F",
+            "0O38s1F",
+            "0O41s1F",
+            "0O42s1F",
+            "0O43s1F",
+            "0O5s1F",
+            "0O4s1F",
+            "0O49s1F",
+            "0O26s0F",
+            "0O47s1F",
+            "0O7s1F",
+            "0O6s1F",
+            "0O8s1F",
+            "0O9s1F",
+            "0O48s1F",
+            "0O40s1F",
+            "0O45s1F",
+            "0O30s0F",
+            "0O19s0F",
+            "0O18s0F",
+            "0O27s0F",
+            "0O24s0F",
+            "0O23s0F",
+            "0O22s0F",
+            "0O2s0F",
+            "0J42F",
+            "0J41F",
+            "0J7F",
+            "0J47F",
+            "0J48F",
+            "0J49F",
+            "0J40F",
+            "0J6F",
+            "0J45F",
+            "0I4F",
+            "0O10s0F",
+            "0O11s0F",
+            "0O31s0F",
+            "0O44s1F",
+            "0O39s1F"
+          ]
+        },
+        {
+          "EventSequenceOpcodes": [
+            "1U1s48O1s2s5F",
+            "1U2s36O1s3s300F",
+            "1U3s36O0s4s150F",
+            "1U4s48O0s0s0F",
+            "1U5s49O1s6s5F",
+            "1U6s38O1s7s30F",
+            "1U7s38O0s8s160F",
+            "1U8s49O0s0s0F",
+            "1U9s47O1s10s5F",
+            "1U10s37O1s11s30F",
+            "1U11s37O0s12s300F",
+            "1U12s47O0s0s0F",
+            "1U13s48O1s14s5F",
+            "1U14s36O1s15s30F",
+            "1U15s36O0s16s90F",
+            "1U16s48O0s17s0F",
+            "1U17s49O1s18s5F",
+            "1U18s38O1s19s30F",
+            "1U19s38O0s20s90F",
+            "1U20s49O0s21s0F",
+            "1U21s47O1s22s5F",
+            "1U22s37O1s23s30F",
+            "1U23s37O0s24s90F",
+            "1U24s47O0s0s0F",
+            "1U25s44O1s26s450F",
+            "1U26s44O0s0s450F",
+            "1U27s39O1s28s2000F",
+            "1U28s39O0s0s2000F",
+            "1U29P05O1s30s350F",
+            "1U30s05O0s0s350F",
+            "1Y1s6s1s1s2F",
+            "1Y2s30s0D100000s1P13F",
+            "1Y3A19B0E100000C1IF4F",
+            "1Y4A18B0E100000C1IF5F",
+            "1Y5A27B0D50000C1P16F",
+            "1Y6A22B0D50000C1P17F",
+            "1Y7A23B0D50000C1P18F",
+            "1Y8s8s1s0s9F",
+            "1Y9s9s1s0s10F",
+            "1Y10s7s1s0s13F",
+            "1Y11s41s1s0s14F",
+            "1Y12s42s1s0s15F",
+            "1Y13s6s1s0s0F",
+            "1Y14s7s1s0s15F",
+            "1Y15s41s1s0s16F",
+            "1Y16s42s1s1s17F",
+            "1Y17s6s1s0s0F",
+            "1Y18s7s1s0s19F",
+            "1Y19s41s1s1s20F",
+            "1Y20s42s1s0s21F",
+            "1Y21s6s1s0s22F",
+            "1Y22s30s0E50000s1P023F",
+            "1Y23s19s0D100000s1IF24F",
+            "1Y24s18s0E100000s1IF25F",
+            "1Y25s27s0D50000s1P126F",
+            "1Y26s22s0D50000s1P127F",
+            "1Y27s23s0D50000s1P128F",
+            "1Y28s8s1s1D29F",
+            "1Y29s9s1s1D0F",
+            "1Y30s7s1s1s31F",
+            "1Y31s41s1s0s32F",
+            "1Y32s42s1s0s33F",
+            "1Y33s6s1s1s34F",
+            "1Y34s30s0D100000s1PO35F",
+            "1Y35s19s0D100000s1IF36F",
+            "1Y36s18s0E100000s1IF37F",
+            "1Y37s27s0E50000s1P038F",
+            "1Y38s22s0D50000s1P139F",
+            "1Y39s8s1s1s40F",
+            "1Y40s9s1s1s0F",
+            "1Y41s6s1s0D42F",
+            "1Y42s27s0D50000s1P143F",
+            "1Y43s30s0E100000s1P00F",
+            "1Y44s6s1s0D45F",
+            "1Y45s27s0D50000s1P146F",
+            "1Y46s30s0D100000s1P00F",
+            "1Y47s30s0D100000s1P048F",
+            "1Y48s19s0D100000s1IF49F",
+            "1Y49s22s0D50000s1P150F",
+            "1Y50s23s0D50000s1P151F",
+            "1Y51s18s0D100000s1IF52F",
+            "1Y52s27s0D50000s1P10F"
+          ]
+        },
+        {
+          "LogicalOperations": [
+            ""
+          ]
+        },
+        {
+          "ConditionalOperations": [
+            ""
+          ]
+        },
+        {
+          "InterruptTriggerBindingOpcodes": [
+            "1V3s1F",
+            "1V7s5F",
+            "1V10s9F",
+            "1V14s13F",
+            "1V15s25F",
+            "1V16s27F",
+            "1V17s29F",
+            "1V50s25F",
+            "1V51s29F",
+            "1V20s29F",
+            "1V22s1000F",
+            "1V23s1000F",
+            "1V27s1000F",
+            "1V18s1000F",
+            "1V19s1000F",
+            "1V30s1000F",
+            "1V21s1000F"
+          ]
+        },
+        {
+          "PinInformation": [
+            "0C8F",
+            "0F9F",
+            "0K10F",
+            "0J5F"
+          ]
+        }
+      ],
+      "MachinePowerStatus": {
+        "MachinePowerStatusCheck": [
+          "0N24F"
+        ],
+        "MachinePowerStatusResponse": [
+          "1124111",
+          "1124011"
+        ]
+      },
+      "DoorLockStatus": {
+        "DoorLockStatusCheck": [
+          "0N21F"
+        ],
+        "DoorLockStatusResponse": [
+          "1121011",
+          "1121111"
+        ],
+        "Enable": [
+          "0T21D100000S1IRF"
+        ],
+        "Disable": [
+          "0S21IF"
+        ]
+      },
+      "OpenLimitSwitchStatus": [
+        {
+          "LimitSwitchStatusCheck": [
+            "0N23F"
+          ],
+          "LimitSwitchStatusResponse": [
+            "1123011",
+            "1123111"
+          ]
+        }
+      ],
+      "MotorDiagnostics": [
+        {
+          "GuideOpen": [
+            "0I39F",
+            "0T23D50000S1P1F",
+            "1W50000F",
+            "0R50s0F",
+            "0H23s1F"
+          ],
+          "GuideOpenResponse": [
+            "11P2311",
+            "11W2311"
+          ],
+          "GuideClose": [
+            "0J39F",
+            "0T22D50000S1P1F",
+            "1W50000F",
+            "0R50S0F",
+            "0H22S1F"
+          ],
+          "GuideCloseResponse": [
+            "11P2211",
+            "11W2211"
+          ],
+          "RotateReelerMotor": [
+            "1W3000F",
+            "0R51S0F",
+            "0H0S0F"
+          ]
+        }
+      ],
+      "HardwareButtonDiagnostics": {
+        "Run": [
+          "0T30D50000S1P0F",
+          "0S30PF"
+        ],
+        "Pause": [
+          "0T19D100000S1IFF",
+          "0S19IF"
+        ],
+        "Stop": [
+          "0T18D35000S1IFF",
+          "0S18IF"
+        ],
+        "BuzzerOff": [
+          "0T27D50000S1P0F",
+          "0S27PF"
+        ]
+      },
+      "TriggerLightCameraSequence": [
+        {
+          "Name": "LightCameraSequence1",
+          "On": [
+            "0R1s1F"
+          ],
+          "Off": [
+            "0J48F"
+          ]
+        },
+        {
+          "Name": "LightCameraSequence2",
+          "On": [
+            "0R5s1F"
+          ],
+          "Off": [
+            "0J49F"
+          ]
+        },
+        {
+          "Name": "LightCameraSequence3",
+          "On": [
+            "0R9s1F"
+          ],
+          "Off": [
+            "0J47F"
+          ]
+        },
+        {
+          "Name": "AllLightCameraSequence",
+          "On": [
+            "0R13s1F"
+          ],
+          "Off": [
+            "0J47F"
+          ]
+        }
+      ],
+      "SensorDiagnostics": [
+        {
+          "Name": "Sensor1",
+          "Opcodes": [
+            "0T2s50000s1IFF",
+            "0I43F",
+            "1V2s13F",
+            "0G51F"
+          ]
+        }
+      ],
+      "TowerLampDiagnostics": {
+        "RedLamp": [
+          "0I7F",
+          "0J7F"
+        ],
+        "YellowLamp": [
+          "0I41F",
+          "0J41F"
+        ],
+        "GreenLamp": [
+          "0I42F",
+          "0J42F"
+        ],
+        "Buzzer": [
+          "0I6F",
+          "0J6F"
+        ]
+      },
+      "Select": [
+        {
+          "HardwareButtonStatus": [
+            "0T30D50000S1P0F",
+            "0S27PF",
+            "0S18IF",
+            "0S19IF",
+            "0S22PF",
+            "0S23PF"
+          ]
+        },
+        {
+          "SwitchOnYellow": [
+            "0I41F"
+          ]
+        },
+        {
+          "StampingWindingControl": [
+            "0J8F",
+            "0J9F"
+          ]
+        }
+      ],
+      "Run": {
+        "HardwareButtonStatus": [
+          "0Z1F"
+        ],
+        "Pass": {
+          "TowerLampStatus": [
+            "0Z14F"
+          ]
+        }
+      },
+      "Pause": {
+        "PauseButtonPress": [
+          {
+            "TowerLampStatus": [
+              ""
+            ]
+          },
+          {
+            "HardwareButtonStatus": [
+              "0Z18F"
+            ]
+          },
+          {
+            "StampingWindingControl": [
+              ""
+            ]
+          }
+        ],
+        "Fail": [
+          {
+            "TowerLampStatus": [
+              ""
+            ]
+          },
+          {
+            "HardwareButtonStatus": [
+              "0Z30F"
+            ]
+          },
+          {
+            "StampingWindingControl": [
+              ""
+            ]
+          }
+        ],
+        "BuzzerOffButtonPress": [
+          "0Z44F",
+          "0Z41F"
+        ]
+      },
+      "Exit": {
+        "Shutdown": [
+          "0D31s1F",
+          "0T31D50000S1P0F",
+          "0E45F"
+        ]
+      },
+      "DHBLS": [
+        {
+          "DisableHardwareButtons": [
+            "0S30PF",
+            "0S20IF",
+            "0S21IF",
+            "0S27PF",
+            "0S21IF"
+          ]
+        },
+        {
+          "TowerLampsOff": [
+            "0J7F",
+            "0J41F",
+            "0J42F",
+            "0J6F"
+          ]
+        },
+        {
+          "PowerOffSensors": [
+            "0B51F",
+            "0J43F"
+          ]
+        },
+        {
+          "DisableSensors": [
+            ""
+          ]
+        },
+        {
+          "StampingWindingControl": [
+            "0I8F",
+            "0I9F"
+          ]
+        }
+      ],
+      "PartsList": [
+        {
+          "Name": "TT-1478",
+          "RackDependentOpcodes": [
+            {
+              "MotorStepsForReadyToInsert": [
+                "0J39F",
+                "1W3250F",
+                "0R50S0F",
+                "0H0S0F"
+              ],
+              "MotorStepsForReadyToRun": [
+                "0J39F",
+                "1W300F",
+                "0R50S0F",
+                "0H0S0F"
+              ],
+              "SetIndex": [
+                "1V2S13F"
+              ],
+              "EnableSensor": [
+                "0I43F",
+                "0T2D50000S1IFF"
+              ],
+              "PowerOnSensor": [
+                "0I43F",
+                "0G51F"
+              ],
+              "DisableSensor": [
+                ""
+              ],
+              "StartReelerMotor": [
+                ""
+              ],
+              "StopReelerMotor": [
+                "0B51F"
+              ]
+            }
+          ]
+        }
+      ],
+      "HardwareButtonPressed": {
+        "RunButtonPress": [
+          "11P3011"
+        ],
+        "PauseButtonPress": [
+          "11P1911"
+        ],
+        "StopButtonPress": [
+          "11P1811"
+        ],
+        "BuzzerOffButtonPress": [
+          "11P2711"
+        ],
+        "DoorUnlock": [
+          "11P2111"
+        ]
+      },
+      "ReadyPositionReached": [
+        "11P0011"
+      ],
+      "IncorrectOpcode": [
+        "11FLS11"
+      ]
+    }
+  }
+}

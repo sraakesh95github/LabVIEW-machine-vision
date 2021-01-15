@@ -1,0 +1,81 @@
+<html>
+<head>
+<title>
+Get JSON elements help
+</title>
+</head>
+<body>
+<b><u>Inputs :</u></b>
+<br>
+<br>
+<b>1) VCluster (LabVIEW Datatype) - required</b>
+<br>
+VCLuster must be a variant turned cluster, which is usually obtained as the output of JSON Serialization. This project uses the JKI JSON toolkit exclusively, so it is recommended to use the JKI JSON UNflatten from JSON string SubVI. The VCLuster takes the output of the JKI JSON Unflatten SubVI.
+<br><br>
+<br>
+<b>2) Base Path (String) - recommended</b>
+<br>Get the base path for the input(the path that is common to all the required elements). This path becomes the general input for the SubVI.
+<br><br>
+<b>3) JSON Path List (Array) - required:</b>
+<br>
+	The required element path from the main JSON string excluding the base path. This path is <b>appended to the base path</b> to make it complete. The array of paths represent seperate elements of the JSON string. At the end all the elements are combined to form a single VCluster. The VCluster can further be converted to the required cluster output using the <b>Variant to Data</b> SubVI. Connect the required cluster structure as input to the Variant to Data SubVI.
+	<br><br>
+	<b>Path Structure :</b>
+	<br><br>
+	Sample path : $.object.array1[0].array2[Id=1].array3[].Name
+	<br><br>
+	The above path gives the "Name" key of all the elements pertaining to the array3 (output will be an array of strings).
+	<br><br>
+	The basic syntax goes as following:<br>
+	$ => Main Object<br>
+	. => Seperates the level of the JSON structure/string (used to traverse through the levels of clusters/objects.<br>
+	[] => To Specify the index of the array from which the data is to be obtained<br>
+	The indices can be given as follows:<br>
+	<ol><li>[index number] => gives the particular element corresponding to the index specified</li>
+	<li>[key=value] => gives the array that matches the speccified key value pair</li>
+	<li> [] => gives all the values of the elements that is given to the next level of the array(as given in the above example (array3 Names))</li>
+	</ol>
+<br>
+<br>
+<b>4) Error In - optional </b>
+<br><br>
+	Describes error conditions that occur before this node runs. This input provides standard error in functionality. 
+<br><br>
+<u><b>Outputs :</u></b>
+<br><br>
+<b>1) VCluster (Variant Cluster)</b>
+<br>
+	Gives the combination of elements given as the array of paths with each part pertaining to a particular element in the cluster.
+<br><br>
+<br>
+<b>2) Error Message</b>
+<br>Gives the grammatical or syntax errors that have been encountered in the JSON path List array. The paths where errors have been encountered will be considered as void by default, i.e the output VCluster will conatin the void datatype at places where the required element was not found. It gives the error message in the below format<br><br>
+[pathIndex] : stringToBeCheckedForError<br><br>
+Example : JSON path provided :<br> [0] => $.cluster.errorArray<br>[1] => $.errorCluster.array<br><br>Error Message:<br>[0]:errorArray<br>[1]:errorCluster 
+<br><br>
+<b>3) Error Out :</b>
+	Contains error information. This output provides standard error out functionality
+<br><br><br>
+<b>JSON String/LabVIEW Constraints</b><br><br><ol>
+<li>LabVIEW does not support the following datatype:
+	<br>-> Array of arrays (Such types can be considered as array of clusters instead)
+	<br>-> Array of different datatypes(different cluster structures)</li>
+<br>
+<li>The Unflatten from JSON JKI does not support the following datatypes:
+	<br>-> 2D arrays</li>
+<br>
+<li>Perform the following to get Enumerated datatype:
+	<br>-> In JSON String : give the Enum in the Numeric syntax (Eg: "enum": 0)
+	<br>-> In LabVIEW : Give the <b>type</b> input input to the <b>Variants to Data.vi</b> as the required Enum.</li><br>
+<li>The timestamp is converted in the form of string. You can use the <b>Scan From String.vi</b> to convert the string into the required timestamp data.
+	</ol>
+<br><br>
+</body>
+</html>
+	
+	
+	
+
+
+
+

@@ -1,0 +1,5 @@
+UI Corrections:
+
+1. During inspection in edit diagnostics,Part should already come as selected in part select drop down box.
+2. User is able to type any event reason other than the predefined event reasons.
+  

@@ -1,0 +1,23 @@
+Debugged to fid the errors in the following :
+
+Test Cases :
+1. ZenGage Default JSON and AlgoParameters Override JSON
+2. ZenGage Default JSON and RacckController Override JSON
+
+Changes in the code :
+1. Change the conversion of the Array of VData to the following process due to the improper type descriptor passed to the "Set Cluster Element by Name". The following process is followed now :
+a. convert the array of VData to LVVariant
+b. Set the attribute and hence the key to the variant obtained at the output.
+c. Set the output of b as an input to the "Set Cluster Element by Name"
+
+2. Included the "Array element check keys" as an input which was previously a constant as an array of the following strings:
+a. Name
+b. ID
+c. name
+d. id
+
+For Example use the "Default JSON ZenGage Test" as the default fiel and the "Override JSON ZenGage Test" as the override file in the path "E:\JSON File Handling\Path to VCluster (Default and Override)\Report". The part 162 measurements alone is represented correctly in both the override and the default JSON files.
+
+
+These string are checked if an array is encountered to check any array element in the override matches with that of the Default.
+

@@ -1,0 +1,3 @@
+Help Document :
+Alphanumeric values such as ".!@#$%^&*()_+{}|:;'<>?/," are accepted whereas the characters such as
+"[]\"" are not accepted 

@@ -1,0 +1,34 @@
+<VI_Documentation>
+	<Owning_Library Checkbox = "True">
+		<Owning_library_name>Zen JSON File Handling</Owning_library_name>
+		<Owning_library_path></Owning_library_path>
+	</Owning_Library>
+	<Names_of_required_libraries>OpenG Toolkit, JKI JSON</Names_of_required_libraries>
+	<Names_of_platforms>Windows</Names_of_platforms>
+	<VI_Description>Takes the two types of VClusters (A Variant which has the meta data as a cluster) as input. The two VClusters being <b>Override</b> and <b>Default</b> obtained from the two JSON files. The two VCluters are overridden to provide the output VCluster with the <b>merger of the two JSONs</b>.
+The <b>Default</b> is assumed to contain the basic structure of the output VCluster which contains all the basic key - value pair whose values don't usually change.
+The <b>Override</b> is assumed to contain the data that needs to be updated during the course of the main program and it's values may be over-written again and again during program execution.
+The output <b>Merged VCluster</b> contains all the required keys and resembles the structure of the main JSON. Any key can be obtained by specifying the path for the required key. </VI_Description>
+	<Detailed_help_link>False</Detailed_help_link>
+	<Scrollable_window>False</Scrollable_window>
+	<Details Checkbox = "False">
+		<Details_text>Takes the two types of VClusters (A Variant which has the meta data as a cluster) as input. The two VClusters being <b>Override</b> and <b>Default</b> obtained from the two JSON files. The two VCluters are overridden to provide the output VCluster with the <b>merger of the two JSONs</b>.
+The <b>Default</b> is assumed to contain the basic structure of the output VCluster which contains all the basic key - value pair whose values don't usually change.
+The <b>Override</b> is assumed to contain the data that needs to be updated during the course of the main program and it's values may be over-written again and again during program execution.
+The output <b>Merged VCluster</b> contains all the required keys and resembles the structure of the main JSON. Any key can be obtained by specifying the path for the required key. </Details_text>
+	</Details>
+	<Examples Checkbox = "True">
+		<Path_to_example_image>E:\JSON File Handling Files\JSON File Handler\JSON File Handling(Internal Test) - Copy - Copy\JSON Default Override Merge\Data\Test Cases\Simple JSON.png</Path_to_example_image>
+		<Example_VI_name>Merge Default and Override-Example</Example_VI_name>
+		<Example_VI_path>E:\JSON File Handling Files\JSON File Handler\JSON File Handling(Internal Test) - Copy - Copy\JSON Default Override Merge\Data\Example\Merge Default and Override-Example.vi</Example_VI_path>	
+	</Examples>
+	<Start_path>VI_folder</Start_path>
+	<Table Checkbox = "False">
+		<Object>
+			</Object>
+		<Link>
+			</Link>
+		<Description>
+			</Description>
+	</Table>	
+</VI_Documentation>

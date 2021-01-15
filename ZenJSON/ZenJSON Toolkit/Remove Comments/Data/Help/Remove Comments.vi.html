@@ -1,0 +1,84 @@
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<link rel="stylesheet" type="text/css" href="Resources/help.css">
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="VI Gods Documentation Toolkit from www.vigods.com">
+</HEAD>
+<BODY>
+<div id="notScrollable">
+<A NAME=""></A><H1></H1>
+
+<!--Owning Palette-->
+
+<p class="Body"><strong>Owning Palette:</strong> <a href="..\..\..\..\..\..\..">JSON File Handling</a></p>
+
+<!--Package-->
+
+<p class="Body"><strong>Requires:</strong> </p>
+
+<!--Platform-->
+
+<p class="Body"><strong>Platform(s):</strong> Windows</p>
+
+<!-- VI/Function Description -->
+
+<p class="Body">This VI removes comments from the JSON that has just been read from a JSON file.This step is mandatory before parsing out the data to the next step. <P></P>It is capable of removing <strong>single line ( // // ) </strong>and<strong> multiple line (/* */)</strong>comments from the input JSON String.</p>
+
+<!-- Supplemental VI/Function Information -->
+
+
+
+<!-- Link to Additional VI/Function Information and Examples  -->
+
+<p class="Body">&nbsp;&nbsp;<a href="#examples">Example</a></p>
+
+
+<!-- Graphic Reference -->
+
+<p class="Anchor"><IMG SRC="Remove Comments.vi.html_Images/Remove Comments.vic.png" ALT="" border="1" style="margin: 2px; padding: 5px"></p>
+<hr>
+</div>
+
+<div id="styleDivScrolling" style="overflow: auto;>
+
+<!-- Table of VI/Function Parameters -->
+
+<P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Remove Comments.vi.html_Images/cstr.png" ALT="cstr"></P><P></P></TD>
+<P></P><TD><P></P><strong>input string</strong> <P>Input JSON string <strong>with</strong> comments</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Remove Comments.vi.html_Images/cerrcodeclst.png" ALT="cerrcodeclst"></P><P></P></TD>
+<P></P><TD><P></P><strong>error in (no error)</strong> <P><strong>error in</strong> can accept error information wired from VIs previously called. Use this information to decide if any functionality should be bypassed in the event of errors from other VIs.</P><P></P><P></P><P></P><P>Right-click the <strong>error in</strong> control on the front panel and select <strong>Explain Error</strong> or <strong>Explain Warning</strong> from the shortcut menu for more information about the error. </P><P></P></TD>
+<P></P></TR><P></P></Table><P></P><UL><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Remove Comments.vi.html_Images/cbool.png" ALT="cbool"></P><P></P></TD>
+<P></P><TD><P></P><strong>status</strong> <P><strong>status</strong> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P><P></P><P></P><P></P><P>Right-click the <strong>error in</strong> control on the front panel and select <strong>Explain Error</strong> or <strong>Explain Warning</strong> from the shortcut menu for more information about the error.</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Remove Comments.vi.html_Images/ci32.png" ALT="ci32"></P><P></P></TD>
+<P></P><TD><P></P><strong>code</strong> <P><strong>code</strong> is the error or warning code.</P><P></P><P></P><P></P><P>Right-click the <strong>error in</strong> control on the front panel and select <strong>Explain Error</strong> or <strong>Explain Warning</strong> from the shortcut menu for more information about the error.</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Remove Comments.vi.html_Images/cstr.png" ALT="cstr"></P><P></P></TD>
+<P></P><TD><P></P><strong>source</strong> <P><strong>source</strong> describes the origin of the error or warning.</P><P></P><P></P><P></P><P>Right-click the <strong>error in</strong> control on the front panel and select <strong>Explain Error</strong> or <strong>Explain Warning</strong> from the shortcut menu for more information about the error.</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P></UL><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Remove Comments.vi.html_Images/ierrcodeclst.png" ALT="ierrcodeclst"></P><P></P></TD>
+<P></P><TD><P></P><strong>error out</strong> <P><strong>error out</strong> passes error or warning information out of a VI to be used by other VIs.</P><P></P><P></P><P></P><P>Right-click the <strong>error out</strong> indicator on the front panel and select <strong>Explain Error</strong> or <strong>Explain Warning</strong> from the shortcut menu for more information about the error.</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P><UL><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Remove Comments.vi.html_Images/ibool.png" ALT="ibool"></P><P></P></TD>
+<P></P><TD><P></P><strong>status</strong> <P><strong>status</strong> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P><P></P><P></P><P></P><P>Right-click the <strong>error out</strong> indicator on the front panel and select <strong>Explain Error</strong> or <strong>Explain Warning</strong> from the shortcut menu for more information about the error.</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Remove Comments.vi.html_Images/ii32.png" ALT="ii32"></P><P></P></TD>
+<P></P><TD><P></P><strong>code</strong> <P><strong>code</strong> is the error or warning code.</P><P></P><P></P><P></P><P>Right-click the <strong>error out</strong> indicator on the front panel and select <strong>Explain Error</strong> or <strong>Explain Warning</strong> from the shortcut menu for more information about the error.</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Remove Comments.vi.html_Images/istr.png" ALT="istr"></P><P></P></TD>
+<P></P><TD><P></P><strong>source</strong> <P><strong>source</strong> string describes the origin of the error or warning.</P><P></P><P></P><P></P><P>Right-click the <strong>error out</strong> indicator on the front panel and select <strong>Explain Error</strong> or <strong>Explain Warning</strong> from the shortcut menu for more information about the error.</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P></UL><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Remove Comments.vi.html_Images/istr.png" ALT="istr"></P><P></P></TD>
+<P></P><TD><P></P><strong>output String</strong> <P>Output JSON string <strong>without</strong> comments</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P>
+
+<!-- Table of VI Descriptions --></table>
+
+<!-- Additional VI/Function Information --><!-- Example Information -->
+
+<h2><a name="examples">Example</a></h2>
+<p class="Anchor"><IMG SRC="Remove Comments.vi.html_Images/Remove Coments 1.png"></p>
+<p class="Body">Refer to the <strong>Remove  Comments Example</strong> VI in the <span class="Monospace">E:\JSON File Handling Files\JSON File Handler\JSON File Handling(Internal Test) - Copy - Copy\Remove Comments\Data\Remove Comments Example.vi</span> for an example of using the <strong></strong>.</p>
+
+</div>
+<script>
+	var notScrollableHeight = document.getElementById("notScrollable").offsetHeight;
+	var browserWindowHeight = window.innerHeight;
+	styleDivScrolling.style.height = browserWindowHeight - notScrollableHeight - 18;
+</script>
+</BODY>
+</HTML>

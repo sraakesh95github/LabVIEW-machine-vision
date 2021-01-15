@@ -1,0 +1,78 @@
+<HTML>
+<HEAD>
+<TITLE>Write JSON Variant to File.vi</TITLE>
+<link rel="stylesheet" type="text/css" href="Resources/help.css">
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="VI Gods Documentation Toolkit from www.vigods.com">
+</HEAD>
+<BODY>
+<div id="notScrollable">
+<A NAME="Write JSON Variant to File.vi"></A><H1>Write JSON Variant to File.vi</H1>
+
+<!--Owning Palette-->
+
+<p class="Body"><strong>Owning Palette:</strong> <a href="..\..\..\..\..\..\..">Zen JSON File Handling</a></p>
+
+<!--Package-->
+
+<p class="Body"><strong>Requires:</strong> JKI JSON</p>
+
+<!--Platform-->
+
+<p class="Body"><strong>Platform(s):</strong> Windows</p>
+
+<!-- VI/Function Description -->
+
+<p class="Body">This VI <strong>deserializes</strong> the JSON variants and the converted JSON string is stored in the filepath specified as an input. </p>
+
+<!-- Supplemental VI/Function Information -->
+
+
+
+<!-- Link to Additional VI/Function Information and Examples  -->
+
+<p class="Body">&nbsp;&nbsp;</p>
+
+
+<!-- Graphic Reference -->
+
+<p class="Anchor"><IMG SRC="Write JSON Variant to File.vi.html_Images/Write JSON Variant to File.vic.png" ALT="Write JSON Variant to File.vi" border="1" style="margin: 2px; padding: 5px"></p>
+<hr>
+</div>
+
+<div id="styleDivScrolling" style="overflow: auto;>
+
+<!-- Table of VI/Function Parameters -->
+
+<P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Write JSON Variant to File.vi.html_Images/cerrcodeclst.png" ALT="cerrcodeclst"></P><P></P></TD>
+<P></P><TD><P></P><strong>Error In</strong> <P>The <strong>error in</strong> cluster can accept error information wired from VIs previously called.  Use this information to decide if any functionality should be bypassed in the event of errors from other VIs.</P><P></P><P></P><P></P><P>The pop-up option <strong>Explain Error</strong> (or Explain Warning) gives more information about the error displayed. </P><P></P></TD>
+<P></P></TR><P></P></Table><P></P><UL><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Write JSON Variant to File.vi.html_Images/cbool.png" ALT="cbool"></P><P></P></TD>
+<P></P><TD><P></P><strong>status</strong> <P>The <strong>status</strong> boolean is either TRUE (X) for an error, or FALSE (checkmark) for no error or a warning.</P><P></P><P></P><P></P><P>The pop-up option <strong>Explain Error</strong> (or Explain Warning) gives more information about the error displayed.</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Write JSON Variant to File.vi.html_Images/ci32.png" ALT="ci32"></P><P></P></TD>
+<P></P><TD><P></P><strong>code</strong> <P>The <strong>code</strong> input identifies the error or warning.</P><P></P><P></P><P></P><P>The pop-up option <strong>Explain Error</strong> (or Explain Warning) gives more information about the error displayed.</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Write JSON Variant to File.vi.html_Images/cstr.png" ALT="cstr"></P><P></P></TD>
+<P></P><TD><P></P><strong>source</strong> <P>The <strong>source</strong> string describes the origin of the error or warning.</P><P></P><P></P><P></P><P>The pop-up option <strong>Explain Error</strong> (or Explain Warning) gives more information about the error displayed.</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P></UL><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Write JSON Variant to File.vi.html_Images/cfxdt.png" ALT="cfxdt"></P><P></P></TD>
+<P></P><TD><P></P><strong>JSON Varaint</strong> <P>The Modified Override JSON which needs to be written back to the JSON File</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Write JSON Variant to File.vi.html_Images/cpath.png" ALT="cpath"></P><P></P></TD>
+<P></P><TD><P></P><strong>file (use dialog)</strong> <P>The file path to write the JSON</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Write JSON Variant to File.vi.html_Images/ierrcodeclst.png" ALT="ierrcodeclst"></P><P></P></TD>
+<P></P><TD><P></P><strong>error out</strong> <P><strong>error in</strong> can accept error information wired from VIs previously called. Use this information to decide if any functionality should be bypassed in the event of errors from other VIs.</P><P></P><P></P><P></P><P>Right-click the <strong>error in</strong> control on the front panel and select <strong>Explain Error</strong> or <strong>Explain Warning</strong> from the shortcut menu for more information about the error.</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P><UL><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Write JSON Variant to File.vi.html_Images/ibool.png" ALT="ibool"></P><P></P></TD>
+<P></P><TD><P></P><strong>status</strong> <P><strong>status</strong> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P><P></P><P></P><P></P><P>Right-click the <strong>error in</strong> control on the front panel and select <strong>Explain Error</strong> or <strong>Explain Warning</strong> from the shortcut menu for more information about the error.</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Write JSON Variant to File.vi.html_Images/ii32.png" ALT="ii32"></P><P></P></TD>
+<P></P><TD><P></P><strong>code</strong> <P><strong>code</strong> is the error or warning code.</P><P></P><P></P><P></P><P>Right-click the <strong>error in</strong> control on the front panel and select <strong>Explain Error</strong> or <strong>Explain Warning</strong> from the shortcut menu for more information about the error.</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Write JSON Variant to File.vi.html_Images/istr.png" ALT="istr"></P><P></P></TD>
+<P></P><TD><P></P><strong>source</strong> <P><strong>source</strong> describes the origin of the error or warning.</P><P></P><P></P><P></P><P>Right-click the <strong>error in</strong> control on the front panel and select <strong>Explain Error</strong> or <strong>Explain Warning</strong> from the shortcut menu for more information about the error.</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P></UL><P></P>
+
+<!-- Table of VI Descriptions --></table>
+
+<!-- Additional VI/Function Information --><!-- Example Information --></div>
+<script>
+	var notScrollableHeight = document.getElementById("notScrollable").offsetHeight;
+	var browserWindowHeight = window.innerHeight;
+	styleDivScrolling.style.height = browserWindowHeight - notScrollableHeight - 18;
+</script>
+</BODY>
+</HTML>

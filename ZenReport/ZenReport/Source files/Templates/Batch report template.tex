@@ -1,0 +1,113 @@
+%% LyX 2.3.0 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english]{article}
+\usepackage[scaled]{helvet}
+\usepackage[OT1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage[bottom = 0.5cm]{geometry}
+\geometry{verbose,lmargin=1cm,rmargin=1cm}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\voffset=-80pt
+\fancyfoot[L]{%
+  \vspace{1.6\baselineskip}
+  \scriptsize{CONFIDENTIALITY NOTICE: The information above may contain Zentron Labs confidential information, protected by law. If this message is confidential, forwarding it to individuals, other than those with a need to know, without the permission is prohibited.}}
+\pagestyle{fancy}
+\newcommand\finline[3][]{\begin{myfont}[#1]{#2}#3\end{myfont}}%
+\newenvironment{myfont}[2][]{\csname#2\endcsname[#1]}{}
+\newcommand{\Uni}[1][]{\fontfamily{uni}#1\selectfont}
+\newcommand{\Helvet}[1][]{\fontfamily{helvet}#1\selectfont}
+\newcommand{\ComFib}[1][]{\fontfamily{plex-otf}#1\selectfont \textbf}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+\makeatother
+
+\usepackage{babel}
+\usepackage{listings}
+\renewcommand{\lstlistingname}{Listing}
+
+\begin{document}
+
+\noindent %
+\begin{minipage}[t]{0.45\columnwidth}%
+\noindent \textbf{\large{ Part Name :}} \large{$part_name$}
+
+\textbf{\large{ Customer Name :}} \large{$customer_name$}
+
+\textbf{\large{ Operator Name :}} \large{$operator_name$}%
+\end{minipage}\qquad{}\qquad{}\qquad{}\qquad{}\qquad{}\qquad{}\qquad{}%
+\begin{minipage}[c]{0.45\columnwidth}%
+\includegraphics[scale=0.5]{\string"$logo_filepath$\string".png}%
+\end{minipage}
+
+\medskip{}
+\medskip{}
+\medskip{}
+
+\noindent \rule[0.5ex]{1\columnwidth}{1pt}
+
+\begin{flushleft}
+\begin{tabular}{p{3cm}p{2cm}p{6.3cm}p{5cm}}
+\textbf{\large{Batch ID}} & \large{$batch_id$} & \textbf{\large{Measurement Date and Time}} & \large{$measurement_date_and_time$}\tabularnewline
+\textbf{\large{System Name}} & \large{$system_name$} & \textbf{\large{Job Number}} & \large{$job_number$}\tabularnewline
+\textbf{\large{Department}} & \large{$department$} & \textbf{\large{Location}} & \large{$location$}\tabularnewline
+\end{tabular}
+\end{flushleft}
+
+
+\noindent \rule[0.5ex]{1\columnwidth}{1pt}
+
+\medskip{}
+\medskip{}
+
+\begin{Large}
+\fontfamily{uni}
+\noindent \textbf{Production summary}
+\end{Large}
+
+\medskip{}
+\medskip{}
+\medskip{}
+
+\begin{center}
+\begin{minipage}[c]{0.6\columnwidth}%
+\setlength\parindent{-50pt}
+\includegraphics[width=$image_width$$unit$ , height=$image_height$$unit$]{\string"$image_path$\string".png}%
+\end{minipage}
+\end{center}
+
+
+\medskip{}
+\medskip{}
+\medskip{}
+
+\medskip{}
+\medskip{}
+\noindent \rule[0.5ex]{1\columnwidth}{1pt}
+\medskip{}
+\medskip{}
+
+\begin{Large}
+\Uni
+\noindent \textbf{SPC (System Process Capability)}
+\end{Large}
+
+\medskip{}
+\medskip{}
+\medskip{}
+
+\begin{center}
+\begin{tabular}{clccccccc}
+\large
+\textbf{Sl No.} & \large\textbf{Measurement Name} & \large\textbf{Mean} & \large\textbf{Variance} & \large\textbf{Standard deviation} & \large\textbf{Cp} & \large\textbf{Cpk}\tabularnewline
+ &  &  &  &  &  &  &  & \tabularnewline
+$table2$
+
+\end{tabular}
+\end{center}
+\end{document}

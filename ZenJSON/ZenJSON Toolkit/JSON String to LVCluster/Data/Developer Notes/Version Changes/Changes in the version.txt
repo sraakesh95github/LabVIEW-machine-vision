@@ -1,0 +1,25 @@
+1. In the "JSON String to Cluster (Cluster Output)", the following changes have been done.
+-> 2D Array Entry String Token Correction
+-> 2D Array new row entry token conrrection
+-> 2D Array end token correction
+Provides the output with "[[" instead of "[ \n [" , "],[" instead of "], \n [" and "]]" instead of "] \n ]"
+
+2. The following changes are done in the Tokenize JSON_new.vi :
+-> Change in the regular expression to incorporate 2D arrays
+
+(\d+\.\d+|\d+|\".+?\"\s*?:\s*?(\[+|{|\".+?\"|\d+\.\d+|\d+|True|False|true|false)|}|\]+,+\[+|\]+|{|\[|\".+?\"|\d+|\d|"\d"|True|False|true|false|\"\d+.+?\d+\")
+
+-> Tokenizing keys added as
+a. "%s": [[ -> 2D Array
+b. "%d%s": [[ -> 2D Array
+c. "%d%s": [[ -> 2D Array
+d. "%d%s%d": [[ -> 2D Array
+e. ]] -> End 2D Array
+f. ],[ -> New Row (2D Array)
+
+3. The following changes have been done in the "JSON Token to VI Ref test2"
+-> Inclusion of a case for the "2D Array"
+-> Inclusion of a case for the "End 2D Array"
+-> Inclusion of a case for the "New Row (2D Array)"
+
+  

@@ -1,0 +1,155 @@
+{
+  "ZenParamsSpecVersion": "1.0",
+  "CompatibleZenGageVersions": [
+    "0.0",
+    "1.3"
+  ],
+  "History": {
+    "ModificationHistory": [
+      {
+        "DateModified": "07-01-2019",
+        "ModifiedBy": "SRINIVASAN",
+        "ModificationNotes": "IoT Compatability",
+        "DocumentVersion": "1.0"
+      }
+    ],
+    "ServiceHistory": [
+      {
+        "DateServiced": "21-10-2017",
+        "ServicedBy": "Guhan",
+        "NextServiceDate": "21-04-2018",
+        "ServiceList": {
+          "CameraCalibrationDate": "22-10-2017",
+          "CameraCalibrationFilePath": "C:\\Cam",
+          "SensorCalibration": true,
+          "SensorCalibNotes": "ReplacementDone",
+          "MotorCalib": true,
+          "MotorCalibNotes": ""
+        },
+        "ServiceNotes": "First version"
+      },
+      {
+        "DateServiced": "23-03-2017",
+        "ServicedBy": "ABC",
+        "NextServiceDate": "23-03-2018",
+        "ServiceNotes": "First version"
+      }
+    ]
+  },
+  "SystemParameters": {
+    "SystemName": "GTRON",
+    "SystemID": "Demo TT-VdddddASAI-MCdd5",
+    "CustomerDetails": {
+      "CustomerName": "TddT",
+      "CustomerId": "MCdd5",
+      "Location": "VASdddAI",
+      "NumberOfShifts": 3,
+      "ShiftDetails": [
+        {
+          "Name": "Shift 1",
+          "Timing": "07:00:00-15:00:00"
+        },
+        {
+          "Name": "Shift 2",
+          "Timing": "15:00:00-23:00:00"
+        },
+        {
+          "Name": "Shift 3",
+          "Timing": "23:00:00-07:00:00"
+        }
+      ]
+    },
+    "InstallationDate": "26-09-2018",
+    "NextServiceDate": "01-12-2018",
+    "NumberOfRacks": 1,
+    "TotalNumberOfCameras": 3,
+    "SoftwareFeatures": {
+      "HardwareEmulated": true,
+      "PowerOnSelfTest": false,
+      "DiagnosticsEnable": true,
+      "AnalyticsEnable": false,
+      "DefectTrackingEnable": true,
+      "AutomaticGuideMovement": false,
+      "DoorPokayokeEnable": true,
+      "FailCountDisplayEnable": true,
+      "FailCountReversalEnable": true,
+      "DataLoggingEnable": true,
+      "PauseOnReelCountFinish": true,
+      "StopOnTotalCountFinish": true,
+      "IoTEnable": true,
+      "ReportEnable": false,
+      "DebugLevel": 0,
+      "PowerOnSelfTestFeatures": {
+        "TimingUnit": true,
+        "MachinePowerStatusCheck": false,
+        "GuideMotor": true,
+        "CameraOptics": false,
+        "MasterSample": false
+      },
+      "DiagnosticsFeatures": {
+        "TimingUnit": true,
+        "GuideMotor": true,
+        "CameraOptics": true,
+        "ReelerMotor": false,
+        "HardwareButtons": true,
+        "Sensors": true,
+        "TowerLamp": true,
+        "MasterSample": false
+      },
+      "UserInterface": {
+        "DynamicImageHandlingEnable": true,
+        "DoorPokaYokeButtonVisible": false,
+        "FailCountDisplayButtonVisible": true,
+        "FailCountReversalButtonVisible": true
+      },
+      "PopupOptions": {
+        "ReasonForPause": false,
+        "ReasonForFail": false,
+        "ReasonForStop": false,
+        "CpCpkOnReelFinish": true
+      },
+      "DataloggingFeatures": {
+        "EventData": true,
+        "MeasurementData": true,
+        "StatisticalData": true,
+        "ReelData": true,
+        "FailedMeasurementData": true,
+        "FailedImages": true
+      },
+      "IoT": {
+        "SMSAlertEnable": true,
+        "EmailAlertEnable": true
+      }
+    }
+  },
+  "PartsConfigured": [
+    {
+      "Name": "TT-1478",
+      "NumberOfRack": 1
+    }
+  ],
+  "CameraSequenceList": [
+    {
+      "Name": "LightCameraSequence1",
+      "RackID": 0
+    },
+    {
+      "Name": "LightCameraSequence2",
+      "RackID": 0
+    },
+    {
+      "Name": "LightCameraSequence3",
+      "RackID": 0
+    }
+  ],
+  "SensorList": [
+    {
+      "Name": "Sensor1",
+      "RackID": 0
+    },
+    {
+      "Name": "Sensor2",
+      "RackID": 0
+    }
+  ]
+}

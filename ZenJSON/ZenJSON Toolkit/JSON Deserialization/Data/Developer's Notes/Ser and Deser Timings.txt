@@ -1,0 +1,4 @@
+Ser and Dserialization Timings
+4539 3241 672 45000 lines
+8368 5906 1111 79879 lines
+14549 10178 1826 133000 lines

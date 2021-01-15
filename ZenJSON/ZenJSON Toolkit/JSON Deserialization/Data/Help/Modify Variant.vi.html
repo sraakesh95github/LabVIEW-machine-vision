@@ -1,0 +1,100 @@
+<HTML>
+<HEAD>
+<TITLE>Modify Variant.vi</TITLE>
+<link rel="stylesheet" type="text/css" href="Resources/help.css">
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="VI Gods Documentation Toolkit from www.vigods.com">
+</HEAD>
+<BODY>
+<div id="notScrollable">
+<A NAME="Modify Variant.vi"></A><H1>Modify Variant.vi</H1>
+
+<!--Owning Palette-->
+
+<p class="Body"><strong>Owning Palette:</strong> <a href="..\..\..\..\..\..\..\..">ZenJSON Toolkit</a></p>
+
+<!--Package-->
+
+<p class="Body"><strong>Requires:</strong> OpenG Toolkit</p>
+
+<!--Platform-->
+
+<p class="Body"><strong>Platform(s):</strong> Windows</p>
+
+<!-- VI/Function Description -->
+
+<p class="Body">This VI <strong>Inserts</strong> / <strong>Appends</strong> / <strong>Replaces</strong> new variant element with the parent variant element to give the modified parent variant out.</p>
+
+<!-- Supplemental VI/Function Information -->
+
+
+
+<!-- Link to Additional VI/Function Information and Examples  -->
+
+<p class="Body">&nbsp;&nbsp;<a href="#examples">Example</a></p>
+
+
+<!-- Graphic Reference -->
+
+<p class="Anchor"><IMG SRC="Modify Variant.vi.html_Images/Modify Variant.vic.png" ALT="Modify Variant.vi" border="1" style="margin: 2px; padding: 5px"></p>
+<hr>
+</div>
+
+<div id="styleDivScrolling" style="overflow: auto;>
+
+<!-- Table of VI/Function Parameters -->
+
+<P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Modify Variant.vi.html_Images/cerrcodeclst.png" ALT="cerrcodeclst"></P><P></P></TD>
+<P></P><TD><P></P><strong>error in (no error)</strong> <P><strong>error in</strong> can accept error information wired from VIs previously called. Use this information to decide if any functionality should be bypassed in the event of errors from other VIs.</P><P></P><P></P><P></P><P>Right-click the <strong>error in</strong> control on the front panel and select <strong>Explain Error</strong> or <strong>Explain Warning</strong> from the shortcut menu for more information about the error. </P><P></P></TD>
+<P></P></TR><P></P></Table><P></P><UL><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Modify Variant.vi.html_Images/cbool.png" ALT="cbool"></P><P></P></TD>
+<P></P><TD><P></P><strong>status</strong> <P><strong>status</strong> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P><P></P><P></P><P></P><P>Right-click the <strong>error in</strong> control on the front panel and select <strong>Explain Error</strong> or <strong>Explain Warning</strong> from the shortcut menu for more information about the error.</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Modify Variant.vi.html_Images/ci32.png" ALT="ci32"></P><P></P></TD>
+<P></P><TD><P></P><strong>code</strong> <P><strong>code</strong> is the error or warning code.</P><P></P><P></P><P></P><P>Right-click the <strong>error in</strong> control on the front panel and select <strong>Explain Error</strong> or <strong>Explain Warning</strong> from the shortcut menu for more information about the error.</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Modify Variant.vi.html_Images/cstr.png" ALT="cstr"></P><P></P></TD>
+<P></P><TD><P></P><strong>source</strong> <P><strong>source</strong> describes the origin of the error or warning.</P><P></P><P></P><P></P><P>Right-click the <strong>error in</strong> control on the front panel and select <strong>Explain Error</strong> or <strong>Explain Warning</strong> from the shortcut menu for more information about the error.</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P></UL><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Modify Variant.vi.html_Images/cfxdt.png" ALT="cfxdt"></P><P></P></TD>
+<P></P><TD><P></P><strong>Parent variant in</strong> <P>Represents the <strong>Override JSON variant</strong> which needs to be modified.</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Modify Variant.vi.html_Images/cfxdt.png" ALT="cfxdt"></P><P></P></TD>
+<P></P><TD><P></P><strong>New element in</strong> <P>Accepts any datatype as an input. This data is used to replace a particular element specified in the JSON Path in the override JSON.</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Modify Variant.vi.html_Images/cenum.png" ALT="cenum"></P><P></P></TD>
+<P></P><TD><P></P><strong>Functionality</strong> <P>Enumerated to choose the functionality between <strong>Insert</strong>, <strong>Append</strong> and <strong>Replace</strong>. </P><P></P><P></P><P></P><P>If action is chosen to be <strong>Replace</strong> / <strong>Insert</strong> and the element in the <strong>JSON query path</strong> is not found, then the action will be automatically changed to <strong>Append</strong>.</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Modify Variant.vi.html_Images/cbool.png" ALT="cbool"></P><P></P></TD>
+<P></P><TD><P></P><strong>Overwrite (Ignore datatype?)</strong> <P>This boolean is applicable if the <strong>Funcitonality</strong> is chosen as <strong>Replace</strong>.</P><P></P><P>If <strong>true</strong>, overwrites the <strong>New element</strong> data with the element specified in the <strong>JSON query path</strong> </P><P></P></TD>
+<P></P></TR><P></P></Table><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Modify Variant.vi.html_Images/cstr.png" ALT="cstr"></P><P></P></TD>
+<P></P><TD><P></P><strong>JSON query path</strong> <P>Represents the querying of various elements with the help of JSON path in the following format:</P><P></P><P></P><P></P><P>Path Structure :</P><P></P><P></P><P></P><P>Sample path : $.object.array1[0].array2[Id=1].array3[].Name</P><P></P><P></P><P></P><P>The above path gives the &quot;Name&quot; key of all the elements pertaining to the array3 (output will be an array of strings).</P><P></P><P></P><P></P><P></P><P></P><P>The basic syntax goes as following:&lt;br&gt;</P><P></P><P></P><P></P><P>&lt;	b&gt;$<strong> =&gt; Main Object</P><P></P><P></P><P></P><P><strong>.</strong> =&gt; Seperates the level of the JSON structure/string (used to traverse through the levels of clusters/objects.&lt;br&gt;</P><P></P><P></P><P></P><P><strong>[]</strong> =&gt; To Specify the index of the array from which the data is to be obtained&lt;br&gt;</P><P></P><P></P><P></P><P>The indices can be given as follows:</P><P></P><P></P><P></P><P><strong>[index number]</strong> =&gt; gives the particular element corresponding to the index specified&lt;/li&gt;</P><P></P><P></P><P></P><P><strong>[key=value]</strong> =&gt; gives the array that matches the speccified key value pair</P><P></P><P></P><P></P><P><strong>[]</strong> =&gt; gives all the values of the elements that is given to the next level of the array(as given in the above example (array3 Names))</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Modify Variant.vi.html_Images/cstr.png" ALT="cstr"></P><P></P></TD>
+<P></P><TD><P></P><strong>JSON New Element Key Name</strong> <P>New element name which will be considered during an <strong>Insert</strong> or <strong>Append</strong> operation</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Modify Variant.vi.html_Images/istr.png" ALT="istr"></P><P></P></TD>
+<P></P><TD><P></P><strong>Syntax Error Message out</strong> <P>Gives the grammatical or syntax errors that have been encountered in the JSON path List array. The paths where errors have been encountered will be considered as void by default, i.e the output VCluster will conatin the void datatype at places where the required element was not found. It gives the error message in the below format</P><P></P><P></P><P></P><P>Structure :</P><P></P><P><strong>[pathIndex] : stringToBeCheckedForError</strong></P><P></P><P></P><P></P><P>Example : JSON path provided : </P><P></P><P>[0] =&gt; $.cluster.errorArray </P><P></P><P>[1] =&gt; $.errorCluster.array</P><P></P><P></P><P></P><P>Error Message:</P><P></P><P>[0]: errorArray</P><P></P><P>[1] : errorCluster</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Modify Variant.vi.html_Images/ierrcodeclst.png" ALT="ierrcodeclst"></P><P></P></TD>
+<P></P><TD><P></P><strong>error out</strong> <P><strong>error in</strong> can accept error information wired from VIs previously called. Use this information to decide if any functionality should be bypassed in the event of errors from other VIs.</P><P></P><P></P><P></P><P>Right-click the <strong>error in</strong> control on the front panel and select <strong>Explain Error</strong> or <strong>Explain Warning</strong> from the shortcut menu for more information about the error.</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P><UL><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Modify Variant.vi.html_Images/ibool.png" ALT="ibool"></P><P></P></TD>
+<P></P><TD><P></P><strong>status</strong> <P><strong>status</strong> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P><P></P><P></P><P></P><P>Right-click the <strong>error in</strong> control on the front panel and select <strong>Explain Error</strong> or <strong>Explain Warning</strong> from the shortcut menu for more information about the error.</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Modify Variant.vi.html_Images/ii32.png" ALT="ii32"></P><P></P></TD>
+<P></P><TD><P></P><strong>code</strong> <P><strong>code</strong> is the error or warning code.</P><P></P><P></P><P></P><P>Right-click the <strong>error in</strong> control on the front panel and select <strong>Explain Error</strong> or <strong>Explain Warning</strong> from the shortcut menu for more information about the error.</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Modify Variant.vi.html_Images/istr.png" ALT="istr"></P><P></P></TD>
+<P></P><TD><P></P><strong>source</strong> <P><strong>source</strong> describes the origin of the error or warning.</P><P></P><P></P><P></P><P>Right-click the <strong>error in</strong> control on the front panel and select <strong>Explain Error</strong> or <strong>Explain Warning</strong> from the shortcut menu for more information about the error.</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P></UL><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Modify Variant.vi.html_Images/ifxdt.png" ALT="ifxdt"></P><P></P></TD>
+<P></P><TD><P></P><strong>VCluster out</strong> <P>Provides the <strong>Modified variant</strong> out.</P><P></P></TD>
+<P></P></TR><P></P></Table><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Modify Variant.vi.html_Images/ienum.png" ALT="ienum"></P><P></P></TD>
+<P></P><TD><P></P><strong>Functionality Applied</strong> </TD>
+<P></P></TR><P></P></Table><P></P><Table><P></P><TR valign=TOP><P></P><TD class="Icon"><P></P><P><IMG SRC="Modify Variant.vi.html_Images/istr.png" ALT="istr"></P><P></P></TD>
+<P></P><TD><P></P><strong>Functionality Error Message out</strong> <P>Gives the error message regarding the logic and the functionality.</P><P></P><P>For example : With <strong>Overwrite?</strong> disabled if the <strong>Replace</strong> functionality is performed with varying datatypes, then an error message with datatype mismatch is displayed. </P><P></P></TD>
+<P></P></TR><P></P></Table><P></P>
+
+<!-- Table of VI Descriptions --></table>
+
+<!-- Additional VI/Function Information --><!-- Example Information -->
+
+<h2><a name="examples">Example</a></h2>
+<p class="Anchor"><IMG SRC="Modify Variant.vi.html_Images/ArrayOfClusters.png"></p>
+<p class="Body">Refer to the <strong>Modify JSON-Example</strong> VI in the <span class="Monospace">F:\Backup\JSON File Hanlding\06-02-2018\JSON File Handling  [With error handling]\JSON Deserialization\Data\Example\Modify JSON-Example.vi</span> for an example of using the <strong>Modify Variant.vi</strong>.</p>
+
+</div>
+<script>
+	var notScrollableHeight = document.getElementById("notScrollable").offsetHeight;
+	var browserWindowHeight = window.innerHeight;
+	styleDivScrolling.style.height = browserWindowHeight - notScrollableHeight - 18;
+</script>
+</BODY>
+</HTML>

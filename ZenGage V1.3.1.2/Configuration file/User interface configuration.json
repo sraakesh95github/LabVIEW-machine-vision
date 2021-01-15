@@ -1,0 +1,347 @@
+{
+  "UIParameters": {
+    "SpecificationVersion": "1",
+    "Title": "GTRON",
+    "NumberOfImagesToBeDisplayed": 1,
+    "ImageCountWindow": 1,
+    "FontName": "Times New Roman",
+    "FontSize": 2,
+    "CustomerLogoFilePath": "ZenGage v3.0 UI\\UX\\IMages\\fcilogo.png",
+    "ZentronLogoFilePath": "ZenGage v3.0 UI\\UX\\IMages\\ZenLogo(181x55).png",
+    "CompatibleSoftwareVersions": [
+      "v1.0"
+    ],
+    "CameraLabelMapping": [
+      {
+        "CameraName": "Top",
+        "ImageLabel": "Top Cam"
+      },
+      {
+        "CameraName": "Front",
+        "ImageLabel": "Front Cam"
+      },
+      {
+        "CameraName": "Back",
+        "ImageLabel": "Back Cam"
+      }
+    ],
+    "ImageIndicatorLayouts": [
+      {
+        "NumberOfImageIndicators": 1,
+        "ImageSpecificData": [
+          {
+            "Width": 1,
+            "Left": 0,
+            "Top": 0,
+            "ImagePercentage": {
+              "Height": 0.95,
+              "Widthcorrection": -7,
+              "Heightcorrection": -20,
+              "Leftcorrection": 0,
+              "Topcorrection": -10
+            },
+            "StringPercentage": {
+              "Height": 0.05,
+              "Widthcorrection": -5,
+              "Heightcorrection": 0,
+              "Leftcorrection": 0,
+              "Topcorrection": 0
+            }
+          }
+        ]
+      },
+      {
+        "NumberOfImageIndicators": 2,
+        "ImageSpecificData": [
+          {
+            "Width": 0.5,
+            "Left": 0,
+            "Top": 0,
+            "ImagePercentage": {
+              "Height": 0.9,
+              "Widthcorrection": -30,
+              "Heightcorrection": -15,
+              "Leftcorrection": 0,
+              "Topcorrection": -10
+            },
+            "StringPercentage": {
+              "Height": 0.05,
+              "Widthcorrection": -30,
+              "Heightcorrection": 0,
+              "Leftcorrection": 0,
+              "Topcorrection": 0
+            }
+          },
+          {
+            "Width": 0.5,
+            "Left": 0.5,
+            "Top": 0,
+            "ImagePercentage": {
+              "Height": 0.9,
+              "Widthcorrection": -30,
+              "Heightcorrection": -15,
+              "Leftcorrection": 0,
+              "Topcorrection": -10
+            },
+            "StringPercentage": {
+              "Height": 0.05,
+              "Widthcorrection": -30,
+              "Heightcorrection": 0,
+              "Leftcorrection": 0,
+              "Topcorrection": 0
+            }
+          }
+        ]
+      },
+      {
+        "NumberOfImageIndicators": 3,
+        "ImageSpecificData": [
+          {
+            "Width": 0.5,
+            "Left": 0,
+            "Top": 0,
+            "ImagePercentage": {
+              "Height": 0.45,
+              "Widthcorrection": -30,
+              "Heightcorrection": -50,
+              "Leftcorrection": 0,
+              "Topcorrection": 5
+            },
+            "StringPercentage": {
+              "Height": 0.05,
+              "Widthcorrection": -30,
+              "Heightcorrection": 0,
+              "Leftcorrection": 0,
+              "Topcorrection": 7
+            }
+          },
+          {
+            "Width": 0.5,
+            "Left": 0,
+            "Top": 0.5,
+            "ImagePercentage": {
+              "Height": 0.45,
+              "Widthcorrection": -30,
+              "Heightcorrection": -50,
+              "Leftcorrection": 0,
+              "Topcorrection": 0
+            },
+            "StringPercentage": {
+              "Height": 0.05,
+              "Widthcorrection": -30,
+              "Heightcorrection": 0,
+              "Leftcorrection": 0,
+              "Topcorrection": 5
+            }
+          },
+          {
+            "Width": 0.5,
+            "Left": 0.5,
+            "Top": 0,
+            "ImagePercentage": {
+              "Height": 0.95,
+              "Widthcorrection": -30,
+              "Heightcorrection": -50,
+              "Leftcorrection": -3,
+              "Topcorrection": 5
+            },
+            "StringPercentage": {
+              "Height": 0.05,
+              "Widthcorrection": -33,
+              "Heightcorrection": 3,
+              "Leftcorrection": 3,
+              "Topcorrection": 7
+            }
+          }
+        ]
+      },
+      {
+        "NumberOfImageIndicators": 4,
+        "ImageSpecificData": [
+          {
+            "Width": 0.5,
+            "Left": 0,
+            "Top": 0,
+            "ImagePercentage": {
+              "Height": 0.45,
+              "Widthcorrection": -30,
+              "Heightcorrection": -50,
+              "Leftcorrection": 0,
+              "Topcorrection": 5
+            },
+            "StringPercentage": {
+              "Height": 0.05,
+              "Widthcorrection": -30,
+              "Heightcorrection": 0,
+              "Leftcorrection": 0,
+              "Topcorrection": 0
+            }
+          },
+          {
+            "Width": 0.5,
+            "Left": 0,
+            "Top": 0.5,
+            "ImagePercentage": {
+              "Height": 0.45,
+              "Widthcorrection": -30,
+              "Heightcorrection": -50,
+              "Leftcorrection": 0,
+              "Topcorrection": 5
+            },
+            "StringPercentage": {
+              "Height": 0.05,
+              "Widthcorrection": -30,
+              "Heightcorrection": -50,
+              "Leftcorrection": 0,
+              "Topcorrection": 5
+            }
+          },
+          {
+            "Width": 0.5,
+            "Left": 0.5,
+            "Top": 0,
+            "ImagePercentage": {
+              "Height": 0.45,
+              "Widthcorrection": -30,
+              "Heightcorrection": -50,
+              "Leftcorrection": 0,
+              "Topcorrection": 5
+            },
+            "StringPercentage": {
+              "Height": 0.05,
+              "Widthcorrection": -30,
+              "Heightcorrection": 0,
+              "Leftcorrection": 0,
+              "Topcorrection": 0
+            }
+          },
+          {
+            "Width": 0.5,
+            "Left": 0.5,
+            "Top": 0.5,
+            "ImagePercentage": {
+              "Height": 0.45,
+              "Widthcorrection": -30,
+              "Heightcorrection": -50,
+              "Leftcorrection": 0,
+              "Topcorrection": 5
+            },
+            "StringPercentage": {
+              "Height": 0.05,
+              "Widthcorrection": -30,
+              "Heightcorrection": 0,
+              "Leftcorrection": 0,
+              "Topcorrection": 5
+            }
+          }
+        ]
+      }
+    ],
+    "SoftwareButtonLabels": {
+      "SelectLabel": "SELECT",
+      "RunLabel": "START",
+      "PauseLabel": "STOP",
+      "StopLabel": "PART CHANGE"
+    },
+    "DiagnosticsParameters": {
+      "CameraOpticsDiagnostics": {
+        "Label": "Camera optics",
+        "CameraLabelsList": [
+          {
+            "CameraName": "LightCameraSequence1",
+            "ImageLabel": "Top Cam"
+          },
+          {
+            "CameraName": "LightCameraSequence2",
+            "ImageLabel": "Side Cam"
+          }
+        ]
+      },
+      "ArduinoDiagnostics": {
+        "Label": "Timing Unit"
+      },
+      "MotorDiagnostics": {
+        "Label": "Guide motor"
+      },
+      "ReelerMotor": {
+        "Label": "Reeler motor"
+      },
+      "TowerLampDiagnostics": {
+        "Label": "Tower lamp"
+      },
+      "TriggerSensor": {
+        "Label": "Trigger sensor",
+        "SensorsLabelsList": [
+          {
+            "SensorName": "Sensor1",
+            "Label": "Sensor 1"
+          },
+          {
+            "SensorName": "Sensor1",
+            "Label": "Sensor 2"
+          }
+        ]
+      },
+      "HardwareButtonDiagnostics": {
+        "Label": "Hardware buttons"
+      },
+      "MasterSampleDiagnostics": {
+        "Label": "Master sample validation"
+      }
+    },
+    "DieIdParameters": {
+      "DefaultDieId": "Not known",
+      "DieIdsList": [
+        "Die_001",
+        "Die_002"
+      ]
+    },
+    "EventReasonsList": {
+      "Pause": [
+        "File open",
+        "Door unlocked",
+        "Edit Tolerance",
+        "Morning Tea Break",
+        "Afternoon Tea Break",
+        "Lunch Break",
+        "Evening Tea Break",
+        "Dinner",
+        "Meeting",
+        "Raw Material Load",
+        "Routine Tool Check",
+        "Training",
+        "Audit",
+        "Accidental Press"
+      ],
+      "Stop": [
+        "Day End",
+        "Target Met",
+        "Part Change"
+      ],
+      "FailPause": [
+        "Damaged Terminal",
+        "Die Tool Issue",
+        "Thread Issue"
+      ],
+      "Ignored": [
+        "Oil Issue",
+        "Dust Issue"
+      ],
+      "DefaultEventReason": "Event reasoning disabled"
+    },
+    "StampingMachineIds": [
+      "STM_001",
+      "STM_002"
+    ],
+    "ErrorPopupStrings": [
+      {
+        "ErrorCode": "F106",
+        "ErrorString": "Timing unit communication error. Please restart the system"
+      },
+      {
+        "ErrorCode": "F102",
+        "ErrorString": "Timing unit opcode error. Please restart the system"
+      }
+    ]
+  }
+}

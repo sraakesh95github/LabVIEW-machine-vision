@@ -1,0 +1,659 @@
+{
+  "CameraControllerParameters": [
+    {
+      "ID": 0,
+      "FrontPanelOpen": false,
+      "NoOfCameras": 3,
+      "CameraID": [
+        0,
+        1,
+        2
+      ],
+      "NoOfReceivers": 1,
+      "Diagnostics": {
+        "Path": "xxxxxx",
+        "LightCameraSequence": [
+          {
+            "Name": "LightCameraSequence1",
+            "CameraID": 0,
+            "LightID": 1
+          },
+          {
+            "Name": "LightCameraSequence2",
+            "CameraID": 1,
+            "LightID": 2
+          },
+          {
+            "Name": "LightCameraSequence3",
+            "CameraID": 2,
+            "LightID": 3
+          }
+        ],
+        "Delaytime": 2000,
+        "DecisionParameters": {
+          "Range": [
+            70,
+            170
+          ],
+          "AcceptancePercentage": [
+            1,
+            20
+          ],
+          "Comparison": [
+            "LesserThan",
+            "LesserThan"
+          ],
+          "AcceptableBlackBinValue": 10000
+        },
+        "DiagnosticsReceiverSequence": {
+          "ReceiverName": "UI",
+          "ReceiverID": 0
+        }
+      },
+      "PartsList": [
+        {
+          "Name": "2.8DF",
+          "CameraIDs": [
+            0,
+            1,
+            2
+          ],
+          "ReceiverSequence": [
+            {
+              "ReceiverName": "Algorithm",
+              "ReceiverID": 0,
+              "NoOfActiveCameras": 3
+            }
+          ]
+        },
+        {
+          "Name": "090 SRS Butterfly",
+          "CameraIDs": [
+            0,
+            1,
+            2
+          ],
+          "ReceiverSequence": [
+            {
+              "ReceiverName": "Algorithm",
+              "ReceiverID": 0,
+              "NoOfActiveCameras": 3
+            }
+          ]
+        },
+        {
+          "Name": "090SRS Female",
+          "CameraIDs": [
+            0,
+            1,
+            2
+          ],
+          "ReceiverSequence": [
+            {
+              "ReceiverName": "Algorithm",
+              "ReceiverID": 0,
+              "NoOfActiveCameras": 3
+            }
+          ]
+        },
+        {
+          "Name": "090SRS Sealed",
+          "CameraIDs": [
+            0,
+            1
+          ],
+          "ReceiverSequence": [
+            {
+              "ReceiverName": "Algorithm",
+              "ReceiverID": 0,
+              "NoOfActiveCameras": 2
+            }
+          ]
+        },
+        {
+          "Name": "BFT",
+          "CameraIDs": [
+            0,
+            1
+          ],
+          "ReceiverSequence": [
+            {
+              "ReceiverName": "Algorithm",
+              "ReceiverID": 0,
+              "NoOfActiveCameras": 2
+            }
+          ]
+        },
+        {
+          "Name": "WP 090SRS Female",
+          "CameraIDs": [
+            0,
+            1,
+            2
+          ],
+          "ReceiverSequence": [
+            {
+              "ReceiverName": "RackController",
+              "ReceiverID": 0,
+              "NoOfActiveCameras": 3
+            }
+          ]
+        },
+        {
+          "Name": "2.8 Side Feed",
+          "CameraIDs": [
+            0,
+            1
+          ],
+          "ReceiverSequence": [
+            {
+              "ReceiverName": "RackController",
+              "ReceiverID": 0,
+              "NoOfActiveCameras": 2
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ImageAcquisitionParameters": [
+    {
+      "Id": 0,
+      "SessionID": "Top",
+      "Type": "Top",
+      "Model": "Point grey CM3-U3-50S5m",
+      "InterfaceType": "USB3",
+      "SerialNumber": "x",
+      "Timeout": 500,
+      "GeneralCameraConfig": [
+        {
+          "ActiveAttribute": "TriggerMode",
+          "Value": "On"
+        },
+        {
+          "ActiveAttribute": "ExposureAuto",
+          "Value": "Off"
+        },
+        {
+          "ActiveAttribute": "ExposureTime",
+          "Value": "60"
+        },
+        {
+          "ActiveAttribute": "GainAuto",
+          "Value": "Off"
+        },
+        {
+          "ActiveAttribute": "Gain",
+          "Value": "5"
+        }
+      ],
+      "DefaultAOI": [
+        1626,
+        1236,
+        0,
+        0
+      ],
+      "DefaultReceiverSequence": [
+            {
+              "ReceiverID": 0,
+              "Index": 0
+            }
+          ],
+      "DefaultfileName": "ZenCAM\\Diagnostics\\Testimages\\Top",
+      "Continuous": 1,
+      "NumberOfBuffers": 50,
+      "BufferNumberMode": 0,
+      "acquisitionTimeout": 1000,
+      "ImageType": 0,
+      "Offline": true,
+      "FrontPanelOpen": false,
+      "ColorCameraParam": {
+        "PixelFormat": "BGRA 8 Packed",
+        "GammaEnable": true,
+        "GammaSelector": "sRGB",
+        "BalanceRationSelector": [
+          "Red",
+          "Blue",
+          "Green"
+        ],
+        "BalanceRationRaw": [
+          95,
+          105,
+          115
+        ],
+        "BalanceWhiteAuto": "Off",
+        "LightSourceSelector": "Daylight 5000 Kelvin"
+      },
+      "PartsList": [
+        {
+          "Name": "2.8DF",
+          "ReceiverSequence": [
+            {
+              "ReceiverID": 0,
+              "Index": 0
+            }
+          ],
+          "AOI": [
+            1100,
+            640,
+            250,
+            300
+          ],
+          "filePath": "ZenCam\\Test Images\\2.8DF\\Top"
+        },
+        {
+          "Name": "090 SRS Butterfly",
+          "ReceiverSequence": [
+            {
+              "ReceiverID": 0,
+              "Index": 0
+            }
+          ],
+          "AOI": [
+            900,
+            650,
+            330,
+            270
+          ],
+          "filePath": "ZenCam\\Test Images\\090 SRS Butterfly\\Top"
+        },
+        {
+          "Name": "090SRS Female",
+          "ReceiverSequence": [
+            {
+              "ReceiverID": 0,
+              "Index": 0
+            }
+          ],
+          "AOI": [
+            1030,
+            585,
+            280,
+            300
+          ],
+          "filePath": "ZenCam\\Test Images\\WP 090SRS Female\\Top"
+        },
+        {
+          "Name": "090SRS Sealed",
+          "ReceiverSequence": [
+            {
+              "ReceiverID": 0,
+              "Index": 0
+            }
+          ],
+          "AOI": [
+            1626,
+            790,
+            0,
+            300
+          ],
+          "filePath": "ZenCam\\Test Images\\090SRS Sealed\\Top"
+        },
+        {
+          "Name": "BFT",
+          "ReceiverSequence": [
+            {
+              "ReceiverID": 0,
+              "Index": 0
+            }
+          ],
+          "AOI": [
+            1380,
+            580,
+            100,
+            320
+          ],
+          "filePath": "ZenCam\\Test Images\\BFT\\Top"
+        },
+        {
+          "Name": "WP 090SRS Female",
+          "ReceiverSequence": [
+            {
+              "ReceiverID": 0,
+              "Index": 0
+            }
+          ],
+          "AOI": [
+            1030,
+            585,
+            280,
+            300
+          ],
+          "filePath": "ZenCam\\Test Images\\WP 090SRS Female\\Top"
+        },
+        {
+          "Name": "2.8 Side Feed",
+          "ReceiverSequence": [
+            {
+              "ReceiverID": 0,
+              "Index": 0
+            }
+          ],
+          "AOI": [
+            1300,
+            620,
+            150,
+            410
+          ],
+          "filePath": "ZenCam\\Test Images\\2.8 Side Feed\\Top"
+        }
+      ]
+    },
+    {
+      "Id": 1,
+      "SessionID": "Side",
+      "Type": "Side",
+      "Model": "Point grey CM3-U3-50S5M",
+      "InterfaceType": "USB3",
+      "SerialNumber": "xC",
+      "Timeout": 500,
+      "GeneralCameraConfig": [
+        {
+          "ActiveAttribute": "TriggerMode",
+          "Value": "On"
+        },
+        {
+          "ActiveAttribute": "ExposureAuto",
+          "Value": "Off"
+        },
+        {
+          "ActiveAttribute": "ExposureTime",
+          "Value": "60"
+        },
+        {
+          "ActiveAttribute": "GainAuto",
+          "Value": "Off"
+        },
+        {
+          "ActiveAttribute": "Gain",
+          "Value": "2"
+        }
+      ],
+      "DefaultAOI": [
+        1626,
+        1236,
+        0,
+        0
+      ],
+      "DefaultReceiverSequence": [
+            {
+              "ReceiverID": 0,
+              "Index": 1
+            }
+          ],
+      "DefaultfileName": "ZenCAM\\Diagnostics\\Testimages\\Side",
+      "Continuous": 1,
+      "NumberOfBuffers": 50,
+      "BufferNumberMode": 0,
+      "acquisitionTimeout": 1000,
+      "ImageType": 0,
+      "Offline": true,
+      "FrontPanelOpen": false,
+      "ColorCameraParam": {
+        "PixelFormat": "BGRA 8 Packed",
+        "GammaEnable": true,
+        "GammaSelector": "sRGB",
+        "BalanceRationSelector": [
+          "Red",
+          "Blue",
+          "Green"
+        ],
+        "BalanceRationRaw": [
+          95,
+          105,
+          115
+        ],
+        "BalanceWhiteAuto": "Off",
+        "LightSourceSelector": "Daylight 5000 Kelvin"
+      },
+      "PartsList": [
+        {
+          "Name": "2.8DF",
+          "ReceiverSequence": [
+            {
+              "ReceiverID": 0,
+              "Index": 1
+            }
+          ],
+          "AOI": [
+            1130,
+            650,
+            300,
+            200
+          ],
+          "filePath": "ZenCam\\Test Images\\2.8DF\\Side"
+        },
+        {
+          "Name": "090 SRS Butterfly",
+          "ReceiverSequence": [
+            {
+              "ReceiverID": 0,
+              "Index": 1
+            }
+          ],
+          "AOI": [
+            950,
+            535,
+            360,
+            220
+          ],
+          "filePath": "ZenCam\\Test Images\\090 SRS Butterfly\\Side"
+        },
+        {
+          "Name": "090SRS Female",
+          "ReceiverSequence": [
+            {
+              "ReceiverID": 0,
+              "Index": 1
+            }
+          ],
+          "AOI": [
+            1130,
+            650,
+            280,
+            220
+          ],
+          "filePath": "ZenCam\\Test Images\\WP 090SRS Female\\Side"
+        },
+        {
+          "Name": "090SRS Sealed",
+          "ReceiverSequence": [
+            {
+              "ReceiverID": 0,
+              "Index": 1
+            }
+          ],
+          "AOI": [
+            1626,
+            690,
+            0,
+            290
+          ],
+          "filePath": "ZenCam\\Test Images\\090SRS Sealed\\Side"
+        },
+        {
+          "Name": "BFT",
+          "ReceiverSequence": [
+            {
+              "ReceiverID": 0,
+              "Index": 1
+            }
+          ],
+          "AOI": [
+            1500,
+            650,
+            100,
+            200
+          ],
+          "filePath": "ZenCam\\Test Images\\BFT\\Side"
+        },
+        {
+          "Name": "WP 090SRS Female",
+          "ReceiverSequence": [
+            {
+              "ReceiverID": 0,
+              "Index": 1
+            }
+          ],
+          "AOI": [
+            1130,
+            650,
+            280,
+            220
+          ],
+          "filePath": "ZenCam\\Test Images\\WP 090SRS Female\\Side"
+        },
+        {
+          "Name": "2.8 Side Feed",
+          "ReceiverSequence": [
+            {
+              "ReceiverID": 0,
+              "Index": 1
+            }
+          ],
+          "AOI": [
+            1300,
+            610,
+            200,
+            330
+          ],
+          "filePath": "ZenCam\\Test Images\\2.8 Side Feed\\Side"
+        }
+      ]
+    },
+    {
+      "Id": 2,
+      "SessionID": "F",
+      "Type": "Front",
+      "Model": "Balser acA1300-30um",
+      "InterfaceType": "USB3",
+      "SerialNumber": "x",
+      "Timeout": 500,
+      "GeneralCameraConfig": [
+        {
+          "ActiveAttribute": "TriggerMode",
+          "Value": "On"
+        },
+        {
+          "ActiveAttribute": "ExposureAuto",
+          "Value": "Off"
+        },
+        {
+          "ActiveAttribute": "ExposureTime",
+          "Value": "50"
+        },
+        {
+          "ActiveAttribute": "GainAuto",
+          "Value": "Off"
+        },
+        {
+          "ActiveAttribute": "Gain",
+          "Value": "0"
+        }
+      ],
+      "DefaultAOI": [
+        1296,
+        966,
+        0,
+        0
+      ],
+      "DefaultReceiverSequence": [
+            {
+              "ReceiverID": 0,
+              "Index": 2
+            }
+          ],
+      "DefaultfileName": "ZenCAM\\Diagnostics\\Testimages\\Front",
+      "Continuous": 1,
+      "NumberOfBuffers": 50,
+      "BufferNumberMode": 0,
+      "acquisitionTimeout": 1000,
+      "ImageType": 0,
+      "Offline": true,
+      "FrontPanelOpen": false,
+      "ColorCameraParam": {
+        "PixelFormat": "BGRA 8 Packed",
+        "GammaEnable": true,
+        "GammaSelector": "sRGB",
+        "BalanceRationSelector": [
+          "Red",
+          "Blue",
+          "Green"
+        ],
+        "BalanceRationRaw": [
+          95,
+          105,
+          115
+        ],
+        "BalanceWhiteAuto": "Off",
+        "LightSourceSelector": "Daylight 5000 Kelvin"
+      },
+      "PartsList": [
+        {
+          "Name": "2.8DF",
+          "ReceiverSequence": [
+            {
+              "ReceiverID": 0,
+              "Index": 2
+            }
+          ],
+          "AOI": [
+            1050,
+            650,
+            170,
+            80
+          ],
+          "filePath": "ZenCam\\Test Images\\2.8DF\\Front"
+        },
+        {
+          "Name": "090 SRS Butterfly",
+          "ReceiverSequence": [
+            {
+              "ReceiverID": 0,
+              "Index": 2
+            }
+          ],
+          "AOI": [
+            1000,
+            600,
+            100,
+            170
+          ],
+          "filePath": "ZenCam\\Test Images\\090 SRS Butterfly\\Front"
+        },
+        {
+          "Name": "090SRS Female",
+          "ReceiverSequence": [
+            {
+              "ReceiverID": 0,
+              "Index": 2
+            }
+          ],
+          "AOI": [
+            1040,
+            700,
+            100,
+            130
+          ],
+          "filePath": "ZenCam\\Test Images\\2.8DF\\Front"
+        },
+        {
+          "Name": "WP 090SRS Female",
+          "ReceiverSequence": [
+            {
+              "ReceiverID": 0,
+              "Index": 2
+            }
+          ],
+          "AOI": [
+            1040,
+            700,
+            100,
+            130
+          ],
+          "filePath": "ZenCam\\Test Images\\WP 090SRS Female\\Front"
+        }
+      ]
+    }
+  ]
+}

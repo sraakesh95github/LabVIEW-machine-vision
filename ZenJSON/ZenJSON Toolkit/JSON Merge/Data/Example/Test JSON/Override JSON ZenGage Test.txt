@@ -1,0 +1,1167 @@
+{
+  "AlgoParameters": {
+    "PartsList": [
+      {
+        "Name": "102",
+        "Measurements": [
+          {
+            "RackID": 0,
+            "MeasurementId": 0,
+            "Name": "EON Presence",
+            "AlgoName": "EON Presence",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 1500,
+              "UCL": 2500,
+              "LSL": 1500,
+              "USL": 2500,
+              "NominalValue": 2000
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "EON Outer Width",
+            "AlgoName": "AET",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 0.77,
+              "UCL": 0.84,
+              "LSL": 0.77,
+              "USL": 0.84,
+              "NominalValue": 0.8
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "Box Width",
+            "AlgoName": "AET",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 1.37,
+              "UCL": 1.43,
+              "LSL": 1.37,
+              "USL": 1.43,
+              "NominalValue": 1.39
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "Lip Outer Width",
+            "AlgoName": "AET",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 0.65,
+              "UCL": 0.95,
+              "LSL": 0.65,
+              "USL": 0.95,
+              "NominalValue": 0.75
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "Lip Symmetry",
+            "AlgoName": "AET",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 0,
+              "UCL": 0.06,
+              "LSL": 0,
+              "USL": 0.06,
+              "NominalValue": 0.025
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "Lip Gap",
+            "AlgoName": "AET",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 0,
+              "UCL": 0.16,
+              "LSL": 0,
+              "USL": 0.16,
+              "NominalValue": 0.025
+            }
+          }
+        ]
+      },
+      {
+        "Name": "122",
+        "Measurements": [
+          {
+            "RackID": 0,
+            "MeasurementId": 0,
+            "Name": "EON presence",
+            "AlgoName": "EON Presence",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 1500,
+              "UCL": 2500,
+              "LSL": 1500,
+              "USL": 2500,
+              "NominalValue": 1500
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "EON outer Width",
+            "AlgoName": "EON Width",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 0.77,
+              "UCL": 0.83,
+              "LSL": 0.77,
+              "USL": 0.83,
+              "NominalValue": 0.79
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "Box Width",
+            "AlgoName": "Box Width",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 1.37,
+              "UCL": 1.43,
+              "LSL": 1.37,
+              "USL": 1.43,
+              "NominalValue": 1.39
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "Lip outer Width",
+            "AlgoName": "Lip Outer Width",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 0.65,
+              "UCL": 0.95,
+              "LSL": 0.65,
+              "USL": 0.95,
+              "NominalValue": 0.8
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "Lip symmetry",
+            "AlgoName": "Lip Symmetry",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 0,
+              "UCL": 0.06,
+              "LSL": 0,
+              "USL": 0.06,
+              "NominalValue": 0.025
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "Lip gap",
+            "AlgoName": "Lipgap FCI",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 0,
+              "UCL": 0.16,
+              "LSL": 0,
+              "USL": 0.16,
+              "NominalValue": 0.1
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "Lip level",
+            "AlgoName": "Lip Level",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 0,
+              "UCL": 0.06,
+              "LSL": 0,
+              "USL": 0.06,
+              "NominalValue": 0.025
+            }
+          }
+        ]
+      },
+      {
+        "Name": "142",
+        "Measurements": [
+          {
+            "RackID": 0,
+            "MeasurementId": 0,
+            "Name": "EON Presence Absence",
+            "AlgoName": "EON Presence",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 1500,
+              "UCL": 2500,
+              "LSL": 1500,
+              "USL": 2500,
+              "NominalValue": 1500
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "EON Outer Width",
+            "AlgoName": "EON Width",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 0.77,
+              "UCL": 0.83,
+              "LSL": 0.77,
+              "USL": 0.83,
+              "NominalValue": 0.79
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "Box Width",
+            "AlgoName": "Box Width",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 1.37,
+              "UCL": 1.43,
+              "LSL": 1.37,
+              "USL": 1.43,
+              "NominalValue": 1.39
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "Lip Outer Width",
+            "AlgoName": "Lip Outer Width",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 0.65,
+              "UCL": 0.95,
+              "LSL": 0.65,
+              "USL": 0.95,
+              "NominalValue": 0.8
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "Lip Symmetry",
+            "AlgoName": "Lip Symmetry",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 0,
+              "UCL": 0.06,
+              "LSL": 0,
+              "USL": 0.06,
+              "NominalValue": 0.025
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "Lip Gap",
+            "AlgoName": "Lipgap FCI",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 0.04,
+              "UCL": 0.16,
+              "LSL": 0.04,
+              "USL": 0.16,
+              "NominalValue": 0.1
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "Lip Level",
+            "AlgoName": "Lip Level",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 0,
+              "UCL": 0.06,
+              "LSL": 0,
+              "USL": 0.06,
+              "NominalValue": 0.025
+            }
+          }
+        ]
+      },
+      {
+        "Name": "130",
+        "Measurements": [
+          {
+            "RackID": 0,
+            "MeasurementId": 0,
+            "Name": "EON Presence Absence",
+            "AlgoName": "EON Presence",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 1500,
+              "UCL": 2500,
+              "LSL": 1500,
+              "USL": 2500,
+              "NominalValue": 1500
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "EON Outer Width",
+            "AlgoName": "EON Width",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 0.77,
+              "UCL": 0.83,
+              "LSL": 0.77,
+              "USL": 0.83,
+              "NominalValue": 0.79
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "Box Width",
+            "AlgoName": "Box Width",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 1.37,
+              "UCL": 1.43,
+              "LSL": 1.37,
+              "USL": 1.43,
+              "NominalValue": 1.39
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "Lip Outer Width",
+            "AlgoName": "Lip Outer Width",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 0.65,
+              "UCL": 0.95,
+              "LSL": 0.65,
+              "USL": 0.95,
+              "NominalValue": 0.8
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "Lip Symmetry",
+            "AlgoName": "Lip Symmetry",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 0,
+              "UCL": 0.06,
+              "LSL": 0,
+              "USL": 0.06,
+              "NominalValue": 0.025
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "Lip Gap",
+            "AlgoName": "Lipgap FCI",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 0.04,
+              "UCL": 0.16,
+              "LSL": 0.04,
+              "USL": 0.16,
+              "NominalValue": 0.1
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "Lip Level",
+            "AlgoName": "Lip Level",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 0,
+              "UCL": 0.06,
+              "LSL": 0,
+              "USL": 0.06,
+              "NominalValue": 0.025
+            }
+          }
+        ]
+      },
+      {
+        "Name": "145",
+        "Measurements": [
+          {
+            "RackID": 0,
+            "MeasurementId": 0,
+            "Name": "EON Presence Absence",
+            "AlgoName": "EON Presence",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 1500,
+              "UCL": 2500,
+              "LSL": 1500,
+              "USL": 2500,
+              "NominalValue": 1500
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "EON Outer Width",
+            "AlgoName": "EON Width",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 0.77,
+              "UCL": 0.83,
+              "LSL": 0.77,
+              "USL": 0.83,
+              "NominalValue": 0.79
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "Box Width",
+            "AlgoName": "Box Width",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 1.37,
+              "UCL": 1.43,
+              "LSL": 1.37,
+              "USL": 1.43,
+              "NominalValue": 1.39
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "Lip Outer Width",
+            "AlgoName": "Lip Outer Width",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 0.65,
+              "UCL": 0.96,
+              "LSL": 0.65,
+              "USL": 0.96,
+              "NominalValue": 0.8
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "Lip Symmetry",
+            "AlgoName": "Lip Symmetry",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 0,
+              "UCL": 0.06,
+              "LSL": 0,
+              "USL": 0.06,
+              "NominalValue": 0.025
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "Lip Gap",
+            "AlgoName": "Lipgap FCI",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 0.04,
+              "UCL": 0.16,
+              "LSL": 0.04,
+              "USL": 0.16,
+              "NominalValue": 0.1
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "Lip Level",
+            "AlgoName": "Lip Level",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 0,
+              "UCL": 0.06,
+              "LSL": 0,
+              "USL": 0.06,
+              "NominalValue": 0.025
+            }
+          }
+        ]
+      },
+      {
+        "Name": "160",
+        "Measurements": [
+          {
+            "RackID": 0,
+            "MeasurementId": 0,
+            "Name": "EON Presence Absence",
+            "AlgoName": "EON Presence",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 1500,
+              "UCL": 2500,
+              "LSL": 1500,
+              "USL": 2500,
+              "NominalValue": 1500
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "EON Outer Width",
+            "AlgoName": "EON Width",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 0.77,
+              "UCL": 0.83,
+              "LSL": 0.77,
+              "USL": 0.83,
+              "NominalValue": 0.79
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "Box Width",
+            "AlgoName": "Box Width",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 1.37,
+              "UCL": 1.43,
+              "LSL": 1.37,
+              "USL": 1.43,
+              "NominalValue": 1.39
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "Lip Outer Width",
+            "AlgoName": "Lip Outer Width",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 0.65,
+              "UCL": 0.95,
+              "LSL": 0.65,
+              "USL": 0.95,
+              "NominalValue": 0.8
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "Lip Symmetry",
+            "AlgoName": "Lip Symmetry",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 0,
+              "UCL": 0.06,
+              "LSL": 0,
+              "USL": 0.06,
+              "NominalValue": 0.025
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "Lip Gap",
+            "AlgoName": "Lipgap FCI",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 0.04,
+              "UCL": 0.16,
+              "LSL": 0.04,
+              "USL": 0.16,
+              "NominalValue": 0.1
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "Lip Level",
+            "AlgoName": "Lip Level",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 0,
+              "UCL": 0.06,
+              "LSL": 0,
+              "USL": 0.06,
+              "NominalValue": 0.025
+            }
+          }
+        ]
+      },
+      {
+        "Name": "162",
+        "Measurements": [
+          {
+            "RackID": 0,
+            "MeasurementId": 0,
+            "Name": "A",
+            "AlgoName": "EON Presence",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 1500,
+              "UCL": 2500,
+              "LSL": 1500,
+              "USL": 2500,
+              "NominalValue": 1500
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "B",
+            "AlgoName": "EON Width",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 0.77,
+              "UCL": 0.84,
+              "LSL": 0.77,
+              "USL": 0.84,
+              "NominalValue": 0.79
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "C",
+            "AlgoName": "Box Width",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 1.37,
+              "UCL": 1.43,
+              "LSL": 1.37,
+              "USL": 1.43,
+              "NominalValue": 1.39
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "D",
+            "AlgoName": "Lip Outer Width",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 0.65,
+              "UCL": 0.95,
+              "LSL": 0.65,
+              "USL": 0.95,
+              "NominalValue": 0.8
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "E",
+            "AlgoName": "Lip Symmetry",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 0,
+              "UCL": 0.06,
+              "LSL": 0,
+              "USL": 0.06,
+              "NominalValue": 0.025
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "F",
+            "AlgoName": "Lipgap FCI",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 0,
+              "UCL": 0.16,
+              "LSL": 0,
+              "USL": 0.16,
+              "NominalValue": 0.1
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "G",
+            "AlgoName": "Lip Level",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 0,
+              "UCL": 0.06,
+              "LSL": 0,
+              "USL": 0.06,
+              "NominalValue": 0.025
+            }
+          }
+        ]
+      },
+      {
+        "Name": "175",
+        "Measurements": [
+          {
+            "RackID": 0,
+            "MeasurementId": 0,
+            "Name": "EON presence",
+            "AlgoName": "EON Presence",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 0,
+              "UserCorrectionBiasCoeff": 1
+            },
+            "SpecValues": {
+              "LCL": 1500,
+              "UCL": 2500,
+              "LSL": 1500,
+              "USL": 2500,
+              "NominalValue": 1500
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "EON outer Width",
+            "AlgoName": "EON Width",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 0,
+              "UserCorrectionBiasCoeff": 1
+            },
+            "SpecValues": {
+              "LCL": 0.77,
+              "UCL": 0.83,
+              "LSL": 0.77,
+              "USL": 0.83,
+              "NominalValue": 0.79
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "Box Width",
+            "AlgoName": "Box Width",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 0,
+              "UserCorrectionBiasCoeff": 1
+            },
+            "SpecValues": {
+              "LCL": 1.37,
+              "UCL": 1.41,
+              "LSL": 1.37,
+              "USL": 1.41,
+              "NominalValue": 1.39
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "Lip outer Width",
+            "AlgoName": "Lip Outer Width",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 0,
+              "UserCorrectionBiasCoeff": 1
+            },
+            "SpecValues": {
+              "LCL": 0.65,
+              "UCL": 0.95,
+              "LSL": 0.65,
+              "USL": 0.95,
+              "NominalValue": 0.8
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "Lip symmetry",
+            "AlgoName": "Lip Symmetry",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 0,
+              "UserCorrectionBiasCoeff": 1
+            },
+            "SpecValues": {
+              "LCL": 0,
+              "UCL": 0.06,
+              "LSL": 0,
+              "USL": 0.06,
+              "NominalValue": 0.025
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "Lip gap",
+            "AlgoName": "Lipgap FCI",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 0,
+              "UserCorrectionBiasCoeff": 1
+            },
+            "SpecValues": {
+              "LCL": 0.04,
+              "UCL": 0.16,
+              "LSL": 0.04,
+              "USL": 0.16,
+              "NominalValue": 0.1
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "Lip level",
+            "AlgoName": "Lip Level",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 0,
+              "UserCorrectionBiasCoeff": 1
+            },
+            "SpecValues": {
+              "LCL": 0,
+              "UCL": 0.06,
+              "LSL": 0,
+              "USL": 0.06,
+              "NominalValue": 0.025
+            }
+          }
+        ]
+      },
+      {
+        "Name": "182",
+        "Measurements": [
+          {
+            "RackID": 0,
+            "MeasurementId": 0,
+            "Name": "EON Presence Absence",
+            "AlgoName": "EON Presence",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 1500,
+              "UCL": 2500,
+              "LSL": 1500,
+              "USL": 2500,
+              "NominalValue": 1500
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "EON Outer Width",
+            "AlgoName": "EON Width",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 0.76,
+              "UCL": 0.83,
+              "LSL": 0.76,
+              "USL": 0.83,
+              "NominalValue": 0.79
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "Box Width",
+            "AlgoName": "Box Width",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 1.37,
+              "UCL": 1.43,
+              "LSL": 1.37,
+              "USL": 1.43,
+              "NominalValue": 1.39
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "Lip Outer Width",
+            "AlgoName": "Lip Outer Width",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 0.65,
+              "UCL": 0.95,
+              "LSL": 0.65,
+              "USL": 0.95,
+              "NominalValue": 0.8
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "Lip Symmetry",
+            "AlgoName": "Lip Symmetry",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 0,
+              "UCL": 0.06,
+              "LSL": 0,
+              "USL": 0.06,
+              "NominalValue": 0.025
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "Lip Gap",
+            "AlgoName": "Lipgap FCI",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 0.04,
+              "UCL": 0.16,
+              "LSL": 0.04,
+              "USL": 0.16,
+              "NominalValue": 0.1
+            }
+          },
+          {
+            "RackID": 0,
+            "MeasurementId": 1,
+            "Name": "Lip Level",
+            "AlgoName": "Lip Level",
+            "MeasurementEnable": true,
+            "UserCalibCoefficients": {
+              "UserCorrectionLinearityCoeff": 1,
+              "UserCorrectionBiasCoeff": 0
+            },
+            "SpecValues": {
+              "LCL": 0,
+              "UCL": 0.07,
+              "LSL": 0,
+              "USL": 0.07,
+              "NominalValue": 0.025
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+BatchID,	FailID,	InspectionMcID,	Event Name,	Event Time,	Event Reason,	Non Utilised Time
+None,None,None,Start,18-Jan-2019 17:23:22,Machine Start,0
+None,None,GTRON_V1.3_TT_TT-VASAI-MC5_26-09-2018,Ready,18-Jan-2019 17:23:23,Inspection Ready,0
+None,None,GTRON_V1.3_TT_TT-VASAI-MC5_26-09-2018,Select,18-Jan-2019 17:27:04,Part Select,221
+Batch_1_TVAS_STM_1_TT-1478_3630657575,None,GTRON_V1.3_TT_TT-VASAI-MC5_26-09-2018,BatchStart,18-Jan-2019 17:29:35,Batch Start,151
+Batch_1_TVAS_STM_1_TT-1478_3630657575,None,GTRON_V1.3_TT_TT-VASAI-MC5_26-09-2018,Pause,18-Jan-2019 17:29:39,Not Listed: Pause,0
+None,None,GTRON_V1.3_TT_TT-VASAI-MC5_26-09-2018,Exit,18-Jan-2019 17:30:24,Software Exit,45
